@@ -128,6 +128,7 @@
         margin-top: $spacer-3;
     }
     &__copy{
+        border-top: 1px solid $color-white;
         padding: $spacer-3 0;
         display: flex;
         justify-content: space-between;
@@ -213,7 +214,6 @@
         line-height: 1.5;
     }
     &__copy{
-        border-top: 1px solid $color-white;
         flex-direction: column-reverse;
         text-align: center;
     }
