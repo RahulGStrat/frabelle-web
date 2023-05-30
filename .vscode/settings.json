@@ -16,8 +16,8 @@
     "/**/node_modules/**",
     "/.vscode/**"
   ],
-  "liveSassCompile.settings.showOutputWindowOn": "Error",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true
+  "liveSassCompile.settings.showOutputWindowOn": "Error"
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.formatOnSave": true,
+  // "editor.formatOnPaste": true
 }
