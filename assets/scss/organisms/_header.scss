@@ -134,6 +134,8 @@
             input{
                 width: 100%;
                 font-size: 12px;
+                color: #848799;
+                font-weight: 500;
                 background-color: transparent;
                 border: none;
                 outline: none;
@@ -236,7 +238,7 @@
 }
 @include mobile{
     .fb-header{    
-        
+
         &__logo{
             margin: 0;
         }
