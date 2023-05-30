@@ -8,9 +8,11 @@
 @import "./base/dev";
 
 // atoms
-
+@import "atoms/discover-btn";
 // molecule
-
+@import "molecules/discover-tile";
+@import "molecules/discover-chef";
 // organisms
+@import "organisms/discover";
 
 // pages
