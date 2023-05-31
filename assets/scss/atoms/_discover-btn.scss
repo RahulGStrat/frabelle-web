@@ -10,7 +10,10 @@
   vertical-align: middle;
   text-align: center;
   border-radius: 3px;
+  transition: 0.3s;
+
   &:hover {
+    transition: 0.3s;
     background: #c31920;
     border: 0;
     color: #fff;

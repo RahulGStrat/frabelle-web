@@ -1,57 +1,77 @@
-.fb-monthly-promo{
-  &__grid{
+.fb-monthly-promo {
+  padding: 16px 0;
+
+  &__grid {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 -16px;
   }
-  &__promo{
+
+  &__promo {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: calc(20% - 32px);
-    padding: 16px 0;
+    padding: 0px 0;
     margin: 0 16px;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      background-color: rgba(217, 217, 217, 0.6);
+    }
   }
+
   &__promo-img {
     height: 60px;
     width: 60px;
   }
-  &__promo a{
+
+  &__promo a {
     user-select: none;
     font-size: 13px;
     font-weight: 600;
     color: rgb(98, 104, 131);
     margin-left: 8px;
+
+    &:hover {
+      color: $color-red;
+    }
   }
 }
 
 
-@include tablet{
-  .fb-monthly-promo{
-    &__grid{
+@include tablet {
+  .fb-monthly-promo {
+    &__grid {
       margin: 0 -8px;
     }
-    &__promo{
+
+    &__promo {
       width: calc(33.33% - 16px);
       margin: 0 8px;
     }
   }
 }
 
-@include mobile{
-  .fb-monthly-promo{
-    &__grid{
+@include mobile {
+  .fb-monthly-promo {
+    &__grid {
       margin: 0 -8px;
     }
-    &__promo{
+
+    &__promo {
       width: calc(50% - 16px);
       margin: 0 8px;
     }
+
     &__promo-img {
       height: 45px;
       width: 45px;
     }
-    &__promo a{
+
+    &__promo a {
       font-size: 12px;
     }
   }

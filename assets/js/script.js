@@ -26,7 +26,7 @@ window.addEventListener('resize', () => {
 //     slidesToScroll: 3
 // });
 $(".fb-customer__outer").slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 3,

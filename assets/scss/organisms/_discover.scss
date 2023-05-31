@@ -5,19 +5,14 @@
     display: flex;
     margin: 0 -8px;
     padding-bottom: $spacer-4;
-  }
+    position: relative;
 
-  &__module-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(35% - 16px);
-    margin: 0 8px;
     &::after {
+      z-index: 1;
       content: "";
       position: absolute;
-      bottom: 24%;
-      left: 30%;
+      bottom: -6%;
+      left: 23%;
       width: 498px;
       height: 248px;
       background-image: url(https://www.frabellemarketplace.ph/static/version1672902296/frontend/Kemana/frabelle/en_US/images/recipes-bg-down.svg);
@@ -27,7 +22,17 @@
     }
   }
 
+  &__module-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(35% - 16px);
+    margin: 0 8px;
+  }
+
   &__module-right {
+    position: relative;
+    z-index: 2;
     width: calc(65% - 16px);
     margin: 0 8px;
     position: relative;
@@ -37,6 +42,7 @@
     display: flex;
     margin: 0 -10px;
     flex-wrap: wrap;
+
     &--second-outer {
       margin-top: $spacer-5;
     }
@@ -45,9 +51,16 @@
   &__right-one {
     width: calc(50% - 20px);
     margin: 0 10px 20px 10px;
+
     &--second-tile {
       width: calc(25% - 20px);
     }
+  }
+
+  &--grey {
+    background-color: #fcfcff;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -61,6 +74,7 @@
       width: 100%;
       padding-bottom: $spacer-4;
       margin: 0;
+
       &::after {
         display: none;
       }
@@ -87,6 +101,10 @@
   .fb-dicover {
     &__outer {
       display: block;
+
+      &::after {
+        display: none;
+      }
     }
 
     &__module-right {
@@ -100,6 +118,7 @@
 
     &__right-one {
       width: 100%;
+
       &--second-tile {
         width: 100%;
         margin: 8px 0;
@@ -109,6 +128,7 @@
     &__module-left {
       width: 100%;
       padding-bottom: $spacer-4;
+
       &::after {
         display: none;
       }
