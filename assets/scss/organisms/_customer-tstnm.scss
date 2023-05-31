@@ -1,111 +1,50 @@
 .fb-customer {
     &__outer {
-        .slick-prev:not(.primary) {
-            background-color: #fff;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, .05);
-            color: #eb2028;
-        }
 
-        .slick-prev {
-            position: absolute;
-            display: block;
-            height: 45px;
-            width: 45px;
-            line-height: 0;
-            font-size: 0;
-            cursor: pointer;
-            background-color: #fff;
-            color: #eb2028;
-            top: 50%;
-            -webkit-transform: translate(0, -50%);
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            padding: 0;
-            border: none;
-            outline: none;
-            border-radius: 50%;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, .05);
-            z-index: 1;
-        }
-
-        .slick-prev::before {
-            content: '';
-            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' fill='white'/%3E%3Cpath d='M1.99912 5.00001L2.00001 4.99911L2.00042 4.99953L7.64642 10.6465L8.00001 11.0002L8.35359 10.6465L13.9996 4.99956L13.9996 4.99953L13.9998 4.99942L14 4.99938L14.0003 4.99942L14.0005 4.99956L14.0006 4.99977L14.0006 5.00001L14.0006 5.00025L14.0005 5.00046L8.00045 11.0005L8.00001 11.0009L7.99956 11.0005L1.99956 5.00046L1.99912 5.00001Z' fill='white' stroke='%23EB2028'/%3E%3C/svg%3E%0A");
-            transform: rotate(90deg);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            background-size: cover;
-            background-position: center;
-            width: 25px;
-            height: 25px;
-            left: 50%;
-            top: 50%;
-            font-size: 0px;
-            line-height: 30px;
-            color: #eb2028;
-            font-family: 'icons-kemana-theme';
-            margin: 0 0 0 3px;
-            vertical-align: middle;
-            display: inline-block;
-            font-weight: 400;
-            overflow: hidden;
-            // speak: none;
-            text-align: center;
-        }
-
+        .slick-prev,
         .slick-next {
-            position: absolute;
-            display: block;
-            height: 45px;
-            width: 45px;
-            line-height: 0;
-            font-size: 0;
-            cursor: pointer;
-            background-color: #fff;
-            color: #eb2028;
-            top: 50%;
-            -webkit-transform: translate(0, -50%);
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            padding: 0;
-            border: none;
-            outline: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 50%;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, .05);
+            width: 45px;
+            height: 45px;
             z-index: 1;
+            background-image: url(../images/ArrowCircle.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
 
-            &::before {
-                background-image: url("data:image/svg+xml,'%5Ce90e'");
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                font-size: 17px;
-                line-height: 30px;
-                color: #eb2028;
-                font-family: "icons-kemana-theme";
-                margin: 0 0 0 3px;
-                vertical-align: middle;
-                display: inline-block;
-                font-weight: 400;
-                overflow: hidden;
-                // speak: none;
-                text-align: center;
+            &::before,
+            &::after {
+                content: "";
+            }
+
+            &:hover {
+                background-image: url(../images/ArrowCircleHvr.svg);
+            }
+
+            &:focus {
+                background-image: url(../images/ArrowCircleHvr.svg);
             }
         }
 
-        .slick-next:not(.primary) {
-            background-color: #fff;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, .05);
-            color: #eb2028;
+        .slick-prev {
+            left: -60px;
+        }
+
+        .slick-next {
+            right: -60px;
+            transform: translate(0, -50%) rotate(180deg);
         }
     }
 
     &__item {
         // background-color: #000;
         padding: 85px 30px 40px;
-        margin: 0 10px 10px;
+        margin: 10px;
         width: 380px;
         color: $color-black;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, .03);
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        border-radius: 5px;
         position: relative;
 
         &::before {
@@ -123,13 +62,14 @@
         font-weight: 500;
         line-height: 24px;
         letter-spacing: .33px;
-        min-height: 144px;
+        min-height: 168px;
         color: #848799;
     }
 
     &__author {
         display: flex;
         align-items: center;
+        margin-top: $spacer-3;
 
         .image {
             width: 45px;
@@ -149,5 +89,57 @@
             margin-left: 22px;
             margin-top: 5px;
         }
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #3b4780;
+        text-align: center;
+        margin-bottom: $spacer-5;
+    }
+}
+
+@include tablet {
+    .fb-customer {
+        &__outer {
+
+            .slick-prev,
+            .slick-next {
+                width: 35px;
+                height: 35px;
+            }
+
+            .slick-prev {
+                left: -20px;
+            }
+
+            .slick-next {
+                right: -20px;
+            }
+        }
+
+    }
+}
+
+@include mobile {
+    .fb-customer {
+        &__outer {
+
+            .slick-prev,
+            .slick-next {
+                width: 35px;
+                height: 35px;
+            }
+
+            .slick-prev {
+                left: 0px;
+            }
+
+            .slick-next {
+                right: 0px;
+            }
+        }
+
     }
 }
