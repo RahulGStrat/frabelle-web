@@ -1,0 +1,58 @@
+.fb-discover-chef {
+  &__img-outer {
+    margin-bottom: $spacer-2;
+    width: 259px;
+    height: 114px;
+    margin: 0 auto;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__img-icon {
+    width: 33px;
+    height: 23px;
+    margin: 0 auto;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__subtext {
+    font-size: 18px;
+    color: #3b4780;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin-top: -$spacer-3;
+    padding-bottom: $spacer-5;
+  }
+
+  &__dicription {
+    color: #848799;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: $spacer-3;
+    padding-top: $spacer-5;
+  }
+
+  &__btn-outer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include mobile-tablet {
+  .fb-discover-chef {
+    &__subtext {
+      padding-bottom: $spacer-3;
+      font-size: 14px;
+    }
+
+    &__dicription {
+      padding-top: $spacer-3;
+    }
+  }
+}

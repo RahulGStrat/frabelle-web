@@ -9,12 +9,16 @@
 
 // atoms
 @import "atoms/input";
+@import "atoms/discover-btn";
 // molecule
 @import "molecules/header-top-links";
 @import "molecules/login-popup";
+@import "molecules/discover-tile";
+@import "molecules/discover-chef";
 
 // organisms
 @import "organisms/header";
 @import "organisms/page-header";
+@import "organisms/discover";
 
 // pages
