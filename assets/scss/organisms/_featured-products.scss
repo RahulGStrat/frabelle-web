@@ -1,27 +1,73 @@
 .fb-featured {
     padding: $spacer-5 $spacer-0;
 
+    &__product-slick {
+        width: 100%;
+        margin: 0 -16px;
+    }
     .nav {
         justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
     }
     .nav-link {
-        color: #848799;
+        width: 60px;
+        color: $color-white;
         font-weight: 700;
-        font-size: 12px;
-        padding: $spacer-0 $spacer-2;
+        font-size: 11px;
+        padding: $spacer-2;
+        border: 1px solid #eb2028;
+        color: #eb2028;
+        
     }
     .nav-link.active {
-        color: #eb2028;
-        position: relative;
-
-        &::after {
+        color: $color-white;
+        background-color: #eb2028;
+        
+    }
+    .nav-item{
+            &:nth-child(1){
+                .nav-link{
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+            }
+            &:nth-child(2){
+                .nav-link{
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+    }
+    .slick-dots li button {
+        height: 10px;
+        &:before {
             content: '';
-            position: absolute;
-            width: 50%;
-            height: 2px;
-            bottom: 0;
-            left: 5px;
-            background-color: #eb2028;
+            width: 20px;
+            height: 8px;
+            // color: $color-white;
+            box-shadow: 0px 2px 5px rgba(0,0,0,.05);
+            border-radius: 10px;
+            background-color: #fff;
+            opacity: 1;
+            transition: 0.3s;
         }
+        &:hover{
+            &:before {
+                transition: 0.3s;
+                background-color: #eb2028;
+            }
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        background-color: #eb2028;
+    }
+}
+
+@include mobile {
+    .fb-featured {
+        &__product-slick {
+            margin: $spacer-0;
+    }
     }
 }
