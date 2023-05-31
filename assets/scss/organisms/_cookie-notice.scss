@@ -1,0 +1,24 @@
+.fb-cookie-ntc {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgb(255, 239, 158);
+  padding: 24px 0;
+
+  &__policy {
+    margin-bottom: 12px;
+    b {
+      font-weight: 700;
+    }
+    a {
+      color: rgb(132, 135, 153);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: rgb(235, 32, 40);
+      }
+    }
+  }
+}

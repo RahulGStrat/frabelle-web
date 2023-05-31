@@ -1,0 +1,18 @@
+.fb-hotdeals{
+  &__deal-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+  &__deal{
+    user-select: none;
+    display: inline-block;
+    width: calc(33.33% - 16px);
+    margin: 0 8px;
+    margin-bottom: 16px;
+  }
+  &__deal-img{
+    height: auto;
+    width: 100%;
+  }
+}
