@@ -1,0 +1,106 @@
+.fb-login_popup{
+    width: 100%;
+    max-width: 280px;
+    // position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 16px 24px;
+    background: #fff;
+    border: 1px solid #c1c3c9;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &__title{
+        color: #51535d;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+
+    &__form{
+        width: 100%;
+        form{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #c1c3c9;
+        }
+
+        &-field{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 13px;
+        }
+    }
+
+    .fb-input__text-wrap{
+        input{
+            height: 35px;
+        }
+    }
+
+    &__link{
+        font-size: 11px;
+        font-weight: 600;
+        color: #eb2028;
+        text-decoration: none;
+    }
+
+    &__text{
+        font-size: 11px;
+        font-weight: 500;
+        color: #848799;
+    }
+
+    &__btn-wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social{
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    &__socialbtn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f8fc;
+        border: 1px solid #e1e1e3;
+        border-radius: 3px;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+        transition: all 0.3s ease-in-out;
+
+        &-text{
+            font-size: 11px;
+            font-weight: 600;
+            font-family: 'Spartan';
+            text-decoration: none;
+            color: #51535d;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        &-logo{
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        
+        &:hover{
+            background: #ededed;
+        }
+    }
+}
