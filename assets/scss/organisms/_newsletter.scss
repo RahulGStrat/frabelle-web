@@ -76,6 +76,7 @@
   .fb-newslettier {
     &__top-head {
       font-size: 18px;
+      padding: $spacer-2 0;
     }
 
     &__bot-imgs {
@@ -84,6 +85,16 @@
 
     &__form-title {
       font-size: 16px;
+    }
+
+    &__form-inpwrap {
+      flex-direction: column;
+    }
+
+    &__form {
+      input {
+        text-align: center;
+      }
     }
   }
 }

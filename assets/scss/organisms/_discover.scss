@@ -1,10 +1,10 @@
 .fb-dicover {
-  padding: $spacer-4 0;
+  padding: $spacer-6 0 $spacer-4 0;
 
   &__outer {
     display: flex;
     margin: 0 -8px;
-    padding-bottom: $spacer-4;
+    padding-bottom: $spacer-5;
     position: relative;
 
     &::after {
@@ -42,10 +42,6 @@
     display: flex;
     margin: 0 -10px;
     flex-wrap: wrap;
-
-    &--second-outer {
-      margin-top: $spacer-5;
-    }
   }
 
   &__right-one {
@@ -66,6 +62,7 @@
 
 @include tablet {
   .fb-dicover {
+    padding-top: 0px;
     &__outer {
       display: block;
     }
@@ -94,13 +91,19 @@
         width: calc(50% - 20px);
       }
     }
+
+    &__outer {
+      padding-bottom: 0;
+    }
   }
 }
 
 @include mobile {
   .fb-dicover {
+    padding: 0;
     &__outer {
       display: block;
+      padding-bottom: 0;
 
       &::after {
         display: none;

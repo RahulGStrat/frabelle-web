@@ -8,6 +8,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+  border-radius: 5px;
 
   &::after {
     position: absolute;
@@ -16,9 +17,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg,
-        rgba(44, 60, 139, 0) 58.36%,
-        #000000 90.07%);
+    background: linear-gradient(
+      180deg,
+      rgba(44, 60, 139, 0) 58.36%,
+      #000000 90.07%
+    );
     opacity: 0.7;
     transition: 0.3s;
   }
@@ -30,10 +33,12 @@
     height: 100%;
     bottom: -100%;
     left: 0;
-    background: linear-gradient(180deg,
-        rgba(0, 0, 0, 0) -38.1%,
-        rgba(0, 0, 0, 1.596589) 58.99%,
-        rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) -38.1%,
+      rgba(0, 0, 0, 1.596589) 58.99%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     opacity: 0.7;
     transition: 0.3s;
   }
