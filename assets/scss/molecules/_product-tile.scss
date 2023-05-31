@@ -1,0 +1,69 @@
+.fb-product-tile {
+    display: block;
+    border: 1px solid $color-white-2;
+    border-radius: 5px;
+    margin: $spacer-3;
+
+    &__tile-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: $spacer-3;
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+    }
+    &__tile-cont {
+        text-align: center;
+        padding: $spacer-2 $spacer-3;
+    }
+    &__title {
+        font-size: 12px;
+        font-weight: 600;
+        color: $color-blue-2;
+        margin-bottom: $spacer-4;
+        transition: 0.3s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__weight {
+        font-size: 10px;
+        font-weight: 600;
+        color: #eb2028;
+        margin-bottom: $spacer-2;
+    }
+    &__price {
+        font-size: 12px;
+        font-weight: 600;
+        color: $color-blue-2;
+        margin-bottom: $spacer-2;
+    }
+    &__price-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        color: #848799;
+        margin-bottom: $spacer-3;
+        img {
+            width: 66px;
+            height: auto;
+            display: block;
+        }
+    }
+    &__cta {
+        display: inline-block;
+        margin-bottom: $spacer-2;
+    }
+    &:hover {
+        .fb-product-tile__title {
+            font-weight: 800;
+        }
+         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);  
+    }
+}

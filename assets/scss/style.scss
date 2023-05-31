@@ -10,7 +10,10 @@
 // atoms
 @import "atoms/input";
 @import "atoms/discover-btn";
+@import "atoms/product-tile-btn";
+@import "atoms/title-head";
 // molecule
+@import "./molecules/product-tile";
 // organisms
 @import "./organisms/footer";
 @import "organisms/monthly-promo";
@@ -30,7 +33,5 @@
 @import "organisms/header";
 @import "organisms/page-header";
 @import "organisms/discover";
-// organisms
-
-// pages
+@import "./organisms/featured-products";
 // pages
