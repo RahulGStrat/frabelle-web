@@ -1,0 +1,60 @@
+.fb-toplinks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    &__wrap{
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+    }
+
+    &__left{
+        width: 70%;
+        margin-right: 8px;
+    }
+
+    &__text{
+        font-size: 10px;
+        font-weight: 400;
+        color: #848799;
+    }
+
+    &__right{
+        flex: 1;
+        margin-right: 8px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li{
+                padding: 0 8px;
+                border-left: 1px solid #ededed;
+                text-align: center;
+                min-width: 70px;
+            }
+            .fb-toplink{
+                font-size: 10px;
+                font-weight: 400;
+                color: #848799;
+                text-decoration: none;
+
+                &:hover,
+                &.active{
+                    // font-size: 11px;
+                    font-weight: 700;
+                    color: #eb2028;
+                }
+            }
+        }
+    }
+}
+
+@include mobile-tablet{
+    .fb-toplinks{
+        display: none;
+    }
+}
