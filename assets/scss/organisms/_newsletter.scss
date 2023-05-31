@@ -22,6 +22,7 @@
     width: 200px;
   }
   &__form-title{
+    text-align: center;
     font-size: 18px;
     font-weight: 700;
     color: rgb(59, 71, 128);
@@ -57,5 +58,19 @@
   &__form-inpwrap {
     display: flex;
     border-bottom: 1px solid rgb(185, 208, 229);
+  }
+}
+
+@include mobile{
+  .fb-newslettier{
+    &__top-head{
+      font-size: 18px;
+    }
+    &__bot-imgs {
+      display: none;
+    }
+    &__form-title{
+      font-size: 16px;
+    }
   }
 }
