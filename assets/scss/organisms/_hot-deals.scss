@@ -1,18 +1,64 @@
-.fb-hotdeals{
-  &__deal-grid{
+.fb-hotdeals {
+  padding: $spacer-6 0;
+
+  &__head {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3b4780;
+    text-align: center;
+    margin-bottom: $spacer-4;
+  }
+
+  &__deal-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -8px;
   }
-  &__deal{
+
+  &__deal {
     user-select: none;
     display: inline-block;
     width: calc(33.33% - 16px);
     margin: 0 8px;
     margin-bottom: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.02);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
   }
-  &__deal-img{
-    height: auto;
+
+  &__deal-img {
+    // height: auto;
+    height: 100%;
     width: 100%;
+  }
+}
+
+@include tablet {
+  .fb-hotdeals {
+
+    &__head {
+      font-size: 35px;
+    }
+
+    &__deal {
+      width: calc(50% - 16px);
+    }
+  }
+}
+
+@include mobile {
+  .fb-hotdeals {
+
+    &__head {
+      font-size: 30px;
+    }
+
+    &__deal {
+      width: calc(100% - 16px);
+    }
   }
 }
