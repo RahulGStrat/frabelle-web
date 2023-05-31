@@ -1,0 +1,27 @@
+.fb-featured {
+    padding: $spacer-5 $spacer-0;
+
+    .nav {
+        justify-content: center;
+    }
+    .nav-link {
+        color: #848799;
+        font-weight: 700;
+        font-size: 12px;
+        padding: $spacer-0 $spacer-2;
+    }
+    .nav-link.active {
+        color: #eb2028;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            bottom: 0;
+            left: 5px;
+            background-color: #eb2028;
+        }
+    }
+}
