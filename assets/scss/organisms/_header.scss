@@ -205,13 +205,11 @@
         &-cnt{
             opacity: 0;
             position: absolute;
-            top: 100%;
+            top: calc(100% + 8px);
             left: 0;
-            width: 100%;
-            min-width: 300px;
+            width: 280px;
             height: 0;
             overflow: hidden;
-            background-color: #eb2028;
         }
         
         &--fav{
