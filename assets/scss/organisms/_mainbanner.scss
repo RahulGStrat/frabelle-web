@@ -1,0 +1,70 @@
+.fb-MainBanner {
+  &__tile-wrap {
+    position: relative;
+  }
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .slick-prev,
+  .slick-next {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+    background-image: url(../images/ArrowCircle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    &::before,
+    &::after {
+      content: "";
+    }
+    &:hover {
+      background-image: url(../images/ArrowCircleHvr.svg);
+    }
+    &:focus {
+      background-image: url(../images/ArrowCircleHvr.svg);
+    }
+  }
+  .slick-prev {
+    left: $spacer-5;
+  }
+  .slick-next {
+    right: $spacer-5;
+    transform: translate(0, -50%) rotate(180deg);
+  }
+  .slick-dots {
+    bottom: $spacer-3;
+    li {
+      height: auto;
+      button {
+        border: 0;
+        background: $color-white;
+        display: block;
+        height: 10px;
+        width: 20px;
+        outline: none;
+        line-height: 0;
+        font-size: 0;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+        &:hover,
+        &:focus {
+          outline: none;
+          border: none;
+          background-color: $color-red;
+        }
+        &::before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: $color-red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.fb-youtube {
+  &__wrap {
+    background: #d9d9d9;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    border: 10px solid $color-grey;
+  }
+}
