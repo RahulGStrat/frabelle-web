@@ -138,6 +138,14 @@
     }
 }
 
+@include tablet {
+    .fb-featured {
+        &__product-slick {
+            margin: $spacer-0;
+    }
+    }
+}
+
 @include mobile {
     .fb-featured {
         &__product-slick {
