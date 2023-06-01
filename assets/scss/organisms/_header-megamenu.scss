@@ -2,9 +2,7 @@
     width: 100%;
     &__outer{
         width: 100%;
-        // position: fixed;
-        // right: 100%;
-        // top: 47px;
+        display: none;
         
         .content-wrapper{
             padding: 0;
@@ -109,6 +107,14 @@
                 height: 17px;
                 transform: rotateZ(180deg);
             }
+        }
+    }
+}
+
+@include mobile-tablet{
+    .fb-header-megamenu{
+        &__outer{
+            display: block;
         }
     }
 }
