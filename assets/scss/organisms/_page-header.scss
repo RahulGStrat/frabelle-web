@@ -1,3 +1,52 @@
 .fb-page-header{
     background-color: $color-white;
+    
+    &--sticky{
+        .fb-header-wrap,
+        .fb-header-nav-wrap{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .fb-header__controller{
+            width: 45px;
+            margin-right: 40px;
+        }
+        .fb-header-nav__active{
+            top: 73px;
+        }
+    }
+}
+
+@include mobile-tablet{
+    .fb-page-header{
+        .fb-header-nav-wrap{
+            position: fixed;
+            right: 100%;
+        }
+        &--sticky{
+            .fb-header-nav-wrap{
+                top: 73px;
+                right: 100%;
+                left: unset;
+            }
+           .fb-header-nav__active{
+                right: 0;
+            } 
+        }
+    }
+}
+
+@include mobile{
+    .fb-page-header{
+        &--sticky{
+            .fb-header__controller{
+                width: 30px;
+                height: 30px;
+                min-height: unset;
+                margin-right: 24px;
+            }
+        }
+    }
 }
