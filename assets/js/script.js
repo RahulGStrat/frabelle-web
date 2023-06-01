@@ -129,9 +129,14 @@ $('.fb-featured__product-slick').slick({
 });
 
 // 
-document.querySelectorAll('.nav-link').forEach(e => {
+document.querySelectorAll('.fb-featured__tabbtn').forEach(e => {
 
     e.addEventListener('click', () => {
         $('.fb-featured__product-slick').slick('refresh');
+        document.querySelector('.fb-featured__loader').classList.add('load')
+        // 
+        setTimeout(() => {
+            document.querySelector('.fb-featured__loader').classList.remove('load')
+        }, 500)
     })
 })
