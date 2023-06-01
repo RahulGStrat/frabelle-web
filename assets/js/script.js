@@ -19,6 +19,7 @@ window.addEventListener('resize', () => {
     }
 })
 
+
 // testimonials
 // $('.fb-customer__outer').slick({
 //     infinite: true,
@@ -126,3 +127,11 @@ $('.fb-featured__product-slick').slick({
         },
     ]
 });
+
+// 
+document.querySelectorAll('.nav-link').forEach(e => {
+
+    e.addEventListener('click', () => {
+        $('.fb-featured__product-slick').slick('refresh');
+    })
+})
