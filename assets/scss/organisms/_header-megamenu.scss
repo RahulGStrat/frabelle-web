@@ -1,0 +1,96 @@
+.fb-header-megamenu{
+    width: 100%;
+    &__outer{
+        width: 100%;
+        // position: fixed;
+        // right: 100%;
+        // top: 47px;
+    }
+    &__link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+
+        &-text{
+            font-size: 12px;
+            font-weight: 700;
+            color: #3b4780;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &-logo{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img,
+            svg{
+                width: 100%;
+            }
+        }
+    }
+    &__home{
+        width: 100%;
+        background-color: #fff;
+        &-list{
+            list-style: none;
+        }
+        &-inner{
+            width: 100%;
+        }
+        &-room{
+            width: 100%;
+        }
+    }   
+    
+    &__sub{
+        width: 100%;
+        background-color: #ee0f0f;
+
+        &-wrap{
+            width: 100%;
+        }
+        
+        &-two{
+            width: 100%;
+            background-color: #0b0b0b;
+        }
+
+        &-list{
+            list-style: none;
+        }
+    }
+
+    &__back{
+        width: 100%;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &-text{
+            font-size: 12px;
+            font-weight: 700;
+            color: #00ff44;
+        }
+
+        &-logo{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 24px;
+
+            svg,
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
