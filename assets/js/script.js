@@ -142,6 +142,7 @@ document.querySelectorAll(".fb-featured__tabbtn").forEach((e) => {
     }, 500);
   });
 });
+
 // pageg header start
 const page_header = document.querySelector(".fb-page-header");
 const header_controller = document.querySelector(".fb-header__controller");
