@@ -5,6 +5,7 @@ const header_nav = document.querySelector(".fb-header-nav-wrap");
 const header_toplink = document.querySelector(".fb-toplinks__wrap");
 const search_icon_mob = document.querySelector(".fb-header__search-icon--mob");
 const search_bar = document.querySelector(".fb-header__search");
+const megaMenu = document.querySelector(".fb-header-megamenu__outer");
 
 // function to make header sticky
 const headerSticky = () => {
@@ -12,7 +13,7 @@ const headerSticky = () => {
   if (scrollTop > 20) {
     page_header.classList.add("fb-page-header--sticky");
   } else {
-    page_header.classListNaNpxove("fb-page-header--sticky");
+    page_header.classList.remove("fb-page-header--sticky");
   }
 }
 
@@ -28,36 +29,41 @@ function screenWidthFinder() {
 
 // sticky header on pagescroll start
 window.addEventListener("scroll", () => {
-  // screenWidthFinder();
+  screenWidthFinder();
 })
 // sticky header on pagescroll end
 
 // sticky header on pageload start
 window.addEventListener("load", () => {
-  // screenWidthFinder();
+  screenWidthFinder();
 })
 // sticky header on pageload end
 
 // sticky header on page resize start
 window.addEventListener("resize", () => {
-  // screenWidthFinder();
+  screenWidthFinder();
 })
 // sticky header on page resize end
 
 // controller start
-// header_controller.addEventListener("click", () => {
-//   header_controller.classList.toggle("fb-header__controller--checked");
-//   search_bar.classListNaNpxove("fb-header__search--active");
-//   header_nav.classList.toggle("fb-header-nav__active");
-// })
+header_controller.addEventListener("click", () => {
+  header_controller.classList.toggle("fb-header__controller--checked");
+  search_bar.classList.remove("fb-header__search--active");
+  var screen_width = document.body.clientWidth;
+  if (screen_width < 1199) {
+    megaMenu.classList.toggle("fb-header-megamenu__active");
+  } else {
+    header_nav.classList.toggle("fb-header-nav__active");
+  }
+})
 // controller end
 
 // search bar mob start
-// search_icon_mob.addEventListener("click", () => {
-//   header_controller.classListNaNpxove("fb-header__controller--checked");
-//   header_nav.classListNaNpxove("fb-header-nav__active");
-//   search_bar.classList.toggle("fb-header__search--active");
-// })
+search_icon_mob.addEventListener("click", () => {
+  header_controller.classList.remove("fb-header__controller--checked");
+  megaMenu.classList.remove("fb-header-megamenu__active");
+  search_bar.classList.toggle("fb-header__search--active");
+})
 // search bar mob end
 
 // megamenu start 

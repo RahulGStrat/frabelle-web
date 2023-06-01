@@ -2,6 +2,9 @@
     width: 100%;
     &__outer{
         width: 100%;
+        position: fixed;
+        background-color: #fff;
+        min-height: calc(100vh - 73px);
         display: none;
         
         .content-wrapper{
@@ -108,6 +111,12 @@
                 transform: rotateZ(180deg);
             }
         }
+    }
+    
+
+    &__active{
+        width: 100%;
+        transition: all 0.3s ease-in-out;
     }
 }
 
