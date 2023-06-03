@@ -74,6 +74,8 @@
 
         &-list{
             list-style: none;
+            height: calc(100vh - 73px);
+            overflow-y: auto;
         }
     }
 
