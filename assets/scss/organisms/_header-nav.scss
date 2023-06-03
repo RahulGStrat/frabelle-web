@@ -1,25 +1,31 @@
-.fb-header-nav{
+.fb-header-nav {
     width: 100%;
     position: relative;
-    &-wrap{
+
+    &-wrap {
         width: 100%;
         background-color: #2c3c8b;
+        transition: all 0.3s ease-in-out;
     }
-    &__cnts{
+
+    &__cnts {
         display: flex;
         align-items: center;
         justify-content: space-between;
         list-style: none;
     }
-    &__item{
+
+    &__item {
         display: inline-block;
-        &:hover{
-            .fb-header-nav__megamenu{
+
+        &:hover {
+            .fb-header-nav__megamenu {
                 display: block;
             }
         }
     }
-    &__link{
+
+    &__link {
         padding: 10px 32px;
         font-size: 10px;
         font-weight: 600;
@@ -27,15 +33,18 @@
         display: inline-block;
         text-decoration: none;
         text-transform: uppercase;
-        &:hover{
+
+        &:hover {
             color: #fff;
             background-color: $color-red;
         }
-        &:last-child{
+
+        &:last-child {
             margin-right: 0;
         }
     }
-    &__megamenu{
+
+    &__megamenu {
         display: none;
         position: absolute;
         top: 100%;
@@ -46,40 +55,44 @@
         padding: 32px;
         background-color: #fff;
 
-        &-cnts{
+        &-cnts {
             display: flex;
             justify-content: space-between;
             list-style: none;
         }
 
-        &-block{
+        &-block {
             width: 25%;
             padding: 0 16px;
-            &:first-child{
+
+            &:first-child {
                 padding-left: 0;
             }
-            &:last-child{
+
+            &:last-child {
                 padding-right: 0;
             }
-            &_img-wrap{
+
+            &_img-wrap {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                img{
+
+                img {
                     width: 100%;
                     object-fit: contain;
                 }
             }
         }
 
-        &-item{
+        &-item {
             width: 100%;
             list-style: none;
             margin-bottom: 16px;
         }
 
-        &-title{
+        &-title {
             display: inline-block;
             font-size: 16px;
             font-weight: 700;
@@ -87,16 +100,18 @@
             text-decoration: none;
             margin-bottom: 8px;
             transition: all 0.3s ease-in-out;
-            &:hover{
+
+            &:hover {
                 color: #eb2028;
             }
         }
     }
-    
-    &__submenu{
+
+    &__submenu {
         width: 100%;
         list-style: none;
-        &-item{
+
+        &-item {
             display: inline-block;
             font-size: 12px;
             font-weight: 500;
@@ -105,43 +120,42 @@
             margin-bottom: 4px;
             transition: all 0.3s ease-in-out;
 
-            &:hover{
+            &:hover {
                 color: #eb2028;
             }
         }
     }
-
-    &__active{
-        width: 100%;
-        transition: all 0.3s ease-in-out;
-    }
 }
 
-@include mobile-tablet{
-    .fb-header-nav{
-        &__cnts{
+@include mobile-tablet {
+    .fb-header-nav {
+        &__cnts {
             flex-direction: column;
         }
-        &__item{
+
+        &__item {
             width: 100%;
         }
-        &__megamenu{
+
+        &__megamenu {
             display: none;
             position: static;
-            &-cnts{
+
+            &-cnts {
                 flex-wrap: wrap;
             }
-            &-block{
+
+            &-block {
                 width: 33.33%;
             }
         }
     }
 }
 
-@include mobile{
-    .fb-header-nav{
-        &__megamenu{
-            &-block{
+@include mobile {
+    .fb-header-nav {
+        &__megamenu {
+            &-block {
                 width: 100%;
                 padding-right: 0;
                 padding-left: 0;
@@ -151,9 +165,10 @@
 }
 
 // 
-.test{
+.test {
     width: 100%;
     min-height: 2000px;
     background-color: aqua;
 }
+
 // 
