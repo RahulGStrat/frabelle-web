@@ -30,10 +30,21 @@
 @import "molecules/header-top-links";
 @import "molecules/login-popup";
 @import "molecules/add-to-cart-popup";
+@import "./molecules/product-tile";
+
+// organisms
+@import "organisms/monthly-promo";
+@import "organisms/cookie-notice";
+@import "organisms/newsletter";
+@import "organisms/hot-deals";
+@import "./organisms/customer-tstnm";
+@import "./organisms/mainbanner";
+@import "./organisms/youtube-frame";
 @import "organisms/header";
 @import "organisms/page-header";
 @import "organisms/discover";
 @import "./organisms/featured-products";
 @import "organisms/header-nav";
+@import "organisms/header-megamenu";
 
 // pages
