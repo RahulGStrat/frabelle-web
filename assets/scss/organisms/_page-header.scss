@@ -22,15 +22,6 @@
       top: 73px;
     }
   }
-
-  .fb-header__controller {
-    width: 45px;
-    margin-right: 40px;
-  }
-
-  .fb-header-nav__active {
-    top: 73px;
-  }
 }
 
 @include mobile-tablet {
@@ -51,18 +42,6 @@
       .fb-header-megamenu__active {
         right: 0;
       }
-    }
-  }
-
-  &--sticky {
-    .fb-header-nav-wrap {
-      top: 73px;
-      right: 100%;
-      left: unset;
-    }
-
-    .fb-header-nav__active {
-      right: 0;
     }
   }
 }

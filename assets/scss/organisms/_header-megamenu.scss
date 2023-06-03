@@ -1,17 +1,19 @@
-.fb-header-megamenu{
+.fb-header-megamenu {
     width: 100%;
-    &__outer{
+
+    &__outer {
         width: 100%;
         position: fixed;
         background-color: #fff;
         min-height: calc(100vh - 73px);
         display: none;
-        
-        .content-wrapper{
+
+        .content-wrapper {
             padding: 0;
         }
     }
-    &__link{
+
+    &__link {
         width: 100%;
         display: flex;
         align-items: center;
@@ -19,7 +21,7 @@
         padding: 12px 20px;
         border-bottom: 1px solid #ebebeb;
 
-        &-text{
+        &-text {
             font-size: 12px;
             font-weight: 700;
             color: #3b4780;
@@ -27,7 +29,7 @@
             text-transform: uppercase;
         }
 
-        &-logo{
+        &-logo {
             width: 25px;
             height: 25px;
             display: flex;
@@ -35,51 +37,59 @@
             justify-content: center;
 
             img,
-            svg{
+            svg {
                 width: 100%;
             }
 
-            svg{
+            svg {
                 width: 6px;
                 height: 17px;
             }
         }
+
+        .fb-header__action-text {
+            display: block;
+        }
     }
-    &__home{
-        width: 100%;
-        background-color: #fff;
-        &-list{
-            list-style: none;
-        }
-        &-inner{
-            width: 100%;
-        }
-        &-room{
-            width: 100%;
-        }
-    }   
-    
-    &__sub{
+
+    &__home {
         width: 100%;
         background-color: #fff;
 
-        &-wrap{
+        &-list {
+            list-style: none;
+        }
+
+        &-inner {
             width: 100%;
         }
-        
-        &-two{
+
+        &-room {
+            width: 100%;
+        }
+    }
+
+    &__sub {
+        width: 100%;
+        background-color: #fff;
+
+        &-wrap {
+            width: 100%;
+        }
+
+        &-two {
             width: 100%;
             background-color: #0b0b0b;
         }
 
-        &-list{
+        &-list {
             list-style: none;
             height: calc(100vh - 73px);
             overflow-y: auto;
         }
     }
 
-    &__back{
+    &__back {
         width: 100%;
         display: flex;
         align-items: center;
@@ -87,7 +97,7 @@
         padding: 12px 20px;
         border-bottom: 1px solid #ebebeb;
 
-        &-text{
+        &-text {
             font-size: 12px;
             font-weight: 700;
             color: #3b4780;
@@ -95,7 +105,7 @@
             text-transform: uppercase;
         }
 
-        &-logo{
+        &-logo {
             width: 20px;
             height: 20px;
             display: flex;
@@ -103,28 +113,28 @@
             justify-content: center;
 
             svg,
-            img{
+            img {
                 width: 100%;
             }
 
-            svg{
+            svg {
                 width: 6px;
                 height: 17px;
                 transform: rotateZ(180deg);
             }
         }
     }
-    
 
-    &__active{
+
+    &__active {
         width: 100%;
         transition: all 0.3s ease-in-out;
     }
 }
 
-@include mobile-tablet{
-    .fb-header-megamenu{
-        &__outer{
+@include mobile-tablet {
+    .fb-header-megamenu {
+        &__outer {
             display: block;
         }
     }
