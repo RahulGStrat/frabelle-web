@@ -83,3 +83,9 @@
     }
   }
 }
+
+@include mobile-tablet {
+  .fb-MainBanner {
+    margin-top: 73px;
+  }
+}
