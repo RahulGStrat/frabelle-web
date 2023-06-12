@@ -132,16 +132,21 @@ $(".fb-featured__product-slick").slick({
 });
 
 //
-document.querySelectorAll(".fb-featured__tabbtn").forEach((e) => {
-  e.addEventListener("click", () => {
-    $(".fb-featured__product-slick").slick("refresh");
-    document.querySelector(".fb-featured__loader").classList.add("load");
-    //
-    setTimeout(() => {
-      document.querySelector(".fb-featured__loader").classList.remove("load");
-    }, 500);
-  });
+// document.querySelectorAll(".fb-featured__tabbtn").forEach((e) => {
+//   e.addEventListener("click", () => {
+//     $(".fb-featured__product-slick").slick("refresh");
+//     document.querySelector(".fb-featured__loader").classList.add("load");
+//     //
+//     setTimeout(() => {
+//       document.querySelector(".fb-featured__loader").classList.remove("load");
+//     }, 500);
+//   });
+// });
+
+$(".fb-featured__tabbtn").on('shown.bs.tab', function(e) {
+  $(".fb-featured__product-slick").slick("setPosition");
 });
+
 
 // pageg header start
 const page_header = document.querySelector(".fb-page-header");
@@ -211,7 +216,7 @@ search_icon_mob.addEventListener("click", () => {
 });
 // search bar mob end
 
-// megamenu start 
+// megamenu start
 const megaHome = document.querySelector(".fb-header-megamenu__home")
 const megaInner = document.querySelectorAll(".fb-header-megamenu__home-inner")
 const megaRoom = document.querySelectorAll(".fb-header-megamenu__home-room")
@@ -261,4 +266,4 @@ megaBack.forEach(item => {
 // megamenu end
 
 
-// pageg header end 
+// pageg header end
