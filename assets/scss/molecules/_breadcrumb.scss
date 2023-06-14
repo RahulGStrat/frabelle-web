@@ -1,0 +1,39 @@
+.fb-breadcrumb {
+    padding: 50px;
+
+    &__outer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__link {
+        margin: 0 16px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 60%;
+            background-color: #c1c3c9;
+        }
+    }
+
+    li {
+        &:first-child {
+            & .fb-breadcrumb__link::after {
+                width: 15px;
+                height: 15px;
+                background-image: url('/assets/images/right-arrow.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: transparent;
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
