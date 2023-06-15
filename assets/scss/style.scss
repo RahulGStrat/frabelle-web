@@ -12,6 +12,8 @@
 @import "atoms/discover-btn";
 @import "atoms/product-tile-btn";
 @import "atoms/title-head";
+@import "atoms/buttons";
+@import "atoms/tooltip";
 // molecule
 @import "./molecules/product-tile";
 // organisms
@@ -33,6 +35,7 @@
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
 
+
 // organisms
 @import "organisms/monthly-promo";
 @import "organisms/cookie-notice";
@@ -47,5 +50,5 @@
 @import "./organisms/featured-products";
 @import "organisms/header-nav";
 @import "organisms/header-megamenu";
-
+@import "organisms/product-info";
 // pages

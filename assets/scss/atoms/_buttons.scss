@@ -1,0 +1,22 @@
+.fb-product-tile-btn {
+    &--red{
+        background-color:$color-red;
+        border: none;
+        color: $color-white;
+        &:hover {
+            background-color:$color-red-hover;
+            color: $color-white;
+            border: none;
+        }
+    }
+    &--orange{
+        background-color:$color-orange;
+        border: none;
+        color: $color-white;
+        &:hover {
+            background-color:$color-orange-hvr;
+            color: $color-white;
+            border: none;
+        }
+    }
+}
