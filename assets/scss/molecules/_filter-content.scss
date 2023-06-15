@@ -1,5 +1,6 @@
 .fb-filter-cnt{
     width: 100%;
+    border: none;
     border-bottom: 1px solid #dadce3;
     padding: 12px 0;
     &__head{
@@ -19,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        margin-right: 16px;
         &-btn{
             display: inline-block;
             font-size: 12px;
@@ -62,6 +63,7 @@
         }
         &__current{
             width: 100%;
+            padding: 16px 0;
             &-list{
                 display: flex;
                 flex-wrap: wrap;
