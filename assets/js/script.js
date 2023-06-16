@@ -1,3 +1,21 @@
+// CLICK TO DROPDOWN
+function myFunction() {
+  document.getElementById("clicktodrop").classList.toggle("show1");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("fb-click-drop__body");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show1')) {
+        openDropdown.classList.remove('show1');
+      }
+    }
+  }
+}
+// CLICK TO DROPDOWN END ////////////////
+
 // onload accordion collapse
 const accordionButton = document.querySelectorAll(
   ".fb-footer__linksec .accordion-button"
@@ -267,3 +285,5 @@ megaBack.forEach(item => {
 
 
 // pageg header end
+
+

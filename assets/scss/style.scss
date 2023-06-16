@@ -15,6 +15,7 @@
 @import "atoms/buttons";
 @import "atoms/tooltip";
 @import "atoms/select";
+@import "atoms/click-dropdown";
 // molecule
 @import "./molecules/product-tile";
 @import "molecules/discover-tile";
@@ -44,6 +45,7 @@
 @import "organisms/header-nav";
 @import "organisms/header-megamenu";
 @import "organisms/product-info";
+@import "organisms/product-media";
 @import "organisms/prdct-list-wrapper";
-
+@import "organisms/pdp";
 // pages

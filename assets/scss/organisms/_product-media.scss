@@ -1,0 +1,11 @@
+.fb-product-media{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+}
+@include mobile{
+    .fb-product-media{
+        width:100%;
+    }
+}
