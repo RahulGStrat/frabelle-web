@@ -18,6 +18,16 @@
 @import "atoms/click-dropdown";
 // molecule
 @import "./molecules/product-tile";
+@import "atoms/select";
+// organisms
+@import "./organisms/footer";
+@import "organisms/monthly-promo";
+@import "organisms/cookie-notice";
+@import "organisms/newsletter";
+@import "organisms/hot-deals";
+@import "./organisms/customer-tstnm";
+@import "./organisms/mainbanner";
+@import "./organisms/youtube-frame";
 @import "molecules/discover-tile";
 @import "molecules/discover-tile2";
 @import "molecules/discover-tile3";
@@ -28,16 +38,6 @@
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
 
-
-// organisms
-@import "./organisms/footer";
-@import "organisms/monthly-promo";
-@import "organisms/cookie-notice";
-@import "organisms/newsletter";
-@import "organisms/hot-deals";
-@import "./organisms/customer-tstnm";
-@import "./organisms/mainbanner";
-@import "./organisms/youtube-frame";
 @import "organisms/header";
 @import "organisms/page-header";
 @import "organisms/discover";
@@ -48,4 +48,6 @@
 @import "organisms/product-media";
 @import "organisms/prdct-list-wrapper";
 @import "organisms/pdp";
+@import "organisms/shoping-cart-list";
 // pages
+
