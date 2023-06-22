@@ -7,17 +7,18 @@
       font-style: normal;
       font-weight: 700;
       line-height: 23px;
-      font-size: 24px;
+      font-size: 20px;
       letter-spacing: 0;
     }
     .info-desc {
-      margin-top: 12px;
-      margin-bottom: 20px;
-      color: #848799;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 20px;
-      font-size: 20px;
+      p {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        color: #848799;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $spacer-3;
+      }
     }
   }
 }
