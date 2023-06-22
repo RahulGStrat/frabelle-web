@@ -26,6 +26,7 @@
 @import "./molecules/breadcrumb";
 @import "./molecules/checkout-recipes-tile";
 @import "./molecules/fulfilment-tile";
+@import "./molecules/order-summary";
 
 // organisms
 @import "./organisms/footer";
@@ -44,5 +45,6 @@
 @import "organisms/header-megamenu";
 @import "organisms/prdct-list-wrapper";
 @import "organisms/checkout-recipes";
+@import "organisms/product-details";
 
 // pages
