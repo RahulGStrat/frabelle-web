@@ -1,0 +1,101 @@
+.fb-breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -16px;
+    padding: $spacer-4 0;
+
+    &__outer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+            position: relative;
+
+            &:last-child {
+                .fb-breadcrumb__link {
+                    color: #848799;
+                    pointer-events: none;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%) rotate(22deg);
+                width: 1px;
+                height: 60%;
+                background-color: #c1c3c9;
+            }
+
+            &:first-child {
+                &::after {
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+        }
+    }
+
+    &__link {
+        margin: 0 16px;
+        color: $color-blue;
+        font-size: 12px;
+        font-weight: 600;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            color: $color-red;
+        }
+
+    }
+
+    &__back {
+        .fb-breadcrumb__link {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+
+            &::after {
+                content: none;
+            }
+
+            &:hover {
+                .fb-breadcrumb__arrow {
+                    svg {
+                        transition: 0.3s;
+
+                        path {
+                            stroke: $color-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+
+        svg {
+            transition: 0.3s;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .fb-breadcrumb {
+        padding: $spacer-2 0;
+
+        &__outer {
+            display: none;
+        }
+    }
+}
