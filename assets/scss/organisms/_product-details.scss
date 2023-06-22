@@ -1,0 +1,84 @@
+.fb-product-d {
+  padding: $spacer-5 0;
+  background-color: #f7f7fc;
+
+  &__outer {
+    display: flex;
+    margin: 0 -24px;
+  }
+
+  &__inner {
+    width: calc(35% - 58px);
+    margin: 0 $spacer-4;
+  }
+
+  &__heading {
+    color: #51535d;
+    font-size: 20px;
+    margin-bottom: $spacer-4;
+    font-weight: 700;
+    &--Specs {
+      border-bottom: 1px solid #dadce3;
+      margin-bottom: 0;
+      padding-bottom: $spacer-4;
+    }
+  }
+
+  &__text {
+    color: #848799;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: $spacer-3;
+  }
+
+  &__row-outer {
+    display: flex;
+    padding: $spacer-2 0;
+    border-bottom: 1px solid #dadce3;
+  }
+
+  &__row-right {
+    width: 50%;
+    text-align: left;
+    color: #51535d;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    &--left {
+      color: #6e7080;
+      font-weight: 500;
+    }
+  }
+}
+
+@include tablet {
+  .fb-product-d {
+    &__outer {
+      display: flex;
+      margin: 0 -16px;
+    }
+
+    &__inner {
+      width: calc(50% - 32px);
+      margin: 0 $spacer-3;
+    }
+  }
+}
+
+@include mobile {
+  .fb-product-d {
+    &__outer {
+      display: block;
+      margin: 0;
+    }
+
+    &__inner {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__text {
+      margin-bottom: $spacer-4;
+    }
+  }
+}

@@ -28,6 +28,8 @@
 @import "molecules/add-to-cart-popup";
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
+@import "./molecules/order-summary";
+
 // organisms
 @import "./organisms/footer";
 @import "organisms/monthly-promo";
@@ -48,5 +50,6 @@
 @import "organisms/prdct-list-wrapper";
 @import "organisms/pdp";
 @import "organisms/shoping-cart-list";
-// pages
+@import "organisms/product-details";
 
+// pages
