@@ -40,6 +40,9 @@
         transition: 0s;
         border: 1px solid $color-grey1;
         margin: 0 $spacer-1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg{
             fill:$color-grey1;
             &:hover{

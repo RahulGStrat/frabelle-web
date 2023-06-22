@@ -19,4 +19,14 @@
             border: none;
         }
     }
+    &--cancel{
+        background: #f7f8fc;
+        border: 1px solid #dadce3;
+        color: #51535d;
+        &:hover {
+            background: #dadce3;
+            color: #51535d;
+            border: 1px solid #dadce3;
+        }
+    }
 }

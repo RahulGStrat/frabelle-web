@@ -1,4 +1,28 @@
 .fb-product{
+    &-badge{
+        margin-bottom: 11px;
+        &__box{
+            padding:5px 8px 3px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.29);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.29);
+            -ms-box-shadow: 0 1px 2px rgba(0,0,0,.29);
+            box-shadow: 0 1px 2px rgba(0,0,0,.29);
+            position: relative;
+            color:$color-white;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            font-size:8px;
+            letter-spacing: .25px;
+            text-transform: uppercase;
+            &--new{
+                background: #77b8c4;
+            }
+            &--sold-out{
+                background: #a7aabe;
+            }
+        }
+    }
     &-info{
         width: 50%;
         padding-left: $spacer-5;
@@ -191,11 +215,39 @@
                 padding: 4px 0 0 0;
                 text-transform: uppercase;
             }
-        }
-        &__select{
-            width: 110px;
-            font-size: 12px;
-            height:40px;
+            &-qty{
+                width: 110px;
+                font-size: 11px;
+                border: 1px solid #c1c3c9;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+            &-label{
+                position: absolute;
+                left: 10px;
+                font-weight: 700;
+                font-size: 11px;
+                z-index: 1;
+            }
+            &-select{
+                width: 100%;
+                height:39px;
+                border: none;
+                border-radius: 3px;
+                padding: 0;
+                background: url(../images/down-arrow.svg) no-repeat;
+                background-size: 8px;
+                background-position: 88% 17px;
+                // background-color: #fff;
+                cursor: pointer;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-expand: none;
+                z-index: 5;
+                padding-left: calc(100% - 60%);
+            }
         }
         &__bottom{
             display: flex;
@@ -267,6 +319,7 @@
                     padding: 0 $spacer-2;
                     align-self: stretch;
                     justify-content: center;
+                    text-align: center;
                 }
                 &-weight,
                 &-stock{
@@ -297,6 +350,10 @@
                     width: 100%;
                     max-width: 100%;
                 }
+                &-qty{
+                    // width: 100%;
+                    margin-bottom: 10px;
+                }
             }
             &__rwdpoints{
                 &-icn{
@@ -308,11 +365,6 @@
                     }
                 }
             }
-            &__select{
-                width: 100%;
-                margin-bottom: 10px;
-            }
-            
         }
     }
 }
