@@ -1,0 +1,111 @@
+.fb-dropdown {
+  padding: $spacer-2;
+  background-color: #fff;
+  border: 1px solid #dadce3;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__outer-text {
+    text-align: center;
+    color: #6e7080;
+    font-weight: 500;
+    line-height: 14px;
+    font-size: 12px;
+    padding-right: 5px;
+  }
+  .accordion-button::after {
+    content: none;
+  }
+
+  .accordion-item {
+    background-color: transparent;
+  }
+
+  .accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $spacer-2;
+    background-color: transparent;
+  }
+
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__down-arrow {
+    width: 17px;
+    height: 17px;
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border-bottom: 1px solid #dadce3;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: #dadce3;
+  }
+  .accordion-button[aria-expanded="true"] {
+    .fb-dropdown__down-arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .accordion-body {
+    padding: $spacer-3 $spacer-2;
+  }
+
+  &__outer-in {
+    display: flex;
+    padding-bottom: $spacer-3;
+    align-items: center;
+  }
+
+  &__product-img {
+    width: 45px;
+    height: 45px;
+    margin-right: $spacer-4;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__inner-text1 {
+    color: #2c3c8b;
+    font-size: 11px;
+    padding-bottom: $spacer-1;
+    font-weight: 600;
+  }
+
+  &__inner-text2 {
+    color: #848799;
+    font-size: 10px;
+    span {
+      padding-right: 5px;
+      border-right: 1px solid #dadce3;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: #f7f8fc;
+    .fb-dropdown__down-arrow {
+      svg {
+        fill: #c31920;
+      }
+    }
+  }
+}
