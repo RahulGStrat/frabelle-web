@@ -1,0 +1,14 @@
+.fb-checkout-recipes {
+    padding: $spacer-4 $spacer-0;
+    background-color: $color-white-3;
+    &__tile-outer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+        .fb-checkout-recipes-tile {
+            width: calc(33.3% - 32px);
+            margin: $spacer-3;
+        }
+    }
+}
