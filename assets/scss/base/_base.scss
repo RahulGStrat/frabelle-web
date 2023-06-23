@@ -12,6 +12,7 @@
   --color-white: #{$color-white};
   --color-blue: #{$color-blue};
   --color-red: #{$color-red};
+  --color-background: #{$color-background};
 }
 
 html {
@@ -31,7 +32,7 @@ body {
   min-height: 100%;
   color: var(--color-black);
   color: rgb(132, 135, 153);
-  background-color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 a,
