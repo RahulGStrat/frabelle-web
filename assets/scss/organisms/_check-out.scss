@@ -1,0 +1,40 @@
+.fb-checkout {
+  padding: 120px 0 60px 0;
+  background-color: #f6f7fc;
+
+  &__outer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -16px;
+  }
+
+  &__left {
+    width: calc(65% - 32px);
+    margin: 0 16px;
+  }
+
+  &__right {
+    width: calc(35% - 32px);
+    margin: 0 16px;
+  }
+}
+
+@include mobile-tablet {
+  .fb-checkout {
+    padding: 90px 0 30px 0;
+    &__outer {
+      margin: 0;
+      flex-direction: column-reverse;
+    }
+
+    &__left {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__right {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

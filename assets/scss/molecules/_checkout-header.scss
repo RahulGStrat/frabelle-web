@@ -1,0 +1,112 @@
+.fb-checkout-heade {
+  background-color: $color-white;
+  padding: $spacer-3 0;
+  // box-shadow: 0px 5px 15px #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  &__outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 130px;
+    height: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    color: #51535d;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__right-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__head-right {
+    position: relative;
+    margin-right: 50px;
+    img {
+      width: 35px;
+      height: 35px;
+      display: block;
+      margin: auto;
+      margin-bottom: $spacer-1;
+    }
+
+    p {
+      color: #51535d;
+      font-size: 12px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 2px;
+      top: 20px;
+      left: 61px;
+      background-image: url(/assets/images/dash-line.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__line-img {
+    width: 40px;
+    height: auto;
+    margin: 0 $spacer-2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@include mobile-tablet {
+  .fb-checkout-heade {
+    &__heading {
+      display: none;
+    }
+
+    &__head-right {
+      margin-right: $spacer-2;
+      &::after {
+        width: 20px;
+        top: 13px;
+        left: 47px;
+      }
+    }
+    &__head-right {
+      img {
+        width: 22px;
+        height: 22px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

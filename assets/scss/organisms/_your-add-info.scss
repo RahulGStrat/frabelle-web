@@ -1,23 +1,67 @@
 .fb-your-addinfo {
-  &__outer {
-  }
+  background-color: $color-white;
+  padding: $spacer-4;
+  border-radius: 3px;
+  overflow: hidden;
   &__mainsec {
     .info-header {
       color: #51535d;
       font-style: normal;
       font-weight: 700;
       line-height: 23px;
-      font-size: 24px;
+      font-size: 20px;
       letter-spacing: 0;
     }
     .info-desc {
-      margin-top: 12px;
-      margin-bottom: 20px;
-      color: #848799;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 20px;
-      font-size: 20px;
+      p {
+        margin-top: 12px;
+        margin-bottom: $spacer-2;
+        color: #848799;
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 500;
+      }
     }
+  }
+  .info-shipping-address {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    margin-bottom: 30px;
+    .box {
+      width: calc(50% - 40px);
+      margin: 0 20px;
+      margin-top: 10px;
+    }
+  }
+  &__add-new-address {
+    color: #2c3c8b;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 13px;
+    ::before {
+      content: "+";
+      padding-right: 5px;
+      font-size: 19px;
+      vertical-align: middle;
+    }
+  }
+}
+@include mobile {
+  .fb-your-addinfo {
+    padding: $spacer-4 $spacer-3 0 $spacer-3;
+    .info-shipping-address {
+      margin: 0;
+      flex-direction: column;
+      .box {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    // &__add-new-address {
+    //   padding-top: 20px;
+    // }
   }
 }

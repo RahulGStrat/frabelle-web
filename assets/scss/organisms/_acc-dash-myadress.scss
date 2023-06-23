@@ -1,0 +1,64 @@
+.fb-ac-dash-myaddress {
+  &__header {
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+    margin-top: 20px;
+
+    .my-address {
+      color: #51535d;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 23px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .manage-address {
+      margin-left: 30px;
+      color: #2c3c8b;
+      font-weight: 600;
+      line-height: 20px;
+      font-size: 15px;
+    }
+  }
+  &__ship-bill {
+    display: flex;
+    flex-wrap: wrap;
+    .default-shipping-address,
+    .default-billing-address {
+      font-size: 18px;
+      color: #6e7080;
+      font-weight: 500;
+      margin-bottom: 15px;
+      display: block;
+      width: calc(50% - 40px);
+      margin-top: 10px;
+    }
+    .address-box {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #848799;
+      .address-box-item {
+        margin-top: 10px;
+      }
+    }
+    .edit-address {
+      color: #2c3c8b;
+      font-weight: 600;
+      line-height: 20px;
+      font-size: 15px;
+    }
+  }
+}
+@include mobile {
+  .fb-ac-dash-myaddress {
+    &__ship-bill {
+      flex-direction: column;
+      .default-shipping-address,
+      .default-billing-address {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}
