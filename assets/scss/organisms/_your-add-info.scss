@@ -49,13 +49,19 @@
 }
 @include mobile {
   .fb-your-addinfo {
+    padding: $spacer-4 $spacer-3 0 $spacer-3;
     .info-shipping-address {
+      margin: 0;
       flex-direction: column;
       .box {
-        width: calc(100% - 20px);
-        margin: 0 10px;
-        margin-top: 20px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
       }
     }
+
+    // &__add-new-address {
+    //   padding-top: 20px;
+    // }
   }
 }

@@ -24,6 +24,8 @@
 @import "molecules/add-to-cart-popup";
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
+@import "./molecules/checkout-recipes-tile";
+@import "./molecules/fulfilment-tile";
 @import "./molecules/order-summary";
 @import "./molecules/check-out-dropdown";
 @import "./molecules/checkout-header";
@@ -45,8 +47,9 @@
 @import "./organisms/featured-products";
 @import "organisms/header-nav";
 @import "organisms/header-megamenu";
-@import "organisms/product-details";
+@import "organisms/product-spec";
 @import "organisms/check-out";
+
 @import "organisms/your-add-info";
 @import "organisms/prdct-list-wrapper";
 @import "organisms/acc-dash-myadress";
