@@ -29,7 +29,7 @@
             font-weight: 600;
             border-left: 4px solid transparent;
             display: block;
-            padding: 8px 0 5px 20px !important;
+            padding: 13px 0px 10px 20px !important;
             display: flex;
             align-items: center;
             letter-spacing: .28px;
@@ -67,7 +67,7 @@
     }
 }
 
-@include mobile{
+@include tablet{
     .fb-sbar{
         padding: 0;
     }
