@@ -1,10 +1,9 @@
 .fb-ac-dash-myaddress {
-  &___outer {
-  }
   &__header {
     display: flex;
     border-bottom: 1px solid #ededed;
     padding-bottom: 15px;
+    margin-top: 20px;
 
     .my-address {
       color: #51535d;
@@ -22,10 +21,9 @@
       font-size: 15px;
     }
   }
-  &__spacer {
-  }
   &__ship-bill {
     display: flex;
+    flex-wrap: wrap;
     .default-shipping-address,
     .default-billing-address {
       font-size: 18px;
@@ -39,13 +37,28 @@
     .address-box {
       margin-top: 20px;
       margin-bottom: 20px;
-      font-size: 15px;
+      font-size: 14px;
+      color: #848799;
+      .address-box-item {
+        margin-top: 10px;
+      }
     }
     .edit-address {
       color: #2c3c8b;
       font-weight: 600;
       line-height: 20px;
       font-size: 15px;
+    }
+  }
+}
+@include mobile {
+  .fb-ac-dash-myaddress {
+    &__ship-bill {
+      flex-direction: column;
+      .default-shipping-address,
+      .default-billing-address {
+        width: calc(100% - 20px);
+      }
     }
   }
 }
