@@ -6,23 +6,15 @@
 @import "./base/reset";
 @import "./base/base";
 @import "./base/dev";
-
 // atoms
 @import "atoms/input";
 @import "atoms/discover-btn";
 @import "atoms/product-tile-btn";
 @import "atoms/title-head";
+@import "atoms/select";
 // molecule
 @import "./molecules/product-tile";
-// organisms
-@import "./organisms/footer";
-@import "organisms/monthly-promo";
-@import "organisms/cookie-notice";
-@import "organisms/newsletter";
-@import "organisms/hot-deals";
-@import "./organisms/customer-tstnm";
-@import "./organisms/mainbanner";
-@import "./organisms/youtube-frame";
+@import "./molecules/review-box";
 @import "molecules/discover-tile";
 @import "molecules/discover-tile2";
 @import "molecules/discover-tile3";
@@ -36,8 +28,10 @@
 @import "./molecules/check-out-dropdown";
 @import "./molecules/checkout-header";
 @import "./molecules/checkout-footer";
+@import "./molecules/shipping-address-item";
 
 // organisms
+@import "./organisms/footer";
 @import "organisms/monthly-promo";
 @import "organisms/cookie-notice";
 @import "organisms/newsletter";
@@ -54,4 +48,6 @@
 @import "organisms/product-details";
 @import "organisms/check-out";
 
+@import "organisms/your-add-info";
+@import "organisms/prdct-list-wrapper";
 // pages

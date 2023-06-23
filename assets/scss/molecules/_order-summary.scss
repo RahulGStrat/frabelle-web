@@ -1,8 +1,8 @@
 .fm-order {
-  max-width: 30%;
-  border: 1px solid #ebebeb;
+  background-color: $color-white;
   padding: $spacer-4;
-  margin: 20px;
+  border-radius: 3px;
+  overflow: hidden;
 
   &__heading {
     color: #51535d;

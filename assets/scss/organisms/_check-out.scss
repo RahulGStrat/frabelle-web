@@ -1,0 +1,19 @@
+.fb-checkout {
+  padding: 140px 0 $spacer-5 0;
+  background-color: #f6f7fc;
+
+  &__outer {
+    display: flex;
+    margin: 0 -16px;
+  }
+
+  &__left {
+    width: calc(65% - 32px);
+    margin: 0 16px;
+  }
+
+  &__right {
+    width: calc(35% - 32px);
+    margin: 0 16px;
+  }
+}
