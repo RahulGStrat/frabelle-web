@@ -6,7 +6,6 @@
 @import "./base/reset";
 @import "./base/base";
 @import "./base/dev";
-
 // atoms
 @import "atoms/input";
 @import "atoms/discover-btn";
@@ -28,11 +27,14 @@
 @import "molecules/add-to-cart-popup";
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
+// @import "./molecules/checkout-recipes-tile";
+@import "./molecules/fulfilment-tile";
 @import "./molecules/order-summary";
 @import "./molecules/_modal.scss";
 @import "./molecules/check-out-dropdown";
 @import "./molecules/checkout-header";
 @import "./molecules/checkout-footer";
+@import "./molecules/shipping-address-item";
 
 // organisms
 @import "./organisms/footer";
@@ -56,7 +58,9 @@
 @import "organisms/shoping-cart-list";
 @import "organisms/product-details";
 @import "organisms/your-add-info";
-// @import "organisms/check-out";
 @import "organisms/cart-table";
-
+@import "organisms/product-spec";
+@import "organisms/check-out";
+@import "organisms/prdct-list-wrapper";
+// @import "organisms/checkout-recipes";
 // pages
