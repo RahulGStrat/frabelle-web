@@ -34,6 +34,8 @@
 @import "./molecules/breadcrumb";
 @import "./molecules/order-summary";
 @import "./molecules/check-out-dropdown";
+@import "./molecules/checkout-header";
+@import "./molecules/checkout-footer";
 
 // organisms
 @import "organisms/monthly-promo";
@@ -50,5 +52,6 @@
 @import "organisms/header-nav";
 @import "organisms/header-megamenu";
 @import "organisms/product-details";
+@import "organisms/check-out";
 
 // pages
