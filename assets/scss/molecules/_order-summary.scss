@@ -30,6 +30,7 @@
     font-size: 12px;
     font-weight: 400;
     text-align: left;
+
     &--center {
       text-align: center;
       margin-bottom: $spacer-1;
@@ -40,6 +41,7 @@
     color: #c31920;
     font-size: 13px;
     font-weight: 600;
+
     &--right {
       text-align: right;
     }
@@ -73,6 +75,7 @@
   &__reward {
     display: flex;
     position: relative;
+
     &::after {
       position: absolute;
       content: "";
@@ -116,6 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     svg {
       width: 100%;
       height: auto;
@@ -134,7 +138,7 @@
         z-index: 2;
       }
 
-      & ~ .fm-order__pop {
+      &~.fm-order__pop {
         max-height: 130px;
         opacity: 1;
         z-index: 1;
@@ -164,9 +168,11 @@
     position: relative;
     margin-bottom: $spacer-4;
     transition: 0.3s;
+
     p {
       padding-top: 6px;
     }
+
     &:hover {
       opacity: 0.7;
       color: #fff;
@@ -179,6 +185,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
+
     img {
       width: 100%;
     }
@@ -188,14 +195,116 @@
     width: 23px;
     height: 24px;
     margin-right: 6px;
+
     img {
       width: 100%;
     }
   }
+
+  &__accordionedit {
+    padding: $spacer-1 0 0;
+    font-size: 10px;
+    font-weight: 600;
+    color: $color-grey3;
+    transition: 0.3s;
+    display: block;
+    margin-top: $spacer-3;
+
+    &:hover {
+      transition: 0.3s;
+      color: $color-red;
+    }
+  }
+
+  &__summarydrop {
+    margin-bottom: $spacer-3;
+
+    &-item {
+      border: 1px solid #dadce3;
+    }
+
+    &-body.accordion-body {
+      padding: 0;
+    }
+
+    &-btn.accordion-button {
+      justify-content: space-between;
+      padding: 0 0 $spacer-2;
+      font-size: 12px;
+      background-color: $color-white;
+      border-bottom: 1px solid #dadce3;
+      box-shadow: none !important;
+
+      &::after {
+        position: absolute;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        margin-left: 150px;
+      }
+
+    }
+
+    &-btn.accordion-button:not(.collapsed) {
+      color: $color-black;
+    }
+
+    &-head.accordion-header {
+      display: none;
+      padding: $spacer-3;
+      color: $color-black;
+
+      .fb-order__accordionedit {
+        margin-top: $spacer-2;
+      }
+
+      span {
+        color: $color-red;
+        font-size: 12px;
+      }
+
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+  }
 }
 
-@include mobile {
+// @include mobile-tablet{
+
+// }
+
+@include mobile-tablet {
   .fb-order {
-    padding: $spacer-4 $spacer-3;
+    padding: 0 $spacer-3 $spacer-3;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__heading {
+      display: none;
+    }
+
+    &__summarydrop {
+      .accordion-header {
+        display: block;
+      }
+    }
+
+    .fb-dropdown {
+      border: none;
+      padding: 0;
+
+      .accordion-item {
+        border: none;
+      }
+
+      .accordion-button {
+        display: none;
+      }
+
+      .fb-order__accordionedit {
+        display: none;
+      }
+    }
   }
 }

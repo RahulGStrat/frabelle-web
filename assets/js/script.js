@@ -2,7 +2,7 @@
 function myFunction() {
   document.getElementById("clicktodrop").classList.toggle("show1");
 }
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("fb-click-drop__body");
     var i;
@@ -161,7 +161,7 @@ $(".fb-featured__product-slick").slick({
 //   });
 // });
 
-$(".fb-featured__tabbtn").on('shown.bs.tab', function(e) {
+$(".fb-featured__tabbtn").on('shown.bs.tab', function (e) {
   $(".fb-featured__product-slick").slick("setPosition");
 });
 
@@ -188,10 +188,12 @@ const headerSticky = () => {
 // to caputure screen width
 function screenWidthFinder() {
   var screen_width = document.body.clientWidth;
-  if (screen_width < 1199) {
-    page_header.classList.add("fb-page-header--sticky");
-  } else {
-    headerSticky();
+  if (page_header) {
+    if (screen_width < 1199) {
+      page_header.classList.add("fb-page-header--sticky");
+    } else {
+      headerSticky();
+    }
   }
 }
 
@@ -214,24 +216,28 @@ window.addEventListener("resize", () => {
 // sticky header on page resize end
 
 // controller start
-header_controller.addEventListener("click", () => {
-  header_controller.classList.toggle("fb-header__controller--checked");
-  search_bar.classList.remove("fb-header__search--active");
-  var screen_width = document.body.clientWidth;
-  if (screen_width < 1199) {
-    megaMenu.classList.toggle("fb-header-megamenu__active");
-  } else {
-    header_nav.classList.toggle("fb-header-nav__active");
-  }
-})
+if (header_controller) {
+  header_controller.addEventListener("click", () => {
+    header_controller.classList.toggle("fb-header__controller--checked");
+    search_bar.classList.remove("fb-header__search--active");
+    var screen_width = document.body.clientWidth;
+    if (screen_width < 1199) {
+      megaMenu.classList.toggle("fb-header-megamenu__active");
+    } else {
+      header_nav.classList.toggle("fb-header-nav__active");
+    }
+  })
+}
 // controller end
 
 // search bar mob start
-search_icon_mob.addEventListener("click", () => {
-  header_controller.classList.remove("fb-header__controller--checked");
-  megaMenu.classList.remove("fb-header-megamenu__active");
-  search_bar.classList.toggle("fb-header__search--active");
-});
+if (search_icon_mob) {
+  search_icon_mob.addEventListener("click", () => {
+    header_controller.classList.remove("fb-header__controller--checked");
+    megaMenu.classList.remove("fb-header-megamenu__active");
+    search_bar.classList.toggle("fb-header__search--active");
+  });
+}
 // search bar mob end
 
 // megamenu start
@@ -286,4 +292,47 @@ megaBack.forEach(item => {
 
 // pageg header end
 
+// order-summary
 
+const orderbtn = document.querySelectorAll(
+  ".fb-order__summarydrop-btn"
+);
+const orderinnerbtn = document.querySelectorAll(
+  ".fb-dropdown .accordion-button"
+);
+const orderCnt = document.querySelectorAll(
+  ".fb-order__summarydrop-cnt"
+);
+const orderinnerCnt = document.querySelectorAll(
+  ".fb-dropdown .accordion-collapse"
+);
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 1024) {
+    orderbtn.forEach((e) => {
+      e.classList.add("collapsed");
+    });
+    orderCnt.forEach((e) => {
+      e.classList.remove("show");
+    });
+    orderinnerbtn.forEach((e) => {
+      e.classList.remove("collapsed");
+    });
+    orderinnerCnt.forEach((e) => {
+      e.classList.add("show");
+    });
+  } else {
+    orderbtn.forEach((e) => {
+      e.classList.remove("collapsed");
+    });
+    orderCnt.forEach((e) => {
+      e.classList.add("show");
+    });
+    orderinnerbtn.forEach((e) => {
+      e.classList.add("collapsed");
+    });
+    orderinnerCnt.forEach((e) => {
+      e.classList.remove("show");
+    });
+  }
+});

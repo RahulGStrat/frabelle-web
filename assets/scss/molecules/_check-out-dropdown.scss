@@ -4,7 +4,7 @@
   border: 1px solid #dadce3;
   border-radius: 3px;
   overflow: hidden;
-  cursor: pointer;
+  transition: 0.3s;
 
   &__outer-text {
     text-align: center;
@@ -12,8 +12,9 @@
     font-weight: 500;
     line-height: 14px;
     font-size: 12px;
-    padding-right: 5px;
+    padding-right: 16px;
   }
+
   .accordion-button::after {
     content: none;
   }
@@ -35,11 +36,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
   }
 
   &__down-arrow {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
+    transition: 0.3s;
+
     svg {
       width: 100%;
       height: 100%;
@@ -56,8 +61,10 @@
     box-shadow: none;
     border-color: #dadce3;
   }
+
   .accordion-button[aria-expanded="true"] {
     .fb-dropdown__down-arrow {
+      transition: 0.3s;
       transform: rotate(180deg);
     }
   }
@@ -76,6 +83,7 @@
     width: 45px;
     height: 45px;
     margin-right: $spacer-4;
+
     img {
       width: 100%;
       height: auto;
@@ -92,9 +100,11 @@
   &__inner-text2 {
     color: #848799;
     font-size: 10px;
+
     span {
       padding-right: 5px;
       border-right: 1px solid #dadce3;
+
       &:last-child {
         border: none;
       }
@@ -102,7 +112,9 @@
   }
 
   &:hover {
+    transition: 0.3s;
     background-color: #f7f8fc;
+
     .fb-dropdown__down-arrow {
       svg {
         fill: #c31920;
