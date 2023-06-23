@@ -1,4 +1,4 @@
-.fm-order {
+.fb-order {
   background-color: $color-white;
   padding: $spacer-4;
   border-radius: 3px;
@@ -7,7 +7,7 @@
   &__heading {
     color: #51535d;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: $spacer-3;
     border-bottom: 1px solid #ebebeb;
     text-align: center;
@@ -191,5 +191,11 @@
     img {
       width: 100%;
     }
+  }
+}
+
+@include mobile {
+  .fb-order {
+    padding: $spacer-4 $spacer-3;
   }
 }
