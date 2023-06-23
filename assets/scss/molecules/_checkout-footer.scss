@@ -1,0 +1,11 @@
+.fb-checkout-footer {
+  background: #2d3765;
+  padding: $spacer-4 $spacer-2;
+  &__text {
+    color: #dde2fc;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    padding: $spacer-2 0;
+  }
+}

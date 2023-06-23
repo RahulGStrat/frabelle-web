@@ -15,7 +15,7 @@
 @import "atoms/buttons";
 @import "atoms/tooltip";
 @import "atoms/select";
-@import "atoms/click-dropdown"; 
+@import "atoms/click-dropdown";
 // molecule
 @import "./molecules/product-tile";
 @import "./molecules/review-box";
@@ -30,6 +30,9 @@
 @import "./molecules/breadcrumb";
 @import "./molecules/order-summary";
 @import "./molecules/_modal.scss";
+@import "./molecules/check-out-dropdown";
+@import "./molecules/checkout-header";
+@import "./molecules/checkout-footer";
 
 // organisms
 @import "./organisms/footer";
@@ -53,4 +56,6 @@
 @import "organisms/shoping-cart-list";
 @import "organisms/product-details";
 @import "organisms/your-add-info";
+@import "organisms/check-out";
+
 // pages
