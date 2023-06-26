@@ -6,7 +6,6 @@
 @import "./base/reset";
 @import "./base/base";
 @import "./base/dev";
-
 // atoms
 @import "atoms/input";
 @import "atoms/discover-btn";
@@ -15,7 +14,7 @@
 @import "atoms/buttons";
 @import "atoms/tooltip";
 @import "atoms/select";
-@import "atoms/click-dropdown"; 
+@import "atoms/click-dropdown";
 // molecule
 @import "./molecules/product-tile";
 @import "./molecules/review-box";
@@ -60,12 +59,15 @@
 @import "organisms/shoping-cart-list";
 @import "organisms/product-details";
 @import "organisms/your-add-info";
+@import "organisms/cart-table";
+@import "organisms/product-spec";
+@import "organisms/check-out";
+@import "organisms/prdct-list-wrapper";
+// @import "organisms/checkout-recipes";
 @import "organisms/sidebar-filter";
 @import "organisms/sidebar-ac";
 @import "organisms/product-spec";
-@import "organisms/check-out";
 @import "organisms/your-add-info";
-@import "organisms/prdct-list-wrapper";
 @import "organisms/acc-dash-myadress";
 @import "organisms/my-account";
 // pages

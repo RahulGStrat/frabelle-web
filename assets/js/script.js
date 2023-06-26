@@ -2,7 +2,7 @@
 function myFunction() {
   document.getElementById("clicktodrop").classList.toggle("show1");
 }
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("fb-click-drop__body");
     var i;
@@ -161,7 +161,7 @@ $(".fb-featured__product-slick").slick({
 //   });
 // });
 
-$(".fb-featured__tabbtn").on('shown.bs.tab', function(e) {
+$(".fb-featured__tabbtn").on('shown.bs.tab', function (e) {
   $(".fb-featured__product-slick").slick("setPosition");
 });
 
@@ -179,11 +179,11 @@ const megaMenu = document.querySelector(".fb-header-megamenu__outer");
 const headerSticky = () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > 20) {
-    if(page_header){
+    if (page_header) {
       page_header.classList.add("fb-page-header--sticky");
     }
   } else {
-    if(page_header){
+    if (page_header) {
       page_header.classList.remove("fb-page-header--sticky");
     }
   }
@@ -192,12 +192,12 @@ const headerSticky = () => {
 // to caputure screen width
 function screenWidthFinder() {
   var screen_width = document.body.clientWidth;
-  if (screen_width < 1199) {
-    if(page_header){
+  if (page_header) {
+    if (screen_width < 1199) {
       page_header.classList.add("fb-page-header--sticky");
+    } else {
+      headerSticky();
     }
-  } else {
-    headerSticky();
   }
 }
 
@@ -220,7 +220,7 @@ window.addEventListener("resize", () => {
 // sticky header on page resize end
 
 // controller start
-if(header_controller){
+if (header_controller) {
   header_controller.addEventListener("click", () => {
     header_controller.classList.toggle("fb-header__controller--checked");
     search_bar.classList.remove("fb-header__search--active");
@@ -235,7 +235,7 @@ if(header_controller){
 // controller end
 
 // search bar mob start
-if(search_icon_mob){
+if (search_icon_mob) {
   search_icon_mob.addEventListener("click", () => {
     header_controller.classList.remove("fb-header__controller--checked");
     megaMenu.classList.remove("fb-header-megamenu__active");
@@ -296,15 +296,59 @@ megaBack.forEach(item => {
 
 // pageg header end
 
+// order-summary
+
+const orderbtn = document.querySelectorAll(
+  ".fb-order__summarydrop-btn"
+);
+const orderinnerbtn = document.querySelectorAll(
+  ".fb-dropdown .accordion-button"
+);
+const orderCnt = document.querySelectorAll(
+  ".fb-order__summarydrop-cnt"
+);
+const orderinnerCnt = document.querySelectorAll(
+  ".fb-dropdown .accordion-collapse"
+);
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 1024) {
+    orderbtn.forEach((e) => {
+      e.classList.add("collapsed");
+    });
+    orderCnt.forEach((e) => {
+      e.classList.remove("show");
+    });
+    orderinnerbtn.forEach((e) => {
+      e.classList.remove("collapsed");
+    });
+    orderinnerCnt.forEach((e) => {
+      e.classList.add("show");
+    });
+  } else {
+    orderbtn.forEach((e) => {
+      e.classList.remove("collapsed");
+    });
+    orderCnt.forEach((e) => {
+      e.classList.add("show");
+    });
+    orderinnerbtn.forEach((e) => {
+      e.classList.add("collapsed");
+    });
+    orderinnerCnt.forEach((e) => {
+      e.classList.remove("show");
+    });
+  }
+});
 const sidebar_filter = document.querySelector(".fb-sidebar .fb-sidebar__controller");
 const sidebar_filter_body = document.querySelector(".fb-sidebar .fb-sidebar__body");
 const sidebar_filter_close = document.querySelector(".fb-sidebar .fb-sidebar__head-logo");
 
-if(sidebar_filter && sidebar_filter_close && sidebar_filter_body){
-  sidebar_filter.addEventListener("click",()=>{
+if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
+  sidebar_filter.addEventListener("click", () => {
     sidebar_filter_body.classList.add("fb-sidebar__body--active");
   })
-  sidebar_filter_close.addEventListener("click",(e)=>{
+  sidebar_filter_close.addEventListener("click", (e) => {
     e.preventDefault();
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   })
