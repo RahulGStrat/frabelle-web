@@ -1,0 +1,57 @@
+.fb-cartpage {
+    padding: 0;
+
+    &__cnt {
+        margin-top: $spacer-5;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        color: $color-blue-2;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__outer {
+        padding: $spacer-5 0;
+    }
+}
+
+@include tablet {
+    .fb-cartpage {
+        padding: 0;
+
+        &__outer {
+            flex-direction: column;
+
+            .fb-order__heading {
+                display: block;
+            }
+
+            .fb-order {
+                padding-top: $spacer-4;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .fb-cartpage {
+        padding: 0;
+
+        &__outer {
+            flex-direction: column;
+
+            .fb-order__heading {
+                display: block;
+            }
+
+            .fb-order {
+                padding-top: $spacer-4;
+                flex-direction: column;
+            }
+        }
+    }
+}
