@@ -1,0 +1,65 @@
+.fb-pages{
+    &__account{
+        padding: $spacer-6 0;
+    }
+    
+}
+.fb-my-ac{
+    display: flex;
+    justify-content: space-between;
+    &__sidebarmain{
+        width: 100%;
+        max-width: 260px;
+        order: 1;
+    }
+    &__maincolum{
+        width: calc(100% - 300px);
+        order: 2;
+        border: 1px solid #ededed;
+        padding: 30px;
+        background: #fff;
+        border-radius: 5px;
+    }
+    .fb-title-head{
+        text-align: left;
+    }
+}
+@include tablet{
+    .fb-page-header{
+        height: 72px;
+    }
+    .fb-my-ac{
+        flex-direction: column;
+        &__sidebarmain{
+            width: 100%;
+            max-width:100%;
+            order: 1;
+            margin-bottom: $spacer-6;
+        }
+        &__maincolum{
+            width: 100%;
+        }
+    }
+}
+@include tablet-pro{
+    .fb-page-header{
+        height:72px;
+    }
+}
+@include mobile{
+    .fb-page-header{
+        height:72px;
+    }
+    .fb-my-ac{
+        flex-direction: column;
+        &__sidebarmain{
+            width: 100%;
+            max-width:100%;
+            order: 1;
+            margin-bottom: $spacer-6;
+        }
+        &__maincolum{
+            width: 100%;
+        }
+    }
+}

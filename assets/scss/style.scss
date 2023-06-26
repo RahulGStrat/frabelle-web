@@ -31,6 +31,7 @@
 @import "./molecules/fulfilment-tile";
 @import "./molecules/order-summary";
 @import "./molecules/_modal.scss";
+@import "molecules/filter-content";
 @import "./molecules/check-out-dropdown";
 @import "./molecules/checkout-header";
 @import "./molecules/checkout-footer";
@@ -63,4 +64,10 @@
 @import "organisms/check-out";
 @import "organisms/prdct-list-wrapper";
 // @import "organisms/checkout-recipes";
+@import "organisms/sidebar-filter";
+@import "organisms/sidebar-ac";
+@import "organisms/product-spec";
+@import "organisms/your-add-info";
+@import "organisms/acc-dash-myadress";
+@import "organisms/my-account";
 // pages

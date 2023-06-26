@@ -179,9 +179,13 @@ const megaMenu = document.querySelector(".fb-header-megamenu__outer");
 const headerSticky = () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > 20) {
-    page_header.classList.add("fb-page-header--sticky");
+    if (page_header) {
+      page_header.classList.add("fb-page-header--sticky");
+    }
   } else {
-    page_header.classList.remove("fb-page-header--sticky");
+    if (page_header) {
+      page_header.classList.remove("fb-page-header--sticky");
+    }
   }
 };
 
@@ -336,3 +340,16 @@ window.addEventListener("resize", () => {
     });
   }
 });
+const sidebar_filter = document.querySelector(".fb-sidebar .fb-sidebar__controller");
+const sidebar_filter_body = document.querySelector(".fb-sidebar .fb-sidebar__body");
+const sidebar_filter_close = document.querySelector(".fb-sidebar .fb-sidebar__head-logo");
+
+if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
+  sidebar_filter.addEventListener("click", () => {
+    sidebar_filter_body.classList.add("fb-sidebar__body--active");
+  })
+  sidebar_filter_close.addEventListener("click", (e) => {
+    e.preventDefault();
+    sidebar_filter_body.classList.remove("fb-sidebar__body--active");
+  })
+}
