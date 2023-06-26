@@ -21,6 +21,10 @@
       font-weight: 600;
       // line-height: 1px;
       font-size: 14px;
+
+      &:hover {
+        color: $color-red;
+      }
     }
   }
 
