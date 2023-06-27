@@ -15,6 +15,7 @@
 @import "atoms/tooltip";
 @import "atoms/select";
 @import "atoms/click-dropdown";
+@import "atoms/message-box";
 // molecule
 @import "./molecules/product-tile";
 @import "./molecules/review-box";
@@ -72,4 +73,6 @@
 @import "organisms/my-account";
 @import "organisms/StoreCredit";
 @import "organisms/GiftCard";
+@import "organisms/reward";
+@import "organisms/myInvitation";
 // pages
