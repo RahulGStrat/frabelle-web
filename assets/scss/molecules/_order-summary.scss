@@ -130,7 +130,7 @@
     color: #2c3c8b;
   }
 
-  .fm-order__reward {
+  .fb-order__reward {
     &:hover {
       &::after {
         height: 20px;
@@ -138,13 +138,13 @@
         z-index: 2;
       }
 
-      &~.fm-order__pop {
+      &~.fb-order__pop {
         max-height: 130px;
         opacity: 1;
         z-index: 1;
       }
 
-      .fm-order__ques-img {
+      .fb-order__ques-img {
         svg {
           circle {
             fill: #77b8c4;
