@@ -127,6 +127,16 @@
         color: $color-red;
       }
     }
+    &-noaddress{
+      width: 100%;
+    }
+  }
+  .fb-product-tile-btn--red{
+    // max-width: 150px;
+    width: auto;
+    padding: 14px 18px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
 

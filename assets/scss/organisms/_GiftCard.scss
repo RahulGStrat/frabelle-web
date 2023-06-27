@@ -1,0 +1,50 @@
+.fb-giftcard{
+    &__fields{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20px;
+        label{
+            color: #6e7080;
+            font-weight: 600;
+            line-height: 14px;
+            font-size: 12px;
+            margin-bottom: 12px;
+            letter-spacing: .3px;
+        }
+        .fb-input__text-wrap{
+            max-width: 340px;
+        }
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        &-link{
+            color: #2c3c8b;
+            font-weight: 600;
+            margin: 0;
+            font-size: 12px;
+            transition: all 0.5s ease;
+            &:hover{
+                color: $color-red;
+              }
+        }
+    }
+    .fb-product-tile-btn{
+        margin-right: 15px;
+        width: auto;
+        padding: 14px 18px 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+@include mobile{
+    .fb-giftcard{
+        &__footer{
+            flex-direction: column;  
+            align-items: flex-start; 
+        }
+    }
+    .fb-product-tile-btn{
+        margin-bottom: 10px;
+    }
+}
