@@ -7208,76 +7208,162 @@
     <div class="content-wrapper">
       <div class="fb-my-ac">
         <div class="fb-my-ac__maincolum">
-          <div class="fb-title-head">Order # 000027787</div>
-          <div class="fb-viewOrder">
-            <div class="fb-viewOrder__head">
-              <div class="fb-viewOrder__details">
-                <div class="fb-viewOrder__status">
-                  <span>Status</span><small>: Pending</small>
+          <div class="fb-my-ac__maincolum-wrap mb-4">
+            <div class="fb-title-head">Order # 000027787</div>
+            <div class="fb-viewOrder">
+              <div class="fb-viewOrder__head">
+                <div class="fb-viewOrder__details">
+                  <div class="fb-viewOrder__status">
+                    <span>Status</span><small>: Pending</small>
+                  </div>
+                  <span>Created </span><small>: June 27, 2023</small>
                 </div>
-                <span>Created </span><small>: June 27, 2023</small>
+                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">Reorder</button>
               </div>
-              <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">Reorder</button>
-            </div>
-            <!-- Tab -->
-            <div class="fb-viewOrder__historyDetail">
+              <!-- Tab -->
+              <div class="fb-viewOrder__historyDetail">
 
-              <ul class=" nav nav-tabs fb-viewOrder__historyDetail-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active fb-viewOrder__historyDetail-tabs-link" id="home-tab"
-                    data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                    aria-selected="true">Ordered</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">Invoice</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <ul class=" nav nav-tabs fb-viewOrder__historyDetail-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active fb-viewOrder__historyDetail-tabs-link" id="home-tab"
+                      data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                      aria-selected="true">Ordered</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                      type="button" role="tab" aria-controls="profile" aria-selected="false">Invoice</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                  <table class="fb-resTable fb-resTable__his">
-                    <thead>
-                      <tr>
-                        <th class="fb-resTable__product">PRODUCT</th>
-                        <th class="fb-resTable__price">PRICE</th>
-                        <th class="fb-resTable__qty">QTY</th>
-                        <th class="fb-resTable__total">SUBTOTAL</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="fb-resTable__product">
-                          <div class="fb-resTable__product-image"><img src="https://www.frabellemarketplace.ph/media/catalog/product/f/m/fmp_crabstick.jpg?width=50&amp;height=50&amp;canvas=50:50&amp;optimize=medium&amp;bg-color=255,255,255&amp;fit=bounds" alt="Frozen Imitation Crabsticks"></div>
-                          <div class="fb-resTable__product-details">
-                            <span class="fb-resTable__product-name">Frozen Imitation Crabsticks</span>
-                            <span class="fb-resTable__product-wt">200g</span>
-                          </div>
-                        </td>
-                        <td class="fb-resTable__price">June 25, 2023</td>
-                        <td class="fb-resTable__qty">Mohamed</td>
-                        <td class="fb-resTable__total">Canceled</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-resTable__product">
-                          <div class="fb-resTable__product-image"><img src="https://www.frabellemarketplace.ph/media/catalog/product/f/m/fmp_crabstick.jpg?width=50&amp;height=50&amp;canvas=50:50&amp;optimize=medium&amp;bg-color=255,255,255&amp;fit=bounds" alt="Frozen Imitation Crabsticks"></div>
-                          <div class="fb-resTable__product-details">
-                            <span class="fb-resTable__product-name">Frozen Imitation Crabsticks</span>
-                            <span class="fb-resTable__product-wt">200g</span>
-                          </div>
-                        </td>
-                        <td class="fb-resTable__price">June 25, 2023</td>
-                        <td class="fb-resTable__qty">Mohamed</td>
-                        <td class="fb-resTable__total">Canceled</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <table class="fb-resTable fb-resTable__viewOrder">
+                      <thead>
+                        <tr>
+                          <th class="fb-resTable__product">PRODUCT</th>
+                          <th class="fb-resTable__price">PRICE</th>
+                          <th class="fb-resTable__qty">QTY</th>
+                          <th class="fb-resTable__total">SUBTOTAL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="fb-resTable__product">
+                            <div class="fb-resTable__product-image"><img
+                                src="https://www.frabellemarketplace.ph/media/catalog/product/f/m/fmp_crabstick.jpg?width=50&amp;height=50&amp;canvas=50:50&amp;optimize=medium&amp;bg-color=255,255,255&amp;fit=bounds"
+                                alt="Frozen Imitation Crabsticks"></div>
+                            <div class="fb-resTable__product-details">
+                              <span class="fb-resTable__product-name">Frozen Imitation Crabsticks</span>
+                              <span class="fb-resTable__product-wt">200g</span>
+                            </div>
+                          </td>
+                          <td class="fb-resTable__price">June 25, 2023</td>
+                          <td class="fb-resTable__qty">Mohamed</td>
+                          <td class="fb-resTable__total">Canceled</td>
+                        </tr>
+                        <tr>
+                          <td class="fb-resTable__product">
+                            <div class="fb-resTable__product-image"><img
+                                src="https://www.frabellemarketplace.ph/media/catalog/product/f/m/fmp_crabstick.jpg?width=50&amp;height=50&amp;canvas=50:50&amp;optimize=medium&amp;bg-color=255,255,255&amp;fit=bounds"
+                                alt="Frozen Imitation Crabsticks"></div>
+                            <div class="fb-resTable__product-details">
+                              <span class="fb-resTable__product-name">Frozen Imitation Crabsticks</span>
+                              <span class="fb-resTable__product-wt">200g</span>
+                            </div>
+                          </td>
+                          <td class="fb-resTable__price">June 25, 2023</td>
+                          <td class="fb-resTable__qty">Mohamed</td>
+                          <td class="fb-resTable__total">Canceled</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr class="subtotal">
+                          <th colspan="3">
+                            Subtotal </th>
+                          <td>
+                            <span class="price">₱54.46</span>
+                          </td>
+                        </tr>
+                        <tr class="shipping">
+                          <th colspan="3">
+                            Shipping Cost </th>
+                          <td class="amount" data-th="Shipping Cost">
+                            <span class="price">₱0.00</span>
+                          </td>
+                        </tr>
+                        <tr class="totals-tax">
+                          <th colspan="3">
+                            Tax </th>
+                          <td class="amount" data-th="Tax">
+                            <span class="price">₱6.54</span>
+                          </td>
+                        </tr>
+                        <tr class="grand-total">
+                          <th colspan="3">
+                            Grand Total
+                          </th>
+                          <td class="amount">
+                            ₱61.00
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
 
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    Invoice
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+              </div>
+              <!-- Tab -->
+            </div>
+          </div>
+          <div class="fb-my-ac__maincolum-wrap">
+            <div class="fb-ac-dash-myaddress__header">
+              <div class="my-address">Order Information</div>
+            </div>
+            <div class="fb-orderInfo">
+              <div class="fb-orderInfo__box">
+                <div class="fb-orderInfo__head">
+                  Shipping Address
+                </div>
+                <p class="fb-orderInfo__txt">
+                  Farhan Mohamed<br>
+                  Angat<br>
+                  Malolos, Bulacan, Central Luzon, 3000<br>
+                  Philippines<br>
+                  T: 7994033309
+                </p>
+              </div>
+              <div class="fb-orderInfo__box">
+                <div class="fb-orderInfo__head">
+                  Billing Address
+                </div>
+                <p class="fb-orderInfo__txt">
+                  Farhan Mohamed<br>
+                  Angat<br>
+                  Malolos, Bulacan, Central Luzon, 3000<br>
+                  Philippines<br>
+                  T: 7994033309
+                </p>
+              </div>
+              <div class="fb-orderInfo__box">
+                <div class="fb-orderInfo__head">
+                  Shipping Method
+                </div>
+                <p class="fb-orderInfo__txt">
+                  Best Way - Frabelle Delivery
+                </p>
+              </div>
+              <div class="fb-orderInfo__box">
+                <div class="fb-orderInfo__head">
+                  Payment Method
+                </div>
+                <p class="fb-orderInfo__txt">
+                  Cash on delivery
+                </p>
               </div>
             </div>
-            <!-- Tab -->
           </div>
         </div>
         <div class="fb-my-ac__sidebarmain">
@@ -7332,7 +7418,7 @@
                       </g>
                     </svg>
                     Order History</span></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="favorites.html">
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
                       <g id="Layer_2" data-name="Layer 2">
@@ -7364,7 +7450,7 @@
                       </g>
                     </svg>
                     My Addresses</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-information.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 27.62">
                       <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_3" data-name="Layer 3">
@@ -7427,7 +7513,7 @@
                       </g>
                     </svg>
                     Newsletters</a></li>
-                <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link">
+                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="invitation.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 31.32">
                       <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_3" data-name="Layer 3">
@@ -7436,8 +7522,8 @@
                         </g>
                       </g>
                     </svg>
-                    Invitations</span></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+                    Invitations</a></li>
+                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="../index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.12 25.04">
                       <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_3" data-name="Layer 3">
