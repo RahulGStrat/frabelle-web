@@ -1,0 +1,19 @@
+.fb-product-info{
+    &__main{
+        &-wrap{
+            margin-bottom: $spacer-4;
+        }
+        display: flex;
+        flex-direction: row;
+    }
+}
+@include mobile{
+    .fb-pages{
+        margin-top: 73px;
+    }
+    .fb-product-info{
+        &__main{
+            flex-direction: column;
+        }
+    }
+}

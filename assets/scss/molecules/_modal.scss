@@ -1,0 +1,170 @@
+.modal.fade .modal-dialog{
+    transform: translate(0, 0);
+}
+.fb-modal{
+    &__atome{
+        &-dialog{
+            max-width: 760px;
+        }
+        &-content{
+            border-radius: 0;
+        }
+        .btn-close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 99;
+        }
+        &-logo{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 180px;
+                margin: $spacer-4 0 $spacer-3 0;
+            }
+        }
+        &-head{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 20px;
+                font-weight: 500;
+                font-size: 18px;
+                color: #141c30;
+                line-height: 30px;
+            }
+            span{
+                font-size: 16px;
+                color: #878d9c;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+        &-desc{
+            display: flex;
+            justify-content: space-evenly;
+            padding:$spacer-4 0 $spacer-4;
+            &-item{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            }
+            &-text{
+                font-size: 16px;
+                color: #878d9c;
+                b{
+                    color: #141c30;
+                    font-weight: 700;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+            a:first-child{
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: normal;
+                text-align: center;
+                color: #131f37;
+            }
+            a:last-child{
+                width: 240px;
+                height: 48px;
+                margin-top: 20px;
+                border-radius: 4px;
+                background-color: #f6ff7e;
+                color: #131f37;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        
+    }
+    &__fav-list{
+        .btn-close{
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            z-index: 99;
+            width: 15px;
+            height: 15px;
+            background-color:$color-red;
+            color: #fff;
+            border-radius: 50%;
+            background-size: 35%;
+            opacity: 1;
+            transition: 0.3s;
+            background-image: url('data:image/svg+xml,<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.5002 28.5L54.9002 5.99999C56.1002 4.79999 56.1002 2.89999 54.9002 1.79999C53.7002 0.599994 51.8002 0.599994 50.7002 1.79999L28.3002 24.3L5.80019 1.79999C4.60019 0.599994 2.7002 0.599994 1.6002 1.79999C0.400195 2.99999 0.400195 4.89999 1.6002 5.99999L24.0002 28.5L1.6002 51C0.400195 52.2 0.400195 54.1 1.6002 55.2C2.2002 55.8 3.0002 56.1 3.7002 56.1C4.4002 56.1 5.20019 55.8 5.80019 55.2L28.3002 32.7L50.8002 55.2C51.4002 55.8 52.2002 56.1 52.9002 56.1C53.6002 56.1 54.4002 55.8 55.0002 55.2C56.2002 54 56.2002 52.1 55.0002 51L32.5002 28.5Z" fill="white"/></svg>');
+            &:hover{
+                transition: 0.3s;
+                background-color: $color-white;
+                background-image: url('data:image/svg+xml,<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.5002 28.5L54.9002 5.99999C56.1002 4.79999 56.1002 2.89999 54.9002 1.79999C53.7002 0.599994 51.8002 0.599994 50.7002 1.79999L28.3002 24.3L5.80019 1.79999C4.60019 0.599994 2.7002 0.599994 1.6002 1.79999C0.400195 2.99999 0.400195 4.89999 1.6002 5.99999L24.0002 28.5L1.6002 51C0.400195 52.2 0.400195 54.1 1.6002 55.2C2.2002 55.8 3.0002 56.1 3.7002 56.1C4.4002 56.1 5.20019 55.8 5.80019 55.2L28.3002 32.7L50.8002 55.2C51.4002 55.8 52.2002 56.1 52.9002 56.1C53.6002 56.1 54.4002 55.8 55.0002 55.2C56.2002 54 56.2002 52.1 55.0002 51L32.5002 28.5Z" fill="red"/></svg>');
+            }
+        }
+        &-head{
+            text-align: center;
+            h2{
+                color: #51535d;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                font-size: 15px;
+                text-transform: capitalize;
+                margin-bottom: $spacer-4;
+            }
+        }
+        &-dialog{
+            max-width:400px;
+        }
+        &-content{
+            border-radius: 0;
+        }
+        &-fields{
+            margin-bottom: $spacer-3;
+        }
+        &-label{
+            color: #6e7080;
+            font-weight: 600;
+            line-height: 14px;
+            font-size: 10px;
+        }
+        &-textarea{
+            width: 100%;
+            border: none;
+            font-size: 10px;
+            height: 40px;
+        }
+        &-footer{
+            padding: 0;
+            border: none;
+            flex-wrap:nowrap;
+            margin: 0 -.25rem;
+            button{
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: 15px;
+                padding-bottom: 13px;
+            }
+        }
+    }
+}
+@include mobile{
+    .fb-modal__atome{
+        &-desc{
+            flex-direction: column;
+        }
+    }
+}

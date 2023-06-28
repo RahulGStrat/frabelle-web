@@ -1,0 +1,85 @@
+.fb-ac-dash-myaddress {
+  &__header {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+    margin-top: 20px;
+
+    .my-address {
+      color: #51535d;
+      font-style: normal;
+      font-weight: 700;
+      // line-height: 1px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    .manage-address {
+      margin-left: 30px;
+      color: #2c3c8b;
+      font-weight: 600;
+      // line-height: 1px;
+      font-size: 14px;
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        color: $color-red;
+      }
+    }
+  }
+
+  &__ship-bill {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px -8px;
+
+    .default-shipping-address,
+    .default-billing-address {
+      font-size: 16px;
+      color: #6e7080;
+      font-weight: 600;
+      display: block;
+      width: calc(50% - 16px);
+      margin: 0 8px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .address-box {
+      margin: 16px 0;
+      font-size: 13px;
+      color: #848799;
+      font-weight: 500;
+
+      .address-box-item {
+        margin-top: 10px;
+      }
+    }
+
+    .edit-address {
+      color: #2c3c8b;
+      font-weight: 600;
+      line-height: 28px;
+      font-size: 14px;
+    }
+  }
+}
+
+@include mobile {
+  .fb-ac-dash-myaddress {
+    &__ship-bill {
+      flex-direction: column;
+
+      .default-shipping-address,
+      .default-billing-address {
+        width: calc(100% - 16px);
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

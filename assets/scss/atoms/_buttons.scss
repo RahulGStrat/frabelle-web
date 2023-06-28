@@ -1,0 +1,32 @@
+.fb-product-tile-btn {
+    &--red{
+        background-color:$color-red;
+        border: none;
+        color: $color-white;
+        &:hover {
+            background-color:$color-red-hover;
+            color: $color-white;
+            border: none;
+        }
+    }
+    &--orange{
+        background-color:$color-orange;
+        border: none;
+        color: $color-white;
+        &:hover {
+            background-color:$color-orange-hvr;
+            color: $color-white;
+            border: none;
+        }
+    }
+    &--cancel{
+        background: #f7f8fc;
+        border: 1px solid #dadce3;
+        color: #51535d;
+        &:hover {
+            background: #dadce3;
+            color: #51535d;
+            border: 1px solid #dadce3;
+        }
+    }
+}
