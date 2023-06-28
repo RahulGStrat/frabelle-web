@@ -16,23 +16,30 @@
         margin-bottom: 0;
     }
     &__table{
-        td:nth-of-type(1):before {
-            content: "Name & Description";
-        }
-        td:nth-of-type(2):before {
-            content: "Items";
-        }
-        td:nth-of-type(3):before {
-            content: "Latest Activity";
-         }
-        td:nth-of-type(4):before {
-            content: "Action";
-        }
         &-name{
-            
+                
         }
         &-desc{
             font-weight: 500;
+            margin-top: $spacer-1;
+        }
+    }
+}
+@include mobile{
+    .fb-favorites{
+        &__table{
+            td:nth-of-type(1):before {
+                content: "Name & Description";
+            }
+            td:nth-of-type(2):before {
+                content: "Items";
+            }
+            td:nth-of-type(3):before {
+                content: "Latest Activity";
+             }
+            td:nth-of-type(4):before {
+                content: "Action";
+            }
         }
     }
 }

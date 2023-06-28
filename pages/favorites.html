@@ -7212,7 +7212,8 @@
             <div class="fb-favorites">
                 <div class="fb-favorites__head">
                     <div class="fb-title-head">Favorites</div>
-                    <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">Create a new list</button>
+                    <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red" data-bs-toggle="modal"
+                    data-bs-target="#fav-list">Create a new list</button>
                 </div>  
                 <div class="fb-favorites__list">
                     <table class="fb-resTable fb-favorites__table">
@@ -7293,7 +7294,7 @@
               </g>
             </svg>
             Order History</a></li>
-        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link">
+        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
               <g id="Layer_2" data-name="Layer 2">
@@ -7347,7 +7348,7 @@
               </g>
             </svg>
             Store Credit</a></li>
-        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.96 21.32">
               <g id="Layer_2" data-name="Layer 2">
@@ -7362,7 +7363,7 @@
                 </g>
               </g>
             </svg>
-            Gift Card</span></li>
+            Gift Card</a></li>
         <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="reward-points.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91">
               <g id="Layer_2" data-name="Layer 2">
@@ -7587,6 +7588,48 @@
     </div>
   </div>
   <!-- Footer end -->
+   <!-- Modal FAVORATE LIST -->
+   <div class="modal fade fb-modal__fav-list" id="fav-list" data-bs-backdrop="static" data-bs-keyboard="false"
+   tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+     <div class="modal-content fb-modal__fav-list-content">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <div class="modal-body ">
+
+         <div class="fb-modal__fav-list-head">
+           <h2>
+             Create a New Favorite List
+             </h1>
+         </div>
+         <div class="fb-modal__fav-list-body">
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Favorite List Name
+             </label>
+             <div class="fb-input__text-wrap">
+               <input type="email" class="fb-input__text" placeholder="Email address">
+             </div>
+           </div>
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Description (optional)
+             </label>
+             <div class="fb-input__text-wrap">
+               <textarea class="fb-modal__fav-list-textarea" ></textarea>
+             </div>
+           </div>
+         </div>
+
+         <footer class="modal-footer fb-modal__fav-list-footer">
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">SAVE</button>
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+
+         </footer>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Modal FAVORATE LIST END -->
   <!-- body content end -->
 
   <!-- scripts -->
