@@ -1,0 +1,42 @@
+.fb-login_popup.fb-login_popup-ac {
+  padding: 0;
+  max-width: 210px;
+  .fb-login_popup__socialbtn {
+    margin-bottom: 0;
+    justify-content: left !important;
+    background-color: $color-white;
+    border: 0 !important;
+    transition: 0.3s;
+    padding: 14px $spacer-3;
+  }
+  .fb-login_popup__socialbtn:hover {
+    background-color: #f7f8fc;
+    transition: 0.3s;
+  }
+  .fb-header__action-icon {
+    margin-right: $spacer-3;
+  }
+  .fb-header__action-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .fb-header__action-icon {
+    &::after {
+      content: none !important;
+    }
+    svg {
+      path {
+        fill: #3b4780 !important;
+      }
+    }
+  }
+  .fb-header__action-text {
+    color: #3b4780 !important;
+  }
+}
+
+@include mobile {
+  .fb-login_popup.fb-login_popup-ac {
+    display: none;
+  }
+}

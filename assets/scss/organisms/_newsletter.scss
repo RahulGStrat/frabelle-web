@@ -69,6 +69,7 @@
   &__form-inpwrap {
     display: flex;
     border-bottom: 1px solid rgb(185, 208, 229);
+    margin-bottom: 3px;
   }
 
   &__tost-message {
@@ -76,7 +77,6 @@
     font-size: 13px;
     font-weight: 500;
     color: rgb(235, 32, 40);
-    padding-top: $spacer-2;
     &--active {
       opacity: 1;
     }
