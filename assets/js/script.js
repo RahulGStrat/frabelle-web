@@ -340,9 +340,9 @@ window.addEventListener("resize", () => {
     });
   }
 });
-const sidebar_filter = document.querySelector(".fb-sidebar .fb-sidebar__controller");
-const sidebar_filter_body = document.querySelector(".fb-sidebar .fb-sidebar__body");
-const sidebar_filter_close = document.querySelector(".fb-sidebar .fb-sidebar__head-logo");
+const sidebar_filter = document.querySelector(".fb-sidebar__controller");
+const sidebar_filter_body = document.querySelector(".fb-sidebar__body");
+const sidebar_filter_close = document.querySelector(".fb-sidebar__head-logo");
 
 if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
   sidebar_filter.addEventListener("click", () => {
