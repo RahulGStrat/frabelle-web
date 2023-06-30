@@ -1,19 +1,14 @@
 .fb-pages{
     &__account{
         padding: $spacer-6 0;
-    }
-    
+    } 
 }
 .fb-my-ac{
     display: flex;
-    justify-content: space-between;
     &__sidebarmain{
-        width: 100%;
-        max-width: 260px;
         order: 1;
     }
     &__maincolum{
-        width: calc(100% - 300px);
         order: 2;
         &-wrap{
             border: 1px solid #ededed;
@@ -30,18 +25,6 @@
     .fb-page-header{
         height: 72px;
     }
-    .fb-my-ac{
-        flex-direction: column;
-        &__sidebarmain{
-            width: 100%;
-            max-width:100%;
-            order: 1;
-            margin-bottom: $spacer-6;
-        }
-        &__maincolum{
-            width: 100%;
-        }
-    }
 }
 @include tablet-pro{
     .fb-page-header{
@@ -52,18 +35,29 @@
     .fb-page-header{
         height:72px;
     }
+}
+@media (min-width: 992px) { 
+    .fb-my-ac{
+        justify-content: space-between;
+        &__sidebarmain{
+            width: 100%;
+            max-width: 260px;
+        }
+        &__maincolum{
+            width: calc(100% - 300px);
+        }
+    }
+  }
+  @media (max-width: 991.98px) {
     .fb-my-ac{
         flex-direction: column;
         &__sidebarmain{
             width: 100%;
             max-width:100%;
-            order: 1;
             margin-bottom: $spacer-6;
         }
         &__maincolum{
             width: 100%;
-            padding: 0;
-            border: none;
         }
     }
-}
+  }
