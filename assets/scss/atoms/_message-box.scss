@@ -1,0 +1,17 @@
+.fb-message{
+    border-radius: 5px;
+    padding: 20px 20px 17px;
+    line-height: 20px;
+    border: 1px solid;
+    background: #f7f8fc;
+    border-color: #e4e6ed;
+    color: #6e7080;
+    position: relative;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: $spacer-3;
+    }
+}

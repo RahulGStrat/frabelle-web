@@ -4,14 +4,14 @@
     align-items: baseline;
     border-bottom: 1px solid #ededed;
     padding-bottom: 15px;
-    margin-top: 20px;
+    // margin-top: 20px;
 
     .my-address {
       color: #51535d;
       font-style: normal;
       font-weight: 700;
       // line-height: 1px;
-      font-size: 24px;
+      font-size:19px;
       letter-spacing: 0;
     }
 
@@ -28,6 +28,9 @@
         color: $color-red;
       }
     }
+  }
+  &--info{
+    margin-top: 20px;
   }
 
   &__ship-bill {
@@ -59,6 +62,10 @@
       .address-box-item {
         margin-top: 10px;
       }
+     
+    }
+    .noaddress{
+      width: 100%;
     }
 
     .edit-address {
@@ -66,20 +73,99 @@
       font-weight: 600;
       line-height: 28px;
       font-size: 14px;
+      transition: all .5s ease;
+      &:hover{
+        color: $color-red;
+      }
+      &.changepass{
+        border-left: 1px solid #ededed;
+        padding-left: 10px;
+        margin-left: 10px;
+      }
     }
   }
 }
+.fb-ac-ad-address{
+  &__head{
+    color: #51535d;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0;
+    align-items: baseline;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+  }
+  &__wrap{
+    display: flex;
+    margin: 0 -8px;
+    flex-wrap: wrap;
+  }
+  &__box{
+    width: calc(50% - 16px);
+    margin:$spacer-4 8px 0;
+    p{
+    margin:0 0 16px 0;
+    font-size: 13px;
+    color: #848799;
+    font-weight: 500;
+    line-height: 26px;
+    }
+    &-link{
+      color: #2c3c8b;
+      font-weight: 600;
+      line-height: 28px;
+      font-size: 14px;
+      transition: all 0.5s ease;
+      border-left: 1px solid #ededed;
+      padding-left: 10px;
+      margin-left: 10px;
+      &:first-child{
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      &:hover{
+        color: $color-red;
+      }
+    }
+    &-noaddress{
+      width: 100%;
+    }
+  }
+  .fb-product-tile-btn--red{
+    // max-width: 150px;
+    width: auto;
+    padding: 14px 18px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
 
 @include mobile {
   .fb-ac-dash-myaddress {
     &__ship-bill {
       flex-direction: column;
+      margin-bottom: 0;
 
       .default-shipping-address,
       .default-billing-address {
         width: calc(100% - 16px);
         margin-bottom: 32px;
       }
+      .default-billing-address{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .fb-ac-ad-address{
+    margin-top: $spacer-4;
+    &__wrap{
+      flex-direction: column;
+    }
+    &__box{
+      width: 100%;
     }
   }
 }

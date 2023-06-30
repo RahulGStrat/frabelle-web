@@ -1,0 +1,122 @@
+.fb-resTable{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    th {
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        letter-spacing: 1px;
+        font-weight: 600;
+        padding: 17px 15px;
+        text-transform: uppercase;
+        color: #848799;
+        vertical-align: top;
+        font-size: 10px;
+    }
+    td{
+        padding: 20px 15px 0; 
+        font-size: 10px;
+        font-weight: 600; 
+        vertical-align: top;
+    }
+    thead{
+      th:first-child{
+        padding-left: 0;
+      }
+    }
+    tbody{
+      td:first-child{
+        padding-left: 0;
+      }
+    }
+    &__action{
+        display: flex;
+        &-link{
+            font-size: 11px;
+            color: #2c3c8b;
+            font-weight: 600;
+            border-left: 1px solid #ededed;
+            padding-left: 10px;
+            margin-left: 10px;
+            transition: all 0.5s ease;
+            &:first-child{
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+            &:hover{
+                color: $color-red;
+            }
+        }
+    }
+    &__order{
+        text-align: right;
+    }
+}
+@include mobile{
+
+  .fb-resTable{
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ebebeb;
+        &:last-child{
+            border: none;
+            margin-bottom: 0;
+            padding-bottom:0px;
+        }
+    }
+    td {
+      border: none;
+      border-bottom: 0px solid #eee;
+      position: relative;
+      padding: 7px 0 7px 140px;
+      text-align: left !important;
+      font-weight: 600;
+      color: #848799;
+      vertical-align: top;
+    }
+  
+    td:before {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      // width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      color: #454545;
+      font-weight: 700;
+    }
+    &.fb-resTable__viewOrder{
+      td:before {
+        left:62px;
+      }
+    }
+  }
+  thead{
+    th:first-child{
+      padding-left:140px !important;
+    }
+  }
+  tbody{
+    td:first-child{
+      padding-left: 140px !important;
+    }
+  }
+}

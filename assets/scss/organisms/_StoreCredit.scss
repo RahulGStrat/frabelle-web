@@ -1,0 +1,37 @@
+.fb-storecredit{
+    &__box{
+        max-width: 303px;
+        background-color: #548b2c;
+        background-image: url(../images/icon-store-credit.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        border-radius: 5px;
+        padding: 20px 20px 22px;
+        margin-bottom: 13px;
+    }
+    &__head{
+        color: #dcffc3;
+        font-size: 13px;
+        line-height: 1.5rem;
+        font-weight: 600;
+        letter-spacing: .33px;
+    }
+    &__balance{
+        font-weight: 700;
+        color: #fff;
+        font-size: 38px;
+    }
+    &__body{
+        letter-spacing: .3px;
+        font-size: 12px;
+        font-weight: 500;
+        a{
+            color: #2c3c8b;
+            font-weight: 600;
+            transition: all .5s ease;
+            &:hover{
+                color: $color-red;
+            }
+        }
+    }
+}
