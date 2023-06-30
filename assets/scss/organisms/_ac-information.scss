@@ -1,0 +1,35 @@
+.fb-Ai{
+    max-width: 340px;
+    .fb-input__box{
+        margin-bottom: $spacer-3;
+    }
+    &__surprise{
+        font-size: 10px;
+        font-weight: 500;
+        color: #a7aabe;
+        margin-bottom: $spacer-3;
+        margin-top: 8px;
+    }
+    .fb-input-checkbox-wrap{
+        margin-bottom: $spacer-3;
+    }
+    .fb-product-tile-btn {
+        width: auto;
+        padding: 14px 18px 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+@include mobile{
+    .fb-Ai{
+        .fb-input__box{
+            flex-direction: column;
+            .fb-input{
+                margin-left: 0 !important;
+            }
+        }
+        .fb-input__scnd{
+            margin-top: $spacer-3;
+        }
+    }
+}
