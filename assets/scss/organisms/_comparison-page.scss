@@ -1,0 +1,18 @@
+.fb-comparison {
+    &__outer {
+        overflow-x: scroll;
+    }
+
+    &__tileouter {
+        display: flex;
+        align-items: center;
+        padding: 32px 0;
+        margin: 0 -8px;
+
+        .fb-product-tile {
+            width: calc(25% - 16px);
+            min-width: 268px;
+            margin: 0 8px;
+        }
+    }
+}
