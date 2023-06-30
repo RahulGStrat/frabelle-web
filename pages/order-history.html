@@ -7208,93 +7208,51 @@
     <div class="content-wrapper">
       <div class="fb-my-ac">
         <div class="fb-my-ac__maincolum">
-          <div class="fb-title-head">Account Dashboard</div>
-          <!-- AcDash -->
-          <div class="fb-ac-dash-myaddress">
-            <!-- <div c lass="content-wrapper">-->
-            <div classs="fb-ac-dash-myaddress___outer">
-              <div class="fb-ac-dash-myaddress__header">
-                <div class="my-address">My Addresses</div>
-                <a href="#" class="manage-address">
-                  <span>Manage Addresses</span>
-                </a>
-              </div>
-              <div class="fb-ac-dash-myaddress__ship-bill">
-                <div class="default-shipping-address">
-                  <div class="title">Default Shipping Address</div>
-                  <div class="address-box">
-                    <divaddress-box>Gokul Chandran</divaddress-box>
-                    <div class="address-box-item">45 , Building Street</div>
-                    <div class="address-box-item">
-                      Dasmariñas Resettlement Area,Cavite, Calabarzon, 4115
-                    </div>
-                    <div class="address-box-item">Philippines</div>
-                    <div class="address-box-item">T: 8590356559</div>
-                  </div>
-                  <a href="#" class="edit-address">
-                    <span>Edit Address</span>
-                  </a>
-                </div>
-                <div class="default-billing-address">
-                  <div class="title">Default Billing Address</div>
-                  <div class="address-box">
-                    <div class="address-box-item">Gokul Chandran</div>
-                    <div class="address-box-item">566, Buliding Street</div>
-                    <div class="address-box-item">
-                      Balic-Balic, City of Manila, NCR, 1008
-                    </div>
-                    <div class="address-box-item">Philippines</div>
-                    <div class="address-box-item">T: 8977678789</div>
-                  </div>
-                  <a href="#" class="edit-address">
-                    <span>Edit Address</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
+          <div class="fb-title-head">Order History</div>
+          <div class="fb-orderHistory">
+            
+            <table class="fb-resTable">
+              <thead>
+                  <tr>
+                      <th>ORDER #</th>
+                      <th>DATE</th>
+                      <th>SHIP TO</th>
+                      <th class="fb-resTable__order">ORDER TOTAL</th>
+                      <th>STATUS</th>
+                      <th>ACTION</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>00005676876</td>
+                      <td>June 25, 2023</td>
+                      <td>Mohamed</td>
+                      <td class="fb-resTable__order">₱666.00</td>
+                      <td>Canceled</td>
+                      <td>
+                          <div class="fb-resTable__action">
+                              <a href="view-order.html" class="fb-resTable__action-link">View Order</a>
+                              <a href="#" class="fb-resTable__action-link">Reorder</a>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>000027787</td>
+                      <td>June 27, 2023</td>
+                      <td>Farhan Mohamed</td>
+                      <td class="fb-resTable__order">₱61.00</td>
+                      <td>Pending</td>
+                      <td>
+                          <div class="fb-resTable__action">
+                              <a href="view-order.html" class="fb-resTable__action-link">View Order</a>
+                              <a href="" class="fb-resTable__action-link">Reorder</a>
+                          </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
           </div>
-          <!-- AcDash -->
-          <!-- AcDash -->
-          <div class="fb-ac-dash-myaddress fb-ac-dash-myaddress--info">
-            <!-- <div c lass="content-wrapper">-->
-            <div classs="fb-ac-dash-myaddress___outer">
-              <div class="fb-ac-dash-myaddress__header">
-                <div class="my-address">Account Information</div>
-              </div>
-              <div class="fb-ac-dash-myaddress__ship-bill">
-                <div class="default-shipping-address">
-                  <div class="title">Default Shipping Address</div>
-                  <div class="address-box">
-                    <divaddress-box>Gokul Chandran</divaddress-box>
-                    <div class="address-box-item">45 , Building Street</div>
-                    <div class="address-box-item">
-                      Dasmariñas Resettlement Area,Cavite, Calabarzon, 4115
-                    </div>
-                    <div class="address-box-item">Philippines</div>
-                    <div class="address-box-item">T: 8590356559</div>
-                  </div>
-                  <a href="#" class="edit-address">
-                    <span>Edit</span>
-                  </a>
-                  <a href="#" class="edit-address changepass">
-                    <span>Change Password</span>
-                  </a>
-                </div>
-                <div class="default-billing-address">
-                  <div class="title">Newsletters</div>
-                  <div class="address-box">
-                    <div class="address-box-item">You aren't subscribed to our newsletter.</div>
-                  </div>
-                  <a href="#" class="edit-address">
-                    <span>Edit</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
-          <!-- AcDash -->
         </div>
         <div class="fb-my-ac__sidebarmain">
           <!-- SIDEBAR START HERE -->
@@ -7306,7 +7264,7 @@
     <div class="collapse navbar-collapse fb-sbar__navbar" id="navbarNavAltMarkup">
       <ul class="navbar-nav fb-sbar__nav">
         <li class="fb-sbar__nav-item ">
-          <span class="nav-link fb-sbar__nav-link active" aria-current="page" href="#">
+          <a class="nav-link fb-sbar__nav-link" aria-current="page" href="customer-account.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.69 26.73">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
@@ -7321,9 +7279,9 @@
                 </g>
               </g>
             </svg>
-            Account Dashboard</span>
+            Account Dashboard</a>
         </li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.89 27.48">
               <g id="Layer_2" data-name="Layer 2">
@@ -7346,7 +7304,7 @@
                 </g>
               </g>
             </svg>
-            Order History</a></li>
+            Order History</span></li>
         <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
@@ -7358,7 +7316,7 @@
               </g>
             </svg>
             Favorites</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="./customer-address.html">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-address.html">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.64 30.05">
               <g id="Layer_2" data-name="Layer 2">
@@ -7391,7 +7349,7 @@
               </g>
             </svg>
             Account Information</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="store-credit.html">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="store-credit.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.37 28.64">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
@@ -7417,7 +7375,7 @@
               </g>
             </svg>
             Gift Card</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="reward-points.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
@@ -7432,7 +7390,7 @@
               </g>
             </svg>
             Reward Points</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="newsletter.html">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="newsletter.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 19.27">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
@@ -7442,7 +7400,7 @@
               </g>
             </svg>
             Newsletters</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="#">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="invitation.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 31.32">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
