@@ -1,0 +1,35 @@
+.fb-empty {
+  width: 100%;
+  height: 100%;
+
+  &__inner-empty {
+    padding: $spacer-3 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cta {
+    width: 190px;
+  }
+
+  .fb-product-tile-btn {
+    font-size: 11px;
+    padding: $spacer-3 $spacer-2 12px $spacer-2;
+  }
+
+  &__icon {
+    width: 90px;
+    height: auto;
+    margin-bottom: $spacer-4;
+  }
+
+  &__text {
+    color: #848799;
+    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: $spacer-3;
+    text-align: center;
+  }
+}

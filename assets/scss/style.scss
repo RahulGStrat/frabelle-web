@@ -29,7 +29,6 @@
 @import "./molecules/product-tile";
 @import "./molecules/breadcrumb";
 @import "./molecules/myaccount-popup";
-// @import "./molecules/checkout-recipes-tile";
 @import "./molecules/fulfilment-tile";
 @import "./molecules/order-summary";
 @import "./molecules/_modal.scss";
@@ -38,6 +37,7 @@
 @import "./molecules/checkout-header";
 @import "./molecules/checkout-footer";
 @import "./molecules/shipping-address-item";
+@import "./molecules/empty-cart";
 
 // organisms
 @import "./organisms/footer";

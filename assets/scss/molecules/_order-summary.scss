@@ -3,7 +3,6 @@
   padding: $spacer-4;
   border-radius: 3px;
   overflow: hidden;
-  max-width: 30%;
 
   &__heading {
     color: #51535d;
@@ -139,7 +138,7 @@
         z-index: 2;
       }
 
-      &~.fb-order__pop {
+      & ~ .fb-order__pop {
         max-height: 130px;
         opacity: 1;
         z-index: 1;
@@ -243,7 +242,6 @@
         height: 15px;
         margin-left: 150px;
       }
-
     }
 
     &-btn.accordion-button:not(.collapsed) {
