@@ -7209,226 +7209,212 @@
       <div class="fb-my-ac">
         <div class="fb-my-ac__maincolum">
           <div class="fb-my-ac__maincolum-wrap">
-            <div class="fb-title-head">Order History</div>
-            <div class="fb-orderHistory">
-
-              <table class="fb-resTable fb-resTable__OrderHistory">
-                <thead>
-                  <tr>
-                    <th>ORDER #</th>
-                    <th>DATE</th>
-                    <th>SHIP TO</th>
-                    <th class="fb-resTable__order">ORDER TOTAL</th>
-                    <th>STATUS</th>
-                    <th>ACTION</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>00005676876</td>
-                    <td>June 25, 2023</td>
-                    <td>Mohamed</td>
-                    <td class="fb-resTable__order">₱666.00</td>
-                    <td>Canceled</td>
-                    <td>
-                      <div class="fb-resTable__action">
-                        <a href="view-order.html" class="fb-resTable__action-link">View Order</a>
-                        <a href="#" class="fb-resTable__action-link">Reorder</a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>000027787</td>
-                    <td>June 27, 2023</td>
-                    <td>Farhan Mohamed</td>
-                    <td class="fb-resTable__order">₱61.00</td>
-                    <td>Pending</td>
-                    <td>
-                      <div class="fb-resTable__action">
-                        <a href="view-order.html" class="fb-resTable__action-link">View Order</a>
-                        <a href="" class="fb-resTable__action-link">Reorder</a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
+            <div class="fb-favorites">
+                <div class="fb-favorites__head">
+                    <div class="fb-title-head">Favorites</div>
+                    <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red" data-bs-toggle="modal"
+                    data-bs-target="#fav-list">Create a new list</button>
+                </div>  
+                <div class="fb-favorites__list">
+                    <table class="fb-resTable fb-favorites__table">
+                        <thead>
+                            <tr>
+                                <th>NAME & DESCRIPTION</th>
+                                <th>ITEMS</th>
+                                <th >LATEST ACTIVITY</th>
+                                <th >ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="fb-favorites__table-name">Name</div>
+                                    <div class="fb-favorites__table-desc">Group 1</div>
+                                </td>
+                                <td>June 25, 2023</td>
+                                <td>Mohamed</td>
+                                <td>
+                                    <a href="#" class="fb-resTable__action-link">View Order</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
           </div>
         </div>
         <div class="fb-my-ac__sidebarmain">
           <!-- SIDEBAR START HERE -->
-          <div class="navbar navbar-expand-lg fb-sbar">
-            <button class="navbar-toggler fb-sbar__toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              Menu
-            </button>
-            <div class="collapse navbar-collapse fb-sbar__navbar" id="navbarNavAltMarkup">
-              <ul class="navbar-nav fb-sbar__nav">
-                <li class="fb-sbar__nav-item ">
-                  <a class="nav-link fb-sbar__nav-link" aria-current="page" href="customer-account.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.69 26.73">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M9.45,12H2.57A2.57,2.57,0,0,1,0,9.45V2.57A2.57,2.57,0,0,1,2.57,0H9.45A2.57,2.57,0,0,1,12,2.57V9.45A2.56,2.56,0,0,1,9.45,12ZM2.57,2A.56.56,0,0,0,2,2.57V9.45a.56.56,0,0,0,.57.56H9.45A.56.56,0,0,0,10,9.45V2.57A.56.56,0,0,0,9.45,2Z" />
-                          <path class="cls-1"
-                            d="M24.12,12H17.24a2.56,2.56,0,0,1-2.56-2.56V2.57A2.57,2.57,0,0,1,17.24,0h6.88a2.57,2.57,0,0,1,2.57,2.57V9.45A2.57,2.57,0,0,1,24.12,12ZM17.24,2a.56.56,0,0,0-.56.57V9.45a.56.56,0,0,0,.56.56h6.88a.57.57,0,0,0,.57-.56V2.57A.57.57,0,0,0,24.12,2Z" />
-                          <path class="cls-1"
-                            d="M9.45,26.73H2.57A2.58,2.58,0,0,1,0,24.16V17.28a2.57,2.57,0,0,1,2.57-2.57H9.45A2.57,2.57,0,0,1,12,17.28v6.88A2.57,2.57,0,0,1,9.45,26.73Zm-6.88-10a.57.57,0,0,0-.57.57v6.88a.57.57,0,0,0,.57.57H9.45a.57.57,0,0,0,.56-.57V17.28a.57.57,0,0,0-.56-.57Z" />
-                          <path class="cls-1"
-                            d="M24.12,26.73H17.24a2.57,2.57,0,0,1-2.56-2.57V17.28a2.57,2.57,0,0,1,2.56-2.57h6.88a2.57,2.57,0,0,1,2.57,2.57v6.88A2.58,2.58,0,0,1,24.12,26.73Zm-6.88-10a.57.57,0,0,0-.56.57v6.88a.57.57,0,0,0,.56.57h6.88a.58.58,0,0,0,.57-.57V17.28a.58.58,0,0,0-.57-.57Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Account Dashboard</a>
-                </li>
-                <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
+  <div class="navbar navbar-expand-lg fb-sbar">
+    <button class="navbar-toggler fb-sbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+    <div class="collapse navbar-collapse fb-sbar__navbar" id="navbarNavAltMarkup">
+      <ul class="navbar-nav fb-sbar__nav">
+        <li class="fb-sbar__nav-item ">
+          <a class="nav-link fb-sbar__nav-link" aria-current="page" href="customer-account.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.69 26.73">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M9.45,12H2.57A2.57,2.57,0,0,1,0,9.45V2.57A2.57,2.57,0,0,1,2.57,0H9.45A2.57,2.57,0,0,1,12,2.57V9.45A2.56,2.56,0,0,1,9.45,12ZM2.57,2A.56.56,0,0,0,2,2.57V9.45a.56.56,0,0,0,.57.56H9.45A.56.56,0,0,0,10,9.45V2.57A.56.56,0,0,0,9.45,2Z" />
+                  <path class="cls-1"
+                    d="M24.12,12H17.24a2.56,2.56,0,0,1-2.56-2.56V2.57A2.57,2.57,0,0,1,17.24,0h6.88a2.57,2.57,0,0,1,2.57,2.57V9.45A2.57,2.57,0,0,1,24.12,12ZM17.24,2a.56.56,0,0,0-.56.57V9.45a.56.56,0,0,0,.56.56h6.88a.57.57,0,0,0,.57-.56V2.57A.57.57,0,0,0,24.12,2Z" />
+                  <path class="cls-1"
+                    d="M9.45,26.73H2.57A2.58,2.58,0,0,1,0,24.16V17.28a2.57,2.57,0,0,1,2.57-2.57H9.45A2.57,2.57,0,0,1,12,17.28v6.88A2.57,2.57,0,0,1,9.45,26.73Zm-6.88-10a.57.57,0,0,0-.57.57v6.88a.57.57,0,0,0,.57.57H9.45a.57.57,0,0,0,.56-.57V17.28a.57.57,0,0,0-.56-.57Z" />
+                  <path class="cls-1"
+                    d="M24.12,26.73H17.24a2.57,2.57,0,0,1-2.56-2.57V17.28a2.57,2.57,0,0,1,2.56-2.57h6.88a2.57,2.57,0,0,1,2.57,2.57v6.88A2.58,2.58,0,0,1,24.12,26.73Zm-6.88-10a.57.57,0,0,0-.56.57v6.88a.57.57,0,0,0,.56.57h6.88a.58.58,0,0,0,.57-.57V17.28a.58.58,0,0,0-.57-.57Z" />
+                </g>
+              </g>
+            </svg>
+            Account Dashboard</a>
+        </li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="order-history.html">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.89 27.48">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1" d="M24.84,27.35,8.4,27.46l.2,0H23.79A5,5,0,0,0,25,27.33Z" />
-                          <path class="cls-1"
-                            d="M27.84,0H8.6a1,1,0,0,0-1,1V18.81H1.05a1,1,0,0,0-.79.34A1,1,0,0,0,0,20c.88,5.87,5,7.4,5.16,7.46a1,1,0,0,0,.37.07h0l2.84,0h0l16.44-.11.18,0a.74.74,0,0,0,.19,0,4.89,4.89,0,0,0,3.68-4.66V1A1,1,0,0,0,27.84,0ZM7.55,25.47H5.77a6.86,6.86,0,0,1-3.44-4.67H7.55Zm2.1-4.66H20.27a8.52,8.52,0,0,0,1.41,4.56l-12,.08Zm17.14,1.81a2.85,2.85,0,0,1-1.94,2.67c-2.79-1-2.48-5.36-2.47-5.41a1,1,0,0,0-.28-.75,1,1,0,0,0-.77-.32H9.65V2H26.79Z" />
-                          <path class="cls-1"
-                            d="M17.7,6H11.4a.51.51,0,0,1-.52-.5A.51.51,0,0,1,11.4,5h6.3a.51.51,0,0,1,.52.5A.51.51,0,0,1,17.7,6Z" />
-                          <path class="cls-1"
-                            d="M25,12.24H16.65a.51.51,0,0,1-.53-.5.52.52,0,0,1,.53-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,12.24Z" />
-                          <path class="cls-1"
-                            d="M25,9.18H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,9.18Z" />
-                          <path class="cls-1"
-                            d="M25,15.45H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,15.45Z" />
-                          <path class="cls-1"
-                            d="M25,6h-4.2a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,6Z" />
-                          <path class="cls-1"
-                            d="M13.5,12.24H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5h2.1a.52.52,0,0,1,.53.5A.51.51,0,0,1,13.5,12.24Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Order History</span></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="favorites.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.89 27.48">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1" d="M24.84,27.35,8.4,27.46l.2,0H23.79A5,5,0,0,0,25,27.33Z" />
+                  <path class="cls-1"
+                    d="M27.84,0H8.6a1,1,0,0,0-1,1V18.81H1.05a1,1,0,0,0-.79.34A1,1,0,0,0,0,20c.88,5.87,5,7.4,5.16,7.46a1,1,0,0,0,.37.07h0l2.84,0h0l16.44-.11.18,0a.74.74,0,0,0,.19,0,4.89,4.89,0,0,0,3.68-4.66V1A1,1,0,0,0,27.84,0ZM7.55,25.47H5.77a6.86,6.86,0,0,1-3.44-4.67H7.55Zm2.1-4.66H20.27a8.52,8.52,0,0,0,1.41,4.56l-12,.08Zm17.14,1.81a2.85,2.85,0,0,1-1.94,2.67c-2.79-1-2.48-5.36-2.47-5.41a1,1,0,0,0-.28-.75,1,1,0,0,0-.77-.32H9.65V2H26.79Z" />
+                  <path class="cls-1"
+                    d="M17.7,6H11.4a.51.51,0,0,1-.52-.5A.51.51,0,0,1,11.4,5h6.3a.51.51,0,0,1,.52.5A.51.51,0,0,1,17.7,6Z" />
+                  <path class="cls-1"
+                    d="M25,12.24H16.65a.51.51,0,0,1-.53-.5.52.52,0,0,1,.53-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,12.24Z" />
+                  <path class="cls-1"
+                    d="M25,9.18H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,9.18Z" />
+                  <path class="cls-1"
+                    d="M25,15.45H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,15.45Z" />
+                  <path class="cls-1"
+                    d="M25,6h-4.2a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5H25a.51.51,0,0,1,.52.5A.51.51,0,0,1,25,6Z" />
+                  <path class="cls-1"
+                    d="M13.5,12.24H11.4a.51.51,0,0,1-.52-.5.51.51,0,0,1,.52-.5h2.1a.52.52,0,0,1,.53.5A.51.51,0,0,1,13.5,12.24Z" />
+                </g>
+              </g>
+            </svg>
+            Order History</a></li>
+        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M14.3,24.36a1,1,0,0,1-.68-.27L2.33,13.45a7.85,7.85,0,0,1,8.15-13,7.93,7.93,0,0,1,3.73,2.78A7.86,7.86,0,1,1,26,13.58l-.08.07L15,24.08A1,1,0,0,1,14.3,24.36ZM7.86,2A5.85,5.85,0,0,0,3.74,12l.09.09L14.3,22l10.28-9.85.08-.06A6,6,0,0,0,26.1,9.82a5.86,5.86,0,0,0-11-4.15,1,1,0,0,1-.92.63h0a1,1,0,0,1-.93-.63A5.89,5.89,0,0,0,9.81,2.34,5.75,5.75,0,0,0,7.86,2Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Favorites</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-address.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M14.3,24.36a1,1,0,0,1-.68-.27L2.33,13.45a7.85,7.85,0,0,1,8.15-13,7.93,7.93,0,0,1,3.73,2.78A7.86,7.86,0,1,1,26,13.58l-.08.07L15,24.08A1,1,0,0,1,14.3,24.36ZM7.86,2A5.85,5.85,0,0,0,3.74,12l.09.09L14.3,22l10.28-9.85.08-.06A6,6,0,0,0,26.1,9.82a5.86,5.86,0,0,0-11-4.15,1,1,0,0,1-.92.63h0a1,1,0,0,1-.93-.63A5.89,5.89,0,0,0,9.81,2.34,5.75,5.75,0,0,0,7.86,2Z" />
+                </g>
+              </g>
+            </svg>
+            Favorites</span></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-address.html">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.64 30.05">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M20.3,30.05H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H20.3a4,4,0,0,1,4,4V26A4,4,0,0,1,20.3,30.05ZM4,2A2,2,0,0,0,2,4V26a2,2,0,0,0,2,2H20.3a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" />
-                          <path class="cls-1"
-                            d="M26.64,11.87H24.2a1,1,0,0,1,0-2h1.44V8.31H24.2a1,1,0,1,1,0-2h2.44a1,1,0,0,1,1,1v3.56A1,1,0,0,1,26.64,11.87Z" />
-                          <path class="cls-1"
-                            d="M26.64,18.46H24.2a1,1,0,1,1,0-2h1.44V14.9H24.2a1,1,0,0,1,0-2h2.44a1,1,0,0,1,1,1v3.56A1,1,0,0,1,26.64,18.46Z" />
-                          <path class="cls-1"
-                            d="M26.64,25.05H24.2a1,1,0,0,1,0-2h1.44V21.5H24.2a1,1,0,0,1,0-2h2.44a1,1,0,0,1,1,1v3.55A1,1,0,0,1,26.64,25.05Z" />
-                          <path class="cls-1"
-                            d="M12.16,15a4.34,4.34,0,1,1,4.34-4.34A4.35,4.35,0,0,1,12.16,15Zm0-6.68a2.34,2.34,0,1,0,2.34,2.34A2.34,2.34,0,0,0,12.16,8.31Z" />
-                          <path class="cls-1"
-                            d="M18.52,23.89H5.8a1,1,0,0,1-1-1,7.07,7.07,0,0,1,6.84-7.09c.35,0,.69,0,1,0a7.07,7.07,0,0,1,6.84,7.09A1,1,0,0,1,18.52,23.89Zm-11.63-2H17.43a5.08,5.08,0,0,0-4.82-4.09q-.45,0-.9,0A5.08,5.08,0,0,0,6.89,21.89Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    My Addresses</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-information.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 27.62">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M12.54,14.73A7.37,7.37,0,1,1,19.9,7.36,7.37,7.37,0,0,1,12.54,14.73ZM12.54,2A5.37,5.37,0,1,0,17.9,7.36,5.37,5.37,0,0,0,12.54,2Z" />
-                          <path class="cls-1"
-                            d="M23.85,27.62a1,1,0,0,1-1-1V22.48A3.8,3.8,0,0,0,19,18.74H5.85A3.8,3.8,0,0,0,2,22.48v4.14a1,1,0,0,1-2,0V22.48a5.8,5.8,0,0,1,5.85-5.74H19a5.8,5.8,0,0,1,5.85,5.74v4.14A1,1,0,0,1,23.85,27.62Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Account Information</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="store-credit.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.37 28.64">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M21.37,5.78,14.2,0,6.62,5.78H0V28.64H28.37V5.78ZM13.49,26.64H9.56V15.46h3.93Zm4.93,0H14.49V15.46h3.93Zm8,0H20.42V13.46H7.56V26.64H2V7.78H7.3l6.86-5.24,6.5,5.24h5.71Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Store Credit</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="gift-card.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.64 30.05">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M20.3,30.05H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H20.3a4,4,0,0,1,4,4V26A4,4,0,0,1,20.3,30.05ZM4,2A2,2,0,0,0,2,4V26a2,2,0,0,0,2,2H20.3a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" />
+                  <path class="cls-1"
+                    d="M26.64,11.87H24.2a1,1,0,0,1,0-2h1.44V8.31H24.2a1,1,0,1,1,0-2h2.44a1,1,0,0,1,1,1v3.56A1,1,0,0,1,26.64,11.87Z" />
+                  <path class="cls-1"
+                    d="M26.64,18.46H24.2a1,1,0,1,1,0-2h1.44V14.9H24.2a1,1,0,0,1,0-2h2.44a1,1,0,0,1,1,1v3.56A1,1,0,0,1,26.64,18.46Z" />
+                  <path class="cls-1"
+                    d="M26.64,25.05H24.2a1,1,0,0,1,0-2h1.44V21.5H24.2a1,1,0,0,1,0-2h2.44a1,1,0,0,1,1,1v3.55A1,1,0,0,1,26.64,25.05Z" />
+                  <path class="cls-1"
+                    d="M12.16,15a4.34,4.34,0,1,1,4.34-4.34A4.35,4.35,0,0,1,12.16,15Zm0-6.68a2.34,2.34,0,1,0,2.34,2.34A2.34,2.34,0,0,0,12.16,8.31Z" />
+                  <path class="cls-1"
+                    d="M18.52,23.89H5.8a1,1,0,0,1-1-1,7.07,7.07,0,0,1,6.84-7.09c.35,0,.69,0,1,0a7.07,7.07,0,0,1,6.84,7.09A1,1,0,0,1,18.52,23.89Zm-11.63-2H17.43a5.08,5.08,0,0,0-4.82-4.09q-.45,0-.9,0A5.08,5.08,0,0,0,6.89,21.89Z" />
+                </g>
+              </g>
+            </svg>
+            My Addresses</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-information.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 27.62">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M12.54,14.73A7.37,7.37,0,1,1,19.9,7.36,7.37,7.37,0,0,1,12.54,14.73ZM12.54,2A5.37,5.37,0,1,0,17.9,7.36,5.37,5.37,0,0,0,12.54,2Z" />
+                  <path class="cls-1"
+                    d="M23.85,27.62a1,1,0,0,1-1-1V22.48A3.8,3.8,0,0,0,19,18.74H5.85A3.8,3.8,0,0,0,2,22.48v4.14a1,1,0,0,1-2,0V22.48a5.8,5.8,0,0,1,5.85-5.74H19a5.8,5.8,0,0,1,5.85,5.74v4.14A1,1,0,0,1,23.85,27.62Z" />
+                </g>
+              </g>
+            </svg>
+            Account Information</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="store-credit.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.37 28.64">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M21.37,5.78,14.2,0,6.62,5.78H0V28.64H28.37V5.78ZM13.49,26.64H9.56V15.46h3.93Zm4.93,0H14.49V15.46h3.93Zm8,0H20.42V13.46H7.56V26.64H2V7.78H7.3l6.86-5.24,6.5,5.24h5.71Z" />
+                </g>
+              </g>
+            </svg>
+            Store Credit</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.96 21.32">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1" d="M7.66,7.15V8.81h0V6.76A1.6,1.6,0,0,1,7.66,7.15Z" />
-                          <path class="cls-1" d="M7.66,8.77v0H6a1.42,1.42,0,0,1-.36,0Z" />
-                          <path class="cls-1" d="M10.84,8.77a1.5,1.5,0,0,1-.37,0H8.81v0Z" />
-                          <path class="cls-1"
-                            d="M24.24,0H3.72A3.73,3.73,0,0,0,0,3.73V17.6a3.73,3.73,0,0,0,3.72,3.72H24.24A3.73,3.73,0,0,0,28,17.6V3.73A3.73,3.73,0,0,0,24.24,0ZM2,3.73A1.73,1.73,0,0,1,3.72,2H7.61V5.05A2.61,2.61,0,0,0,6,4.5,2.66,2.66,0,0,0,3.34,7.15,2.63,2.63,0,0,0,3.9,8.77H2ZM7.61,19.32H3.72A1.72,1.72,0,0,1,2,17.6V10.77H6.77a20.74,20.74,0,0,1-2.18,1.6l.54.84a19.5,19.5,0,0,0,2.48-1.85Zm0-10.51H6a1.42,1.42,0,0,1-.36,0A1.65,1.65,0,0,1,6,5.5,1.65,1.65,0,0,1,7.61,6.76a1.6,1.6,0,0,1,0,.39ZM26,17.6a1.72,1.72,0,0,1-1.72,1.72H8.61v-7.7A14.14,14.14,0,0,0,11,13.23l.48-.88a16.7,16.7,0,0,1-2.39-1.58H26ZM8.81,8.81V7.15a1.66,1.66,0,1,1,2,1.62,1.5,1.5,0,0,1-.37,0ZM26,8.77H12.57a2.63,2.63,0,0,0,.56-1.62A2.66,2.66,0,0,0,8.61,5.26V2H24.24A1.73,1.73,0,0,1,26,3.73Z" />
-                          <path class="cls-1"
-                            d="M22.78,12.44v3.42a.36.36,0,0,1-.36.36H13.11a.36.36,0,0,1-.36-.36v-.71a.36.36,0,0,1,.36-.36h3.12a.36.36,0,0,0,.36-.36v-2a.36.36,0,0,1,.36-.36h5.47A.36.36,0,0,1,22.78,12.44Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Gift Card</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="reward-points.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M14,27.91A14,14,0,1,1,27.91,14,14,14,0,0,1,14,27.91ZM14,2a12,12,0,1,0,12,12A12,12,0,0,0,14,2Z" />
-                          <path class="cls-1"
-                            d="M14,23.63A9.68,9.68,0,1,1,23.63,14,9.69,9.69,0,0,1,14,23.63ZM14,6.28A7.68,7.68,0,1,0,21.63,14,7.68,7.68,0,0,0,14,6.28Z" />
-                          <path class="cls-1" d="M11.09,18.94V9.7h6.22v1.57H12.89v2.38h3.67v1.46H12.89v3.83Z" />
-                          <path class="cls-1"
-                            d="M13.14,19.19h-2.3V9.45h6.72v2.07H13.14V13.4h3.67v2H13.14Zm-1.8-.5h1.3V14.86h3.67v-1H12.64V11h4.42V10H11.34Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Reward Points</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="newsletter.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 19.27">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M24.24,0H2.69A2.69,2.69,0,0,0,0,2.68V16.59a2.69,2.69,0,0,0,2.69,2.68H24.24a2.68,2.68,0,0,0,2.68-2.68V2.68A2.68,2.68,0,0,0,24.24,0Zm-.71,2L14.76,8.67a1.82,1.82,0,0,1-2.19,0L3.79,2Zm1.39,14.59a.68.68,0,0,1-.68.68H2.69A.68.68,0,0,1,2,16.59V3.15l9.36,7.11a3.8,3.8,0,0,0,4.61,0l9-6.81Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Newsletters</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="invitation.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 31.32">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M24.68,12.09V7.49L17.87.13,2.73,0V12.12l0-.07A2.69,2.69,0,0,0,0,14.73V28.64a2.69,2.69,0,0,0,2.69,2.68H24.24a2.68,2.68,0,0,0,2.68-2.68V14.73A2.68,2.68,0,0,0,24.68,12.09ZM18.43,3.68l3.23,3.49H18.43ZM4.73,2l11.7.1V9.17h6.25V15l-7.19,5.15-.73.56a2.26,2.26,0,0,1-.26.16h0l-1,.73L4.73,15.28ZM24.92,28.64a.68.68,0,0,1-.68.68H2.69A.68.68,0,0,1,2,28.64V15.2l.73.55,8.63,6.56a3.8,3.8,0,0,0,4.17.29l1.09-.78,8.06-6.14.24-.18Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Invitations</a></li>
-                <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="../index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.12 25.04">
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_3" data-name="Layer 3">
-                          <path class="cls-1"
-                            d="M11,25H3.84C1.72,25,0,23.05,0,20.6V4.44C0,2,1.72,0,3.84,0H11a1,1,0,0,1,0,2H3.84C2.84,2,2,3.12,2,4.44V20.6C2,21.93,2.84,23,3.84,23H11a1,1,0,0,1,0,2Z" />
-                          <path class="cls-1"
-                            d="M24.12,12.92a1,1,0,0,1-.31.73l-7.53,7a1,1,0,1,1-1.37-1.46l5.67-5.28H8.16a1,1,0,0,1,0-2H20.61l-5.7-5.36a1,1,0,0,1,0-1.42,1,1,0,0,1,1.41,0l7.53,7.09A1,1,0,0,1,24.12,12.92Z" />
-                        </g>
-                      </g>
-                    </svg>
-                    Log Out</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- SIDEBAR END HERE -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.96 21.32">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1" d="M7.66,7.15V8.81h0V6.76A1.6,1.6,0,0,1,7.66,7.15Z" />
+                  <path class="cls-1" d="M7.66,8.77v0H6a1.42,1.42,0,0,1-.36,0Z" />
+                  <path class="cls-1" d="M10.84,8.77a1.5,1.5,0,0,1-.37,0H8.81v0Z" />
+                  <path class="cls-1"
+                    d="M24.24,0H3.72A3.73,3.73,0,0,0,0,3.73V17.6a3.73,3.73,0,0,0,3.72,3.72H24.24A3.73,3.73,0,0,0,28,17.6V3.73A3.73,3.73,0,0,0,24.24,0ZM2,3.73A1.73,1.73,0,0,1,3.72,2H7.61V5.05A2.61,2.61,0,0,0,6,4.5,2.66,2.66,0,0,0,3.34,7.15,2.63,2.63,0,0,0,3.9,8.77H2ZM7.61,19.32H3.72A1.72,1.72,0,0,1,2,17.6V10.77H6.77a20.74,20.74,0,0,1-2.18,1.6l.54.84a19.5,19.5,0,0,0,2.48-1.85Zm0-10.51H6a1.42,1.42,0,0,1-.36,0A1.65,1.65,0,0,1,6,5.5,1.65,1.65,0,0,1,7.61,6.76a1.6,1.6,0,0,1,0,.39ZM26,17.6a1.72,1.72,0,0,1-1.72,1.72H8.61v-7.7A14.14,14.14,0,0,0,11,13.23l.48-.88a16.7,16.7,0,0,1-2.39-1.58H26ZM8.81,8.81V7.15a1.66,1.66,0,1,1,2,1.62,1.5,1.5,0,0,1-.37,0ZM26,8.77H12.57a2.63,2.63,0,0,0,.56-1.62A2.66,2.66,0,0,0,8.61,5.26V2H24.24A1.73,1.73,0,0,1,26,3.73Z" />
+                  <path class="cls-1"
+                    d="M22.78,12.44v3.42a.36.36,0,0,1-.36.36H13.11a.36.36,0,0,1-.36-.36v-.71a.36.36,0,0,1,.36-.36h3.12a.36.36,0,0,0,.36-.36v-2a.36.36,0,0,1,.36-.36h5.47A.36.36,0,0,1,22.78,12.44Z" />
+                </g>
+              </g>
+            </svg>
+            Gift Card</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="reward-points.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M14,27.91A14,14,0,1,1,27.91,14,14,14,0,0,1,14,27.91ZM14,2a12,12,0,1,0,12,12A12,12,0,0,0,14,2Z" />
+                  <path class="cls-1"
+                    d="M14,23.63A9.68,9.68,0,1,1,23.63,14,9.69,9.69,0,0,1,14,23.63ZM14,6.28A7.68,7.68,0,1,0,21.63,14,7.68,7.68,0,0,0,14,6.28Z" />
+                  <path class="cls-1" d="M11.09,18.94V9.7h6.22v1.57H12.89v2.38h3.67v1.46H12.89v3.83Z" />
+                  <path class="cls-1"
+                    d="M13.14,19.19h-2.3V9.45h6.72v2.07H13.14V13.4h3.67v2H13.14Zm-1.8-.5h1.3V14.86h3.67v-1H12.64V11h4.42V10H11.34Z" />
+                </g>
+              </g>
+            </svg>
+            Reward Points</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="newsletter.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 19.27">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M24.24,0H2.69A2.69,2.69,0,0,0,0,2.68V16.59a2.69,2.69,0,0,0,2.69,2.68H24.24a2.68,2.68,0,0,0,2.68-2.68V2.68A2.68,2.68,0,0,0,24.24,0Zm-.71,2L14.76,8.67a1.82,1.82,0,0,1-2.19,0L3.79,2Zm1.39,14.59a.68.68,0,0,1-.68.68H2.69A.68.68,0,0,1,2,16.59V3.15l9.36,7.11a3.8,3.8,0,0,0,4.61,0l9-6.81Z" />
+                </g>
+              </g>
+            </svg>
+            Newsletters</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="invitation.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.92 31.32">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M24.68,12.09V7.49L17.87.13,2.73,0V12.12l0-.07A2.69,2.69,0,0,0,0,14.73V28.64a2.69,2.69,0,0,0,2.69,2.68H24.24a2.68,2.68,0,0,0,2.68-2.68V14.73A2.68,2.68,0,0,0,24.68,12.09ZM18.43,3.68l3.23,3.49H18.43ZM4.73,2l11.7.1V9.17h6.25V15l-7.19,5.15-.73.56a2.26,2.26,0,0,1-.26.16h0l-1,.73L4.73,15.28ZM24.92,28.64a.68.68,0,0,1-.68.68H2.69A.68.68,0,0,1,2,28.64V15.2l.73.55,8.63,6.56a3.8,3.8,0,0,0,4.17.29l1.09-.78,8.06-6.14.24-.18Z" />
+                </g>
+              </g>
+            </svg>
+            Invitations</a></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.12 25.04">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_3" data-name="Layer 3">
+                  <path class="cls-1"
+                    d="M11,25H3.84C1.72,25,0,23.05,0,20.6V4.44C0,2,1.72,0,3.84,0H11a1,1,0,0,1,0,2H3.84C2.84,2,2,3.12,2,4.44V20.6C2,21.93,2.84,23,3.84,23H11a1,1,0,0,1,0,2Z" />
+                  <path class="cls-1"
+                    d="M24.12,12.92a1,1,0,0,1-.31.73l-7.53,7a1,1,0,1,1-1.37-1.46l5.67-5.28H8.16a1,1,0,0,1,0-2H20.61l-5.7-5.36a1,1,0,0,1,0-1.42,1,1,0,0,1,1.41,0l7.53,7.09A1,1,0,0,1,24.12,12.92Z" />
+                </g>
+              </g>
+            </svg>
+            Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- SIDEBAR END HERE -->
         </div>
       </div>
     </div>
@@ -7602,6 +7588,48 @@
     </div>
   </div>
   <!-- Footer end -->
+   <!-- Modal FAVORATE LIST -->
+   <div class="modal fade fb-modal__fav-list" id="fav-list" data-bs-backdrop="static" data-bs-keyboard="false"
+   tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+     <div class="modal-content fb-modal__fav-list-content">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <div class="modal-body ">
+
+         <div class="fb-modal__fav-list-head">
+           <h2>
+             Create a New Favorite List
+             </h1>
+         </div>
+         <div class="fb-modal__fav-list-body">
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Favorite List Name
+             </label>
+             <div class="fb-input__text-wrap">
+               <input type="email" class="fb-input__text" placeholder="Email address">
+             </div>
+           </div>
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Description (optional)
+             </label>
+             <div class="fb-input__text-wrap">
+               <textarea class="fb-modal__fav-list-textarea" ></textarea>
+             </div>
+           </div>
+         </div>
+
+         <footer class="modal-footer fb-modal__fav-list-footer">
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">SAVE</button>
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+
+         </footer>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Modal FAVORATE LIST END -->
   <!-- body content end -->
 
   <!-- scripts -->
