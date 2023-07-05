@@ -196,6 +196,27 @@
           height: auto;
           opacity: 1;
           min-height: 400px;
+          &.empty {
+            .fb-cart_popup {
+              display: none;
+            }
+            .fb-empty-out {
+              .fb-cart_popup {
+                display: block;
+              }
+            }
+          }
+          .fb-empty-out {
+            .fb-empty__icon {
+              width: 75px;
+            }
+            .fb-empty__text {
+              font-size: 11px;
+            }
+            .fb-cart_popup {
+              display: none;
+            }
+          }
         }
 
         .fb-header__action-icon {
