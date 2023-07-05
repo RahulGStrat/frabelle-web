@@ -207,6 +207,10 @@
             }
           }
           .fb-empty-out {
+            &__close {
+              display: block;
+              text-align: right;
+            }
             .fb-empty__icon {
               width: 75px;
             }
@@ -215,6 +219,20 @@
             }
             .fb-cart_popup {
               display: none;
+            }
+            .fb-cart_popup {
+              .fb-close {
+                display: flex;
+                justify-content: flex-end;
+                a {
+                  width: 15px;
+                  height: 15px;
+                  svg {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
             }
           }
         }
