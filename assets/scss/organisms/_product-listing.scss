@@ -5,12 +5,19 @@
   }
   .fb-sidebar{
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+    padding-right: 24px;
   }
   .fb-prdct-list-outer{
     flex: 1;
     &__head{
       flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    &__grid{
+      img{
+        width: 100%;
+      }
     }
   }
   .fb-prdct-list-outer__filter{
