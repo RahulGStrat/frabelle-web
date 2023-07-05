@@ -7299,412 +7299,459 @@
       <!-- breadcrumb end -->
       <div class="fb-cartpage__cnt">
         <h2 class="fb-cartpage__title">Shopping Cart</h2>
-        <!-- msg -->
-        <div class="fb-carttable__msgbox fb-carttable__msgbox--top">
-          <img src="../assets/images/close.svg" alt="">
-          <p>Some of the products are out of stock.</p>
-        </div>
-        <!--  -->
-        <div class="fb-checkout__outer fb-cartpage__outer">
-          <div class="fb-checkout__left">
-            <!-- cart table start -->
-            <div class="fb-carttable">
-              <div class="fb-carttable__outer">
-                <ul class="fb-carttable__head">
-                  <li class="fb-carttable__headitem product">PRODUCT</li>
-                  <li class="fb-carttable__headitem">PRICE</li>
-                  <li class="fb-carttable__headitem">QTY</li>
-                  <li class="fb-carttable__headitem">SUBTOTAL</li>
-                  <li class="fb-carttable__headitem blank"></li>
-                </ul>
-                <!-- tile 1 -->
-                <div class="fb-carttable__tile">
-                  <div class="fb-carttable__item">
-                    <a href="#" class="fb-carttable__itemcnt logo">
-                      <img src="../assets/images/cart-small-img.webp" alt="">
-                    </a>
-                    <div class="fb-carttable__itemwrap">
-                      <div class="fb-carttable__itemcnt prdct ">
-                        <a href="#">Kasim Cubes 2x2 Inches</a>
-                        <p class="fb-carttable__weight">1kg</p>
-                        <div class="fb-carttable__msgbox">
-                          <img src="../assets/images/close.svg" alt="">
-                          <p>This product is out of stock.</p>
+        <div class="fb-cart-out">
+          <!-- empty cart start -->
+          <div class="fb-empty">
+            <div class="fb-empty__inner-empty">
+              <div class="fb-empty__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.94 31.46">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #dadce3;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_3" data-name="Layer 3">
+                      <path class="cls-1"
+                        d="M25.21,11a.48.48,0,0,1-.37-.17l-.27-.3a1.07,1.07,0,0,0-.81-.37h-17a.5.5,0,0,1,0-1h17a2.1,2.1,0,0,1,1.56.71l.27.3a.51.51,0,0,1-.05.71A.5.5,0,0,1,25.21,11Z" />
+                      <path class="cls-1"
+                        d="M7.05,13.07a.49.49,0,0,1-.49-.45L6.11,8.27A1.86,1.86,0,0,0,4.23,6.73H.5a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5H4.24A2.85,2.85,0,0,1,7.1,8.15l.45,4.37a.49.49,0,0,1-.44.54Z" />
+                      <path class="cls-1"
+                        d="M23.86,25.28H11.27a3.55,3.55,0,0,1-3.52-3.06l-1-7.5a.5.5,0,0,1,1-.13l1,7.5a2.54,2.54,0,0,0,2.53,2.19H23.86a.5.5,0,0,1,.5.5A.5.5,0,0,1,23.86,25.28Z" />
+                      <path class="cls-1"
+                        d="M21.87,20.92H8.18a.5.5,0,0,1,0-1H21.87a2.42,2.42,0,0,0,2.47-2.05l.38-3.27a.5.5,0,1,1,1,.12L25.33,18A3.41,3.41,0,0,1,21.87,20.92Z" />
+                      <path class="cls-1"
+                        d="M25.44,13.28a.5.5,0,0,1-.5-.5v-.33a.5.5,0,0,1,.5-.5.51.51,0,0,1,.5.5v.33A.5.5,0,0,1,25.44,13.28Z" />
+                      <path class="cls-1"
+                        d="M12.14,31.46A2.48,2.48,0,1,1,14.61,29,2.48,2.48,0,0,1,12.14,31.46Zm0-4A1.48,1.48,0,1,0,13.61,29,1.48,1.48,0,0,0,12.14,27.5Z" />
+                      <path class="cls-1"
+                        d="M20.28,31.46A2.48,2.48,0,1,1,22.76,29,2.48,2.48,0,0,1,20.28,31.46Zm0-4A1.48,1.48,0,1,0,21.76,29,1.48,1.48,0,0,0,20.28,27.5Z" />
+                      <path class="cls-1"
+                        d="M16,5.13a.51.51,0,0,1-.5-.5V.5A.5.5,0,0,1,16,0a.5.5,0,0,1,.5.5V4.63A.5.5,0,0,1,16,5.13Z" />
+                      <path class="cls-1"
+                        d="M19.53,6.35a.51.51,0,0,1-.36-.15.51.51,0,0,1,0-.71l2.92-2.92a.5.5,0,1,1,.71.71L19.88,6.2A.5.5,0,0,1,19.53,6.35Z" />
+                      <path class="cls-1"
+                        d="M12.42,6.35a.51.51,0,0,1-.36-.15L9.15,3.28a.5.5,0,0,1,0-.71.5.5,0,0,1,.7,0l2.92,2.92a.5.5,0,0,1,0,.71A.49.49,0,0,1,12.42,6.35Z" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p class="fb-empty__text">You have no items in your shopping cart.</p>
+              <div class="fb-empty__cta"><button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">CONTINUE
+                  SHOPPING</button>
+              </div>
+            </div>
+          </div>
+          <!-- empty cart end -->
+          <!-- msg -->
+          <div class="fb-carttable__msgbox fb-carttable__msgbox--top">
+            <img src="../assets/images/close.svg" alt="">
+            <p>Some of the products are out of stock.</p>
+          </div>
+          <!--  -->
+          <div class="fb-checkout__outer fb-cartpage__outer">
+            <div class="fb-checkout__left">
+              <!-- cart table start -->
+              <div class="fb-carttable">
+                <div class="fb-carttable__outer">
+                  <ul class="fb-carttable__head">
+                    <li class="fb-carttable__headitem product">PRODUCT</li>
+                    <li class="fb-carttable__headitem">PRICE</li>
+                    <li class="fb-carttable__headitem">QTY</li>
+                    <li class="fb-carttable__headitem">SUBTOTAL</li>
+                    <li class="fb-carttable__headitem blank"></li>
+                  </ul>
+                  <!-- tile 1 -->
+                  <div class="fb-carttable__tile">
+                    <div class="fb-carttable__item">
+                      <a href="#" class="fb-carttable__itemcnt logo">
+                        <img src="../assets/images/cart-small-img.webp" alt="">
+                      </a>
+                      <div class="fb-carttable__itemwrap">
+                        <div class="fb-carttable__itemcnt prdct ">
+                          <a href="#">Kasim Cubes 2x2 Inches</a>
+                          <p class="fb-carttable__weight">1kg</p>
+                          <div class="fb-carttable__msgbox">
+                            <img src="../assets/images/close.svg" alt="">
+                            <p>This product is out of stock.</p>
+                          </div>
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Price</p>
+                          <p>₱374.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt select">
+                          <p class="fb-carttable__label">Qty</p>
+                          <!-- select start -->
+                          <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">Option one</option>
+                            <option value="" class="fb-select__option">Option two</option>
+                            <option value="" class="fb-select__option">Option three</option>
+                            <option value="" class="fb-select__option">Option four</option>
+                            <option value="" class="fb-select__option">Option five</option>
+                            <option value="" class="fb-select__option">Option six</option>
+                          </select>
+                          <!-- select end -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Subtotal</p>
+                          <p>₱2,992.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt dlt">
+                          <a href="#" class="fb-carttable_dlticon">
+                            <div class="fb-carttable__dltimg">
+                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
+                                  fill="#E3E3E5" />
+                              </svg>
+                            </div>
+                            <p class="fb-carttable__label">Delete</p>
+                          </a>
                         </div>
                       </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Price</p>
-                        <p>₱374.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt select">
-                        <p class="fb-carttable__label">Qty</p>
-                        <!-- select start -->
-                        <select name="" id="" class="fb-select">
-                          <option value="" class="fb-select__option">Option one</option>
-                          <option value="" class="fb-select__option">Option two</option>
-                          <option value="" class="fb-select__option">Option three</option>
-                          <option value="" class="fb-select__option">Option four</option>
-                          <option value="" class="fb-select__option">Option five</option>
-                          <option value="" class="fb-select__option">Option six</option>
-                        </select>
-                        <!-- select end -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Subtotal</p>
-                        <p>₱2,992.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt dlt">
-                        <a href="#" class="fb-carttable_dlticon">
-                          <div class="fb-carttable__dltimg">
-                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
-                                fill="#E3E3E5" />
-                            </svg>
-                          </div>
-                          <p class="fb-carttable__label">Delete</p>
-                        </a>
-                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- tile 2 -->
-                <div class="fb-carttable__tile">
-                  <div class="fb-carttable__item">
-                    <a href="#" class="fb-carttable__itemcnt logo">
-                      <img src="../assets/images/cart-small-img.webp" alt="">
-                    </a>
-                    <div class="fb-carttable__itemwrap">
-                      <div class="fb-carttable__itemcnt prdct ">
-                        <a href="#">Kasim Cubes 2x2 Inches</a>
-                        <p class="fb-carttable__weight">1kg</p>
-                        <!-- <div class="fb-carttable__msgbox">
+                  <!-- tile 2 -->
+                  <div class="fb-carttable__tile">
+                    <div class="fb-carttable__item">
+                      <a href="#" class="fb-carttable__itemcnt logo">
+                        <img src="../assets/images/cart-small-img.webp" alt="">
+                      </a>
+                      <div class="fb-carttable__itemwrap">
+                        <div class="fb-carttable__itemcnt prdct ">
+                          <a href="#">Kasim Cubes 2x2 Inches</a>
+                          <p class="fb-carttable__weight">1kg</p>
+                          <!-- <div class="fb-carttable__msgbox">
                                       <img src="../assets/images/close.svg" alt="">
                                       <p>This product is out of stock.</p>
                                   </div> -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Price</p>
-                        <p>₱374.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt select">
-                        <p class="fb-carttable__label">Qty</p>
-                        <!-- select start -->
-                        <select name="" id="" class="fb-select">
-                          <option value="" class="fb-select__option">Option one</option>
-                          <option value="" class="fb-select__option">Option two</option>
-                          <option value="" class="fb-select__option">Option three</option>
-                          <option value="" class="fb-select__option">Option four</option>
-                          <option value="" class="fb-select__option">Option five</option>
-                          <option value="" class="fb-select__option">Option six</option>
-                        </select>
-                        <!-- select end -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Subtotal</p>
-                        <p>₱2,992.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt dlt">
-                        <a href="#" class="fb-carttable_dlticon">
-                          <div class="fb-carttable__dltimg">
-                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
-                                fill="#E3E3E5" />
-                            </svg>
-                          </div>
-                          <p class="fb-carttable__label">Delete</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- tile 2 -->
-                <div class="fb-carttable__tile">
-                  <div class="fb-carttable__item">
-                    <a href="#" class="fb-carttable__itemcnt logo">
-                      <img src="../assets/images/cart-small-img.webp" alt="">
-                    </a>
-                    <div class="fb-carttable__itemwrap">
-                      <div class="fb-carttable__itemcnt prdct ">
-                        <a href="#">Kasim Cubes 2x2 Inches</a>
-                        <p class="fb-carttable__weight">1kg</p>
-                        <!-- <div class="fb-carttable__msgbox">
-                                      <img src="../assets/images/close.svg" alt="">
-                                      <p>This product is out of stock.</p>
-                                  </div> -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Price</p>
-                        <p>₱374.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt select">
-                        <p class="fb-carttable__label">Qty</p>
-                        <!-- select start -->
-                        <select name="" id="" class="fb-select">
-                          <option value="" class="fb-select__option">Option one</option>
-                          <option value="" class="fb-select__option">Option two</option>
-                          <option value="" class="fb-select__option">Option three</option>
-                          <option value="" class="fb-select__option">Option four</option>
-                          <option value="" class="fb-select__option">Option five</option>
-                          <option value="" class="fb-select__option">Option six</option>
-                        </select>
-                        <!-- select end -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Subtotal</p>
-                        <p>₱2,992.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt dlt">
-                        <a href="#" class="fb-carttable_dlticon">
-                          <div class="fb-carttable__dltimg">
-                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
-                                fill="#E3E3E5" />
-                            </svg>
-                          </div>
-                          <p class="fb-carttable__label">Delete</p>
-                        </a>
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Price</p>
+                          <p>₱374.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt select">
+                          <p class="fb-carttable__label">Qty</p>
+                          <!-- select start -->
+                          <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">Option one</option>
+                            <option value="" class="fb-select__option">Option two</option>
+                            <option value="" class="fb-select__option">Option three</option>
+                            <option value="" class="fb-select__option">Option four</option>
+                            <option value="" class="fb-select__option">Option five</option>
+                            <option value="" class="fb-select__option">Option six</option>
+                          </select>
+                          <!-- select end -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Subtotal</p>
+                          <p>₱2,992.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt dlt">
+                          <a href="#" class="fb-carttable_dlticon">
+                            <div class="fb-carttable__dltimg">
+                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
+                                  fill="#E3E3E5" />
+                              </svg>
+                            </div>
+                            <p class="fb-carttable__label">Delete</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- tile 3 -->
-                <div class="fb-carttable__tile">
-                  <div class="fb-carttable__item">
-                    <a href="#" class="fb-carttable__itemcnt logo">
-                      <img src="../assets/images/cart-small-img.webp" alt="">
-                    </a>
-                    <div class="fb-carttable__itemwrap">
-                      <div class="fb-carttable__itemcnt prdct ">
-                        <a href="#">Kasim Cubes 2x2 Inches</a>
-                        <p class="fb-carttable__weight">1kg</p>
-                        <!-- <div class="fb-carttable__msgbox">
+                  <!-- tile 2 -->
+                  <div class="fb-carttable__tile">
+                    <div class="fb-carttable__item">
+                      <a href="#" class="fb-carttable__itemcnt logo">
+                        <img src="../assets/images/cart-small-img.webp" alt="">
+                      </a>
+                      <div class="fb-carttable__itemwrap">
+                        <div class="fb-carttable__itemcnt prdct ">
+                          <a href="#">Kasim Cubes 2x2 Inches</a>
+                          <p class="fb-carttable__weight">1kg</p>
+                          <!-- <div class="fb-carttable__msgbox">
                                       <img src="../assets/images/close.svg" alt="">
                                       <p>This product is out of stock.</p>
                                   </div> -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Price</p>
-                        <p>₱374.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt select">
-                        <p class="fb-carttable__label">Qty</p>
-                        <!-- select start -->
-                        <select name="" id="" class="fb-select">
-                          <option value="" class="fb-select__option">Option one</option>
-                          <option value="" class="fb-select__option">Option two</option>
-                          <option value="" class="fb-select__option">Option three</option>
-                          <option value="" class="fb-select__option">Option four</option>
-                          <option value="" class="fb-select__option">Option five</option>
-                          <option value="" class="fb-select__option">Option six</option>
-                        </select>
-                        <!-- select end -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Subtotal</p>
-                        <p>₱2,992.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt dlt">
-                        <a href="#" class="fb-carttable_dlticon">
-                          <div class="fb-carttable__dltimg">
-                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
-                                fill="#E3E3E5" />
-                            </svg>
-                          </div>
-                          <p class="fb-carttable__label">Delete</p>
-                        </a>
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Price</p>
+                          <p>₱374.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt select">
+                          <p class="fb-carttable__label">Qty</p>
+                          <!-- select start -->
+                          <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">Option one</option>
+                            <option value="" class="fb-select__option">Option two</option>
+                            <option value="" class="fb-select__option">Option three</option>
+                            <option value="" class="fb-select__option">Option four</option>
+                            <option value="" class="fb-select__option">Option five</option>
+                            <option value="" class="fb-select__option">Option six</option>
+                          </select>
+                          <!-- select end -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Subtotal</p>
+                          <p>₱2,992.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt dlt">
+                          <a href="#" class="fb-carttable_dlticon">
+                            <div class="fb-carttable__dltimg">
+                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
+                                  fill="#E3E3E5" />
+                              </svg>
+                            </div>
+                            <p class="fb-carttable__label">Delete</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- tile 4 -->
-                <div class="fb-carttable__tile">
-                  <div class="fb-carttable__item">
-                    <a href="#" class="fb-carttable__itemcnt logo">
-                      <img src="../assets/images/cart-small-img.webp" alt="">
-                    </a>
-                    <div class="fb-carttable__itemwrap">
-                      <div class="fb-carttable__itemcnt prdct ">
-                        <a href="#">Kasim Cubes 2x2 Inches</a>
-                        <p class="fb-carttable__weight">1kg</p>
-                        <!-- <div class="fb-carttable__msgbox">
+                  <!-- tile 3 -->
+                  <div class="fb-carttable__tile">
+                    <div class="fb-carttable__item">
+                      <a href="#" class="fb-carttable__itemcnt logo">
+                        <img src="../assets/images/cart-small-img.webp" alt="">
+                      </a>
+                      <div class="fb-carttable__itemwrap">
+                        <div class="fb-carttable__itemcnt prdct ">
+                          <a href="#">Kasim Cubes 2x2 Inches</a>
+                          <p class="fb-carttable__weight">1kg</p>
+                          <!-- <div class="fb-carttable__msgbox">
                                       <img src="../assets/images/close.svg" alt="">
                                       <p>This product is out of stock.</p>
                                   </div> -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Price</p>
+                          <p>₱374.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt select">
+                          <p class="fb-carttable__label">Qty</p>
+                          <!-- select start -->
+                          <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">Option one</option>
+                            <option value="" class="fb-select__option">Option two</option>
+                            <option value="" class="fb-select__option">Option three</option>
+                            <option value="" class="fb-select__option">Option four</option>
+                            <option value="" class="fb-select__option">Option five</option>
+                            <option value="" class="fb-select__option">Option six</option>
+                          </select>
+                          <!-- select end -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Subtotal</p>
+                          <p>₱2,992.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt dlt">
+                          <a href="#" class="fb-carttable_dlticon">
+                            <div class="fb-carttable__dltimg">
+                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
+                                  fill="#E3E3E5" />
+                              </svg>
+                            </div>
+                            <p class="fb-carttable__label">Delete</p>
+                          </a>
+                        </div>
                       </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Price</p>
-                        <p>₱374.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt select">
-                        <p class="fb-carttable__label">Qty</p>
-                        <!-- select start -->
-                        <select name="" id="" class="fb-select">
-                          <option value="" class="fb-select__option">Option one</option>
-                          <option value="" class="fb-select__option">Option two</option>
-                          <option value="" class="fb-select__option">Option three</option>
-                          <option value="" class="fb-select__option">Option four</option>
-                          <option value="" class="fb-select__option">Option five</option>
-                          <option value="" class="fb-select__option">Option six</option>
-                        </select>
-                        <!-- select end -->
-                      </div>
-                      <div class="fb-carttable__itemcnt">
-                        <p class="fb-carttable__label">Subtotal</p>
-                        <p>₱2,992.00</p>
-                      </div>
-                      <div class="fb-carttable__itemcnt dlt">
-                        <a href="#" class="fb-carttable_dlticon">
-                          <div class="fb-carttable__dltimg">
-                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
-                                fill="#E3E3E5" />
-                              <path
-                                d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
-                                fill="#E3E3E5" />
-                            </svg>
-                          </div>
-                          <p class="fb-carttable__label">Delete</p>
-                        </a>
+                    </div>
+                  </div>
+                  <!-- tile 4 -->
+                  <div class="fb-carttable__tile">
+                    <div class="fb-carttable__item">
+                      <a href="#" class="fb-carttable__itemcnt logo">
+                        <img src="../assets/images/cart-small-img.webp" alt="">
+                      </a>
+                      <div class="fb-carttable__itemwrap">
+                        <div class="fb-carttable__itemcnt prdct ">
+                          <a href="#">Kasim Cubes 2x2 Inches</a>
+                          <p class="fb-carttable__weight">1kg</p>
+                          <!-- <div class="fb-carttable__msgbox">
+                                      <img src="../assets/images/close.svg" alt="">
+                                      <p>This product is out of stock.</p>
+                                  </div> -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Price</p>
+                          <p>₱374.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt select">
+                          <p class="fb-carttable__label">Qty</p>
+                          <!-- select start -->
+                          <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">Option one</option>
+                            <option value="" class="fb-select__option">Option two</option>
+                            <option value="" class="fb-select__option">Option three</option>
+                            <option value="" class="fb-select__option">Option four</option>
+                            <option value="" class="fb-select__option">Option five</option>
+                            <option value="" class="fb-select__option">Option six</option>
+                          </select>
+                          <!-- select end -->
+                        </div>
+                        <div class="fb-carttable__itemcnt">
+                          <p class="fb-carttable__label">Subtotal</p>
+                          <p>₱2,992.00</p>
+                        </div>
+                        <div class="fb-carttable__itemcnt dlt">
+                          <a href="#" class="fb-carttable_dlticon">
+                            <div class="fb-carttable__dltimg">
+                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z"
+                                  fill="#E3E3E5" />
+                                <path
+                                  d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z"
+                                  fill="#E3E3E5" />
+                              </svg>
+                            </div>
+                            <p class="fb-carttable__label">Delete</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- cart table end -->
             </div>
-            <!-- cart table end -->
-          </div>
-          <div class="fb-checkout__right">
-            <!-- order summary start -->
-            <div class="fb-order">
-              <div class="fb-order__heading">Order Summary</div>
-              <div class="fb-order__outer">
-                <div class="fb-order__inner">
-                  <div class="fb-order__inner-left">
-                    Product Total</div>
-                  <div class="fb-order__inner-left">
-                    ₱306.00</div>
+            <div class="fb-checkout__right">
+              <!-- order summary start -->
+              <div class="fb-order">
+                <div class="fb-order__heading">Order Summary</div>
+                <div class="fb-order__outer">
+                  <div class="fb-order__inner">
+                    <div class="fb-order__inner-left">
+                      Product Total</div>
+                    <div class="fb-order__inner-left">
+                      ₱306.00</div>
+                  </div>
+                  <div class="fb-order__inner">
+                    <div class="fb-order__inner-left">
+                      Discount</div>
+                    <div class="fb-order__inner-left">
+                      -₱30.60</div>
+                  </div>
+                  <div class="fb-order__inner">
+                    <div class="fb-order__inner-left">
+                      Shipping Cost <span class="fb-order__free">FREE</span></div>
+                    <div class="fb-order__inner-left">
+                      ₱0.00</div>
+                  </div>
                 </div>
                 <div class="fb-order__inner">
-                  <div class="fb-order__inner-left">
-                    Discount</div>
-                  <div class="fb-order__inner-left">
-                    -₱30.60</div>
+                  <div class="fb-order__total-txt">
+                    Subtotal</div>
+                  <div class="fb-order__total-txt fb-order__total-txt--right">
+                    ₱275.40</div>
                 </div>
-                <div class="fb-order__inner">
-                  <div class="fb-order__inner-left">
-                    Shipping Cost <span class="fb-order__free">FREE</span></div>
-                  <div class="fb-order__inner-left">
-                    ₱0.00</div>
-                </div>
-              </div>
-              <div class="fb-order__inner">
-                <div class="fb-order__total-txt">
-                  Subtotal</div>
-                <div class="fb-order__total-txt fb-order__total-txt--right">
-                  ₱275.40</div>
-              </div>
-              <div class="fb-order__outer-reward">
-                <a class="fb-order__reward">
-                  <div class="fb-order__inner-left">Reward Points</div>
-                  <div class="fb-order__ques-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 106">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #bac5f5;
-                          }
+                <div class="fb-order__outer-reward">
+                  <a class="fb-order__reward">
+                    <div class="fb-order__inner-left">Reward Points</div>
+                    <div class="fb-order__ques-img">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 106">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #bac5f5;
+                            }
 
-                          .cls-2 {
-                            fill: #fff;
-                          }
-                        </style>
-                      </defs>
-                      <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_2-2" data-name="Layer 2">
-                          <circle class="cls-1" cx="53" cy="53" r="53" />
-                          <path class="cls-2"
-                            d="M46.53,67.14V65.37c0-5.64.45-9.2,1.33-10.67s3.22-3.61,7-6.4A15.63,15.63,0,0,0,59,44.23a8.67,8.67,0,0,0,1.16-4.67A6.91,6.91,0,0,0,58,34.14a7.64,7.64,0,0,0-5.31-2q-8.23,0-9.25,11.63L30.67,42q1.44-10.5,7.7-15.91a22.61,22.61,0,0,1,15.28-5.39A23.06,23.06,0,0,1,69.1,26a16.92,16.92,0,0,1,6.23,13.45Q75.33,49.52,65,56.3c-3,2-4.84,3.54-5.47,4.65s-1,3.18-1,6.19ZM60.86,85.33H46.25v-14H60.86Z" />
+                            .cls-2 {
+                              fill: #fff;
+                            }
+                          </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_2-2" data-name="Layer 2">
+                            <circle class="cls-1" cx="53" cy="53" r="53" />
+                            <path class="cls-2"
+                              d="M46.53,67.14V65.37c0-5.64.45-9.2,1.33-10.67s3.22-3.61,7-6.4A15.63,15.63,0,0,0,59,44.23a8.67,8.67,0,0,0,1.16-4.67A6.91,6.91,0,0,0,58,34.14a7.64,7.64,0,0,0-5.31-2q-8.23,0-9.25,11.63L30.67,42q1.44-10.5,7.7-15.91a22.61,22.61,0,0,1,15.28-5.39A23.06,23.06,0,0,1,69.1,26a16.92,16.92,0,0,1,6.23,13.45Q75.33,49.52,65,56.3c-3,2-4.84,3.54-5.47,4.65s-1,3.18-1,6.19ZM60.86,85.33H46.25v-14H60.86Z" />
+                          </g>
                         </g>
-                      </g>
-                    </svg>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="fb-order__inner-left">
+                    1</div>
+                  <div class="fb-order__pop">You will receive reward points after purchasing this product. These points
+                    can
+                    be used to pay your next order. <span class="fb-order__blue-text">Check my points</span>.
                   </div>
+                </div>
+                <a href="#" class="fb-order__cta">
+                  <div class="fb-order__lock">
+                    <img src="../assets/images/lock.svg" alt="">
+                  </div>
+                  <p>PROCEED TO CHECKOUT</p>
                 </a>
-                <div class="fb-order__inner-left">
-                  1</div>
-                <div class="fb-order__pop">You will receive reward points after purchasing this product. These points
-                  can
-                  be used to pay your next order. <span class="fb-order__blue-text">Check my points</span>.
+                <p class="fb-order__inner-left fb-order__inner-left--center">Check out with and enjoy 3 easy payments
+                  with
+                </p>
+                <div class="fb-order__atome">
+                  <a href="#"><img src="../assets/images/atome-logo.svg" alt=""></a>
                 </div>
+                <p class="fb-order__inner-left fb-order__inner-left--center">0% interest.</p>
               </div>
-              <a href="#" class="fb-order__cta">
-                <div class="fb-order__lock">
-                  <img src="../assets/images/lock.svg" alt="">
-                </div>
-                <p>PROCEED TO CHECKOUT</p>
-              </a>
-              <p class="fb-order__inner-left fb-order__inner-left--center">Check out with and enjoy 3 easy payments with
-              </p>
-              <div class="fb-order__atome">
-                <a href="#"><img src="../assets/images/atome-logo.svg" alt=""></a>
-              </div>
-              <p class="fb-order__inner-left fb-order__inner-left--center">0% interest.</p>
-            </div>
-            <!-- order summary end -->
+              <!-- order summary end -->
 
-            <!-- <div class="fb-order">
+              <!-- <div class="fb-order">
               <div class="fb-order__head">
                 <div class="fb-order__heading">Order Summary</div>
                 <div class="fb-order__outer">
@@ -7785,8 +7832,9 @@
                 <a href="#" class="fb-order__accordionedit">View and Edit Cart</a>
               </div>
             </div> -->
+            </div>
+            <button href="#" class="fb-product-tile-btn">Add Gift Box</button>
           </div>
-          <button href="#" class="fb-product-tile-btn">Add Gift Box</button>
         </div>
       </div>
     </div>

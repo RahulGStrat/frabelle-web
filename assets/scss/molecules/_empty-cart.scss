@@ -1,4 +1,20 @@
+.fb-cart-out {
+  &.empty-show {
+    .fb-empty {
+      display: block;
+    }
+    .fb-carttable__msgbox {
+      display: none;
+    }
+
+    .fb-checkout__outer {
+      display: none;
+    }
+  }
+}
 .fb-empty {
+  display: none;
+  padding: 56px 0 80px 0;
   &__inner-empty {
     padding: 0 !important;
     display: flex;
@@ -28,5 +44,11 @@
     font-size: 12px;
     padding-bottom: $spacer-3;
     text-align: center;
+  }
+}
+
+@include mobile {
+  .fb-empty {
+    padding: $spacer-2 0 $spacer-4 0;
   }
 }
