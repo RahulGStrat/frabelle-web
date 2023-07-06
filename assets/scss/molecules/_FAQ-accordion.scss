@@ -30,6 +30,9 @@
   .accordion-body {
     padding: $spacer-5 $spacer-3;
   }
+  .accordion-item {
+    border-bottom: 1px solid #ededed !important;
+  }
   .accordion-item:first-of-type {
     border-radius: 0 !important;
   }
