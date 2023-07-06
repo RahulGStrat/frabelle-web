@@ -1,0 +1,40 @@
+.fb-pages{
+    &__faq{
+        padding:0 0 $spacer-6 0;    
+        .fb-sbar{
+            padding: 0 0 15px;
+            .fb-sbar__nav{
+                .fb-sbar__nav-item{
+                    &:first-child{
+                        .fb-sbar__nav-link{
+                            padding: 24px 20px !important;
+                            color: #51535d;
+                            font-weight: 700;
+                            line-height: 20px;
+                            font-size: 17px;
+                        } 
+                    }
+                } 
+            }
+        }
+    } 
+}
+
+@media (min-width: 992px) { 
+    .fb-my-ac__sidebarmain{
+        order: 1;
+    }
+    .fb-my-ac__maincolum{
+        order: 2;
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .fb-my-ac__sidebarmain{
+        order: 2;
+    }
+    .fb-my-ac__maincolum{
+        order: 1;
+        margin-bottom: $spacer-4;
+    } 
+}
