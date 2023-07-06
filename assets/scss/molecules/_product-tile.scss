@@ -3,8 +3,24 @@
     border: 1px solid $color-white-2;
     border-radius: 5px;
     margin: $spacer-3;
-    &--new{
-        .fb-product-tile__new-product-outer{
+    position: relative;
+
+    &__close {
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        background-position: 54% 50%;
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 28px;
+        top: -10px;
+        right: -4px;
+        box-shadow: 0px 5px 20px #c8cde3;
+    }
+
+    &--new {
+        .fb-product-tile__new-product-outer {
             display: block;
         }
     }
@@ -26,6 +42,7 @@
             border-left: 6px solid transparent;
         }
     }
+
     &__new-product {
         position: absolute;
         width: 40px;
@@ -53,17 +70,50 @@
         border-radius: 5px;
         overflow: hidden;
         padding: $spacer-3;
+        position: relative;
+
         img {
             width: 100%;
             height: 100%;
             display: block;
             border-radius: 5px;
         }
+
+        .fb-product-tile__fav {
+            display: none;
+            position: absolute;
+            border-radius: 50%;
+            background: #fff;
+            width: 28px;
+            height: 28px;
+            bottom: 10px;
+            right: 10px;
+            box-shadow: 0px 0px 8px #c8cde3;
+            transition: 0.3s;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                svg {
+                    transition: 0.3s;
+
+                    path {
+                        fill: #eb2028;
+                    }
+                }
+            }
+        }
     }
+
     &__tile-cont {
         text-align: center;
         padding: $spacer-2 $spacer-3;
     }
+
     &__title {
         font-size: 12px;
         font-weight: 600;
@@ -74,18 +124,21 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
     &__weight {
         font-size: 10px;
         font-weight: 600;
         color: #eb2028;
         margin-bottom: $spacer-2;
     }
+
     &__price {
         font-size: 12px;
         font-weight: 600;
         color: $color-blue-2;
         margin-bottom: $spacer-2;
     }
+
     &__price-divider {
         display: flex;
         flex-direction: column;
@@ -93,23 +146,33 @@
         font-size: 10px;
         color: #848799;
         margin-bottom: $spacer-3;
+
         span {
             min-height: 30px;
         }
+
         img {
             width: 66px;
             height: auto;
             display: block;
         }
     }
+
     &__cta {
         display: inline-block;
         margin-bottom: $spacer-2;
     }
+
     &:hover {
         .fb-product-tile__title {
             font-weight: 800;
         }
-         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);  
+
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+
+        .fb-product-tile__fav {
+            display: block;
+            transition: 0.3s;
+        }
     }
 }
