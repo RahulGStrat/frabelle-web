@@ -21,7 +21,7 @@
     font-size: 15px;
     font-weight: 600;
     transition: 0.3s;
-    padding: $spacer-4;
+    padding: $spacer-4 30px;
     &:hover {
       background-color: #f7f8fc !important;
       transition: 0.3s;
@@ -32,6 +32,7 @@
   }
   .accordion-item {
     border-bottom: 1px solid #ededed !important;
+    border: none;
   }
   .accordion-item:first-of-type {
     border-radius: 0 !important;
