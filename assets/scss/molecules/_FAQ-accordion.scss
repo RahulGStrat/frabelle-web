@@ -1,0 +1,53 @@
+.fb-faq-ac {
+  &__content {
+    color: #848799;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0 0 $spacer-5 $spacer-2;
+  }
+
+  &__read-more {
+    color: #2c3c8b;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s;
+    &:hover {
+      color: #eb2028;
+      transition: 0.3s;
+    }
+  }
+  .accordion-button {
+    color: #6e7080;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    &:hover {
+      background-color: #f7f8fc !important;
+      transition: 0.3s;
+    }
+  }
+  .accordion-item:first-of-type {
+    border-radius: 0 !important;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #f7f8fc !important;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/images/accordion-up.svg) !important;
+  }
+  .accordion-button::after {
+    background-image: url(/assets/images/accordion-up.svg) !important;
+    width: 15px;
+    background-size: 15px;
+    height: 15px;
+  }
+  .accordion-button:focus {
+    border: none;
+    // box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);\
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: #f7f8fc;
+  }
+}
