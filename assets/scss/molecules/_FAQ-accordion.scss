@@ -26,6 +26,9 @@
       transition: 0.3s;
     }
   }
+  .accordion-body {
+    padding: $spacer-5 $spacer-3;
+  }
   .accordion-item:first-of-type {
     border-radius: 0 !important;
   }
