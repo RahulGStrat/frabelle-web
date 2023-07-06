@@ -31,7 +31,7 @@
     padding: $spacer-5 $spacer-3;
   }
   .accordion-item {
-    border-bottom: 1px solid #ededed !important;
+    border-bottom: 1px solid #ededed;
   }
   .accordion-item:first-of-type {
     border-radius: 0 !important;
@@ -56,5 +56,13 @@
   }
   &:hover {
     background-color: #f7f8fc;
+  }
+}
+
+@include mobile {
+  .fb-faq-ac {
+    .accordion-button {
+      font-size: 13px;
+    }
   }
 }
