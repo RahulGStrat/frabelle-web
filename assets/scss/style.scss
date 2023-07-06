@@ -38,7 +38,8 @@
 @import "./molecules/checkout-footer";
 @import "./molecules/shipping-address-item";
 @import "./molecules/empty-cart";
-// @import "./molecules/search-result";
+@import "./molecules/search-result";
+@import "./molecules/FAQ-accordion";
 
 // organisms
 @import "./organisms/footer";
@@ -85,4 +86,5 @@
 @import "organisms/product-listing";
 @import "organisms/faq";
 @import "organisms/fb-pages";
+@import "organisms/recipe";
 // pages
