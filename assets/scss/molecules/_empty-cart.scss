@@ -36,6 +36,11 @@
     width: 90px;
     height: auto;
     margin-bottom: $spacer-4;
+    svg {
+      path {
+        fill: #848799;
+      }
+    }
   }
 
   &__text {
