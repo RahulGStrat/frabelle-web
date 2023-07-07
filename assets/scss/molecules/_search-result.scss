@@ -1,6 +1,7 @@
 .fb-search-result {
   padding: $spacer-3 0 $spacer-5 0;
-  display: flex;
+  // display: flex;
+  display: none;
   margin: 0 -16px;
   align-items: center;
 
@@ -30,10 +31,15 @@
     font-size: 13px;
     padding-bottom: $spacer-1;
     transform: 0.3s;
+
     &:hover {
       color: #eb2028;
       transform: 0.3s;
     }
+  }
+
+  &.show {
+    display: flex;
   }
 }
 
@@ -41,6 +47,7 @@
   .fb-search-result {
     padding: 0 $spacer-3;
     display: block;
+
     &__left {
       width: 100%;
       margin: 0;
