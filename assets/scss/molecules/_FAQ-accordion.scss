@@ -41,10 +41,10 @@
     box-shadow: none;
   }
   .accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/images/accordion-up.svg) !important;
+    background-image: url(/assets/images/accordion-down.svg) !important;
   }
   .accordion-button::after {
-    background-image: url(/assets/images/accordion-up.svg) !important;
+    background-image: url(/assets/images/accordion-down.svg) !important;
     width: 15px;
     background-size: 15px;
     height: 15px;
