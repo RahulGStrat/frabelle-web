@@ -12,8 +12,9 @@
     }
 
     &__text {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 16px;
+        font-weight: 500;
     }
 
     &__link {
@@ -73,6 +74,9 @@
     .fb-product-tile-btn {
         margin-top: 16px;
         max-width: 200px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 14px 18px 10px;
     }
 
 }
@@ -83,6 +87,10 @@
 
         &__text {
             text-align: center;
+        }
+        .fb-product-tile-btn {
+            width: 100%;
+            max-width:100%;
         }
     }
 }

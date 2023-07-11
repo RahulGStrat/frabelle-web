@@ -7232,8 +7232,8 @@
       <div class="fb-my-ac">
         <div class="fb-my-ac__maincolum">
           <div class="fb-my-ac__maincolum-wrap">
-            <div class="fb-favorites">
-              <div class="fb-favorites__head">
+            <div class="fb-faq">
+              <div class="fb-faq__head">
                 <div class="fb-title-head">Gift Card</div>
               </div>
               <!-- =====================Accordion -->
@@ -7303,6 +7303,46 @@
               <!-- ====================Accordion End -->
             </div>
           </div>
+          <!-- Button toggle -->
+        <div class="fb-askquestion">
+          <input id="question" type="checkbox" class="fb-askquestion__togglebtn">
+          <p class="fb-askquestion__text">Did you find what you were looking for?<label class="fb-askquestion__link" for="question">Ask a question</label></p>
+          <!-- hidden form -->
+          <div class="fb-askquestion__body">
+            <div class="fb-modal__fav-list-body">
+              <div class="fb-modal__fav-list-fields">
+                <label class="fb-modal__fav-list-label">
+                  Your Question<span>*</span>
+                </label>
+                <div class="fb-input__text-wrap">
+                    <textarea name="description" class="fb-modal__fav-list-textarea" maxlength="255" placeholder="Type your question here..."></textarea>
+                  </div>
+            </div>
+            <div class="fb-modal__fav-list-fields">
+                <label class="fb-modal__fav-list-label">
+                  Your Name
+                </label>
+                <div class="fb-input__text-wrap">
+                    <input type="email" class="fb-input__text" placeholder="Name">
+                  </div>
+            </div>
+            <div class="fb-input-checkbox-wrap">
+              <input type="checkbox" id="checkbox" class="fb-askquestion__checkbox">
+              <label for="checkbox" class="fb-askquestion__checklabel"> Get notification on email when the answer is ready</label>
+              <div class="fb-modal__fav-list-fields fb-askquestion__mail">
+                <label class="fb-modal__fav-list-label">
+                  Your email<span>*</span>
+                </label>
+                <div class="fb-input__text-wrap">
+                    <input type="email" class="fb-input__text" placeholder="Name">
+                </div>
+              </div>
+              <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">Send the Question</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Button toggle end -->
         </div>
         <div class="fb-my-ac__sidebarmain">
           <div class="fb-sbar__search">
@@ -7354,46 +7394,6 @@
           </div>
           <!-- SIDEBAR END HERE -->
         </div>
-        <!-- Button toggle -->
-        <div class="fb-askquestion">
-          <input id="question" type="checkbox" class="fb-askquestion__togglebtn">
-          <p class="fb-askquestion__text">Did you find what you were looking for?<label class="fb-askquestion__link" for="question">Ask a question</label></p>
-          <!-- hidden form -->
-          <div class="fb-askquestion__body">
-            <div class="fb-modal__fav-list-body">
-              <div class="fb-modal__fav-list-fields">
-                <label class="fb-modal__fav-list-label">
-                  Your Question<span>*</span>
-                </label>
-                <div class="fb-input__text-wrap">
-                    <textarea name="description" class="fb-modal__fav-list-textarea" maxlength="255" placeholder="Type your question here..."></textarea>
-                  </div>
-            </div>
-            <div class="fb-modal__fav-list-fields">
-                <label class="fb-modal__fav-list-label">
-                  Your Name
-                </label>
-                <div class="fb-input__text-wrap">
-                    <input type="email" class="fb-input__text" placeholder="Name">
-                  </div>
-            </div>
-            <div class="fb-input-checkbox-wrap">
-              <input type="checkbox" id="checkbox" class="fb-askquestion__checkbox">
-              <label for="checkbox" class="fb-askquestion__checklabel"> Get notification on email when the answer is ready</label>
-              <div class="fb-modal__fav-list-fields fb-askquestion__mail">
-                <label class="fb-modal__fav-list-label">
-                  Your email<span>*</span>
-                </label>
-                <div class="fb-input__text-wrap">
-                    <input type="email" class="fb-input__text" placeholder="Name">
-                </div>
-                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">Send the Question</button>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        <!-- Button toggle end -->
       </div>
     </div>
 
