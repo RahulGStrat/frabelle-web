@@ -1,63 +1,90 @@
-.fb-pages{
-    &__account{
+.fb-pages {
+    &__account {
         padding: $spacer-6 0;
-    } 
+    }
 }
-.fb-my-ac{
+
+.fb-my-ac {
     display: flex;
-    &__sidebarmain{
+    flex-wrap: wrap;
+
+    &__sidebarmain {
         order: 1;
     }
-    &__maincolum{
+
+    &__maincolum {
         order: 2;
-        &-wrap{
+
+        &-wrap {
             border: 1px solid #ededed;
             padding: 30px;
             background: #fff;
             border-radius: 5px;
         }
     }
-    .fb-title-head{
+
+    .fb-title-head {
         text-align: left;
     }
+
+    .fb-askquestion {
+        order: 3;
+        width: 50%;
+        margin: 16px auto;
+    }
 }
-@include tablet{
-    .fb-page-header{
+
+@include tablet {
+    .fb-page-header {
         height: 72px;
     }
 }
-@include tablet-pro{
-    .fb-page-header{
-        height:72px;
+
+@include tablet-pro {
+    .fb-page-header {
+        height: 72px;
     }
 }
-@include mobile{
-    .fb-page-header{
-        height:72px;
+
+@include mobile {
+    .fb-page-header {
+        height: 72px;
     }
 }
-@media (min-width: 992px) { 
-    .fb-my-ac{
+
+@media (min-width: 992px) {
+    .fb-my-ac {
         justify-content: space-between;
-        &__sidebarmain{
+
+        &__sidebarmain {
             width: 100%;
             max-width: 260px;
         }
-        &__maincolum{
+
+        &__maincolum {
             width: calc(100% - 300px);
         }
     }
-  }
-  @media (max-width: 991.98px) {
-    .fb-my-ac{
+}
+
+@media (max-width: 991.98px) {
+    .fb-my-ac {
         flex-direction: column;
-        &__sidebarmain{
+
+        &__sidebarmain {
+            order: 3 !important;
             width: 100%;
-            max-width:100%;
+            max-width: 100%;
             margin-bottom: $spacer-6;
         }
-        &__maincolum{
+
+        &__maincolum {
+            width: 100%;
+        }
+
+        .fb-askquestion {
+            order: 2;
             width: 100%;
         }
     }
-  }
+}

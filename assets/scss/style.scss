@@ -40,6 +40,8 @@
 @import "./molecules/empty-cart";
 @import "./molecules/search-result";
 @import "./molecules/FAQ-accordion";
+@import "./molecules/alert-popup";
+@import "./molecules/ask-question";
 
 // organisms
 @import "./organisms/footer";
@@ -65,7 +67,6 @@
 @import "organisms/cart-table";
 @import "organisms/check-out";
 @import "organisms/prdct-list-wrapper";
-// @import "organisms/checkout-recipes";
 @import "organisms/sidebar-filter";
 @import "organisms/sidebar-ac";
 @import "organisms/product-spec";
@@ -87,4 +88,5 @@
 @import "organisms/faq";
 @import "organisms/fb-pages";
 @import "organisms/recipe";
+@import "organisms/general-faq";
 // pages

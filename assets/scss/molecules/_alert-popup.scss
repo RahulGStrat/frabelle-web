@@ -1,0 +1,55 @@
+.fb-alert-popup {
+  .modal-header {
+    border: 0 !important;
+    padding: $spacer-3 $spacer-4;
+    margin-top: 10px;
+  }
+  .modal-footer {
+    justify-content: flex-start;
+    border: 0 !important;
+    padding: $spacer-3 $spacer-4;
+  }
+  .modal-body {
+    padding: $spacer-3 $spacer-4;
+  }
+
+  &__text {
+    color: #9193a4;
+    font-size: 14px;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    background-color: #fff;
+    border: 1px solid #2c3c8b;
+    color: #2c3c8b;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .btn-primary:focus {
+    box-shadow: none;
+  }
+  .btn-check:focus + .btn-secondary,
+  .btn-secondary:focus {
+    box-shadow: none;
+  }
+  .btn-close:focus {
+    box-shadow: none;
+  }
+  .btn {
+    padding: $spacer-2 $spacer-3;
+  }
+  .modal-footer > * {
+    margin: 6px;
+  }
+  .btn-close {
+    background-image: url(/assets/images/close-icon.svg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+  }
+}

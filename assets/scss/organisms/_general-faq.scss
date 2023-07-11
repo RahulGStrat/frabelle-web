@@ -1,0 +1,23 @@
+.fb-faq-general {
+  margin-bottom: $spacer-3;
+  background-color: $color-white;
+  border: 1px solid #ededed;
+  &__block1 {
+    padding: $spacer-5 $spacer-4 $spacer-4 $spacer-4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+  }
+  &__general {
+    color: #51535d;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__cta {
+    width: 100px;
+  }
+  .fb-product-tile-btn {
+    font-weight: 600;
+  }
+}

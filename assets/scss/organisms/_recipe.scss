@@ -1,6 +1,6 @@
-.fb-recipe{
+.fb-recipe {
 
-  &__head{
+  &__head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,33 +11,43 @@
     padding: 42px 0;
     margin: 0 auto;
   }
-  &__title{
+
+  &__title {
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 24px;
     color: rgb(59, 71, 128);
   }
-  &__desc{
+
+  &__desc {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.7;
     color: rgb(110, 112, 129);
   }
-  &__chef-card{
+
+  &__chef-card {
     width: 280px;
     margin: 32px 0 0 0;
+    transition: 0.3s;
 
-    img{
+    img {
       object-fit: cover;
       width: 100%;
       height: 100%;
     }
-  }
-  &__body{
-    text-align: center;
-    padding: 42px 0;
 
-    .fb-product-tile-btn{
+    &:hover {
+      transition: 0.3s;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    padding: 24px 0 40px;
+
+    .fb-product-tile-btn {
       display: inline-flex;
       font-size: 14px;
       line-height: 13px;
@@ -47,22 +57,36 @@
     }
 
   }
-  &__filters{
-    .fb-select{
+
+  &__filters {
+    .fb-select {
       min-width: 180px;
       padding: 12px 8px;
       margin: 12px 12px 0 12px;
     }
   }
-  &__sub-title{
+
+  &__sub-title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 24px;
     color: rgb(59, 71, 128);
   }
-  &__recipe-grid{
-    img{
+
+  &__recipe-grid {
+    margin-top: 24px;
+
+    img {
       width: 100%;
+    }
+  }
+}
+
+@include mobile {
+  .fb-recipe {
+
+    &__title {
+      font-size: 32px;
     }
   }
 }

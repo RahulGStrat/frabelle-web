@@ -11,25 +11,30 @@
     font-weight: 600;
     font-size: 13px;
     transition: 0.3s;
+
     &:hover {
       color: #eb2028;
       transition: 0.3s;
     }
   }
+
   .accordion-button {
     color: #6e7080;
     font-size: 15px;
     font-weight: 600;
     transition: 0.3s;
     padding: $spacer-4 30px;
+
     &:hover {
       background-color: #f7f8fc !important;
       transition: 0.3s;
     }
   }
+
   .accordion-body {
     padding: $spacer-5 $spacer-3;
   }
+
   .accordion-item {
     border-bottom: 1px solid #ededed !important;
     border: none;
@@ -37,28 +42,42 @@
       border-top: 1px solid #ededed !important;
     }
   }
+
   .accordion-item:first-of-type {
     border-radius: 0 !important;
   }
+
   .accordion-button:not(.collapsed) {
     background-color: #f7f8fc !important;
     box-shadow: none;
   }
+
   .accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/images/accordion-up.svg) !important;
+    background-image: url(/assets/images/accordion-down.svg) !important;
   }
+
   .accordion-button::after {
-    background-image: url(/assets/images/accordion-up.svg) !important;
+    background-image: url(/assets/images/accordion-down.svg) !important;
     width: 15px;
     background-size: 15px;
     height: 15px;
   }
+
   .accordion-button:focus {
     border: none;
     // box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);\
     box-shadow: none;
   }
+
   &:hover {
     background-color: #f7f8fc;
+  }
+}
+
+@include mobile {
+  .fb-faq-ac {
+    .accordion-button {
+      font-size: 13px;
+    }
   }
 }
