@@ -20,12 +20,13 @@
         // display: inline-flex;
         // flex-direction: column;
         display: block;
+        margin-bottom: 32px;
     }
 
     &__table-row {
         display: inline-block;
         border: 1px solid $color-grey;
-        border-bottom: 0;
+        // border-bottom: 0;
 
         &:last-child {
             border-bottom: 1px solid $color-grey;
@@ -51,10 +52,37 @@
         padding: 24px 16px;
         font-size: 14px;
     }
+
+    &__table-list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+
+        li {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: $color-grey3;
+                border-radius: 50%;
+                left: -14px;
+                top: 8px;
+                transform: translateY(-50%);
+            }
+        }
+
+    }
 }
 
 @include mobile {
     .fb-comparison {
+        // &__outer {
+        //     overflow-x: scroll;
+        // }
+
         &__tileouter {
             .fb-product-tile {
                 min-width: 200px;

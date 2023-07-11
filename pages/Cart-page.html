@@ -234,7 +234,7 @@
                                   <a href="#" class="fb-cart_popup__product-title">
                                     Pork Sinigang Cut 1kg
                                   </a>
-                                  <button class="fb-cart_popup__product-dlt">
+                                  <button class="fb-cart_popup__product-dlt" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -8005,6 +8005,28 @@
     </div>
   </div>
   <!-- footer end -->
+  <!-- alert popup start -->
+  <!-- Button trigger modal -->
+  <div class="fb-alert-popup">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fb-alert-popup__text">Are you sure you would like to remove this item from the shopping cart?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert popup end -->
   <!-- body content end -->
 
   <!-- scripts -->
