@@ -1,6 +1,27 @@
 .fb-input{
-
+    width: 100%;
     // type text,email,number etc
+    margin-left: 10px;
+    &__box{
+        display: flex;
+        label{
+            font-weight: 600;
+            color: #6e7080;
+            font-size: 11px;
+            margin-bottom: $spacer-1;
+        }
+        span{
+            font-size:10px;
+            color: #a7aabe;
+            font-weight: 600;
+        }
+        textarea{
+            height:100px;
+        }
+    }
+    &:first-child{
+        margin-left: 0;
+    }
     &__text-wrap{
         width: 100%;
         background: #fff;
@@ -35,6 +56,31 @@
             font-family: Spartan;
             color: #848799;
             }
+        }
+    }
+    &__text{
+        width: 100%;
+        background: #fff;
+        border: 1px solid #c1c3c9;
+        border-radius: 3px;
+        overflow: hidden;
+        width: 100%;
+        height: 40px;
+        font-size: 11px;
+        font-weight: 500;
+        font-family: Spartan;
+        color: #848799;
+        padding: 8px 16px;
+        background: #fff;
+        outline: none;
+        &::placeholder{
+            opacity: 0.5;
+        }
+        &-dob{
+            background-image: url(../images/date-icn.svg);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: right 10px top 10px;
         }
     }
 
@@ -96,9 +142,8 @@
                 font-size: 11px;
                 font-weight: 500;
                 color: #848799;
-                padding:0 8px;
+                padding:4px 8px 0;
                 cursor: pointer;
         }
     }
-
 }

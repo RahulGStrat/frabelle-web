@@ -8,4 +8,19 @@
         font-weight: 600;
         text-transform: uppercase;
     }
+    &__addemail{
+        margin-top: -3px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #2c3c8b;
+        font-size: 11px;
+        padding: 0;
+    }
+    &__note{
+        letter-spacing: .3px;
+        margin-bottom: 10px;
+        color: #848799;
+        font-weight: 500;
+        font-size: 12px;
+    }
 }

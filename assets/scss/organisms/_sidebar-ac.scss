@@ -65,6 +65,28 @@
             box-shadow:none !important;
         }
     }
+    &__search{
+        margin-bottom: $spacer-3;
+        input{
+            height: 37px !important;
+            position: relative;
+            padding-left: 35px !important;
+        }
+        .fb-input__text-wrap{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: 10px;
+                top: 9px;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/search-sidebar.svg);
+                background-repeat: no-repeat;
+                background-size: 20px;
+            }
+        }
+    }
 }
 
 @include tablet{

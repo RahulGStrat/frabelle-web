@@ -8,9 +8,9 @@
     }
 }
 @include mobile{
-    .fb-pages{
-        margin-top: 73px;
-    }
+    // .fb-pages{
+    //     margin-top: 73px;
+    // }
     .fb-product-info{
         &__main{
             flex-direction: column;
