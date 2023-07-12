@@ -1,3 +1,123 @@
 .fb-pages{
     padding:0 0 $spacer-6 0;
+    &__faq{
+        padding:0 0 $spacer-6 0;    
+        .fb-sbar{
+            padding: 0 0 15px;
+            .fb-sbar__nav{
+                .fb-sbar__nav-item{
+                    &:first-child{
+                        .fb-sbar__nav-link{
+                            padding: 24px 20px !important;
+                            color: #51535d;
+                            font-weight: 700;
+                            line-height: 20px;
+                            font-size: 17px;
+                        } 
+                    }
+                } 
+            }
+        }
+        .fb-faq-ac{
+            margin-bottom: -30px;
+        }
+        .fb-faq-ac .accordion-item{
+            margin: 0px -30px;
+        }
+        &-head{
+            width: 35.5%;
+            margin: 0 auto $spacer-5 auto;
+        }
+        &-wrap{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &-items{
+            width: 49%;
+            border-radius: 5px;
+            border: 1px solid #ededed;
+            background: #fff;
+            margin-bottom: $spacer-4;
+            &:first-child{
+                border: 1px solid #ededed; 
+            }
+            &-head{
+                h2{
+                    color: #51535d;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 1;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 30px 20px;
+                border-bottom: 1px solid rgba(0,0,0,.125);
+                .fb-product-tile-btn{
+                    width: auto;
+                    padding: 14px 18px 10px;
+                }
+            }
+            .accordion-button:focus {
+                border: none;
+                box-shadow: none;
+            }
+            .accordion-button:hover {
+                background-color: #f7f8fc !important;
+                transition: 0.3s;
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: #f7f8fc !important;
+                box-shadow: none;
+            }
+            .accordion-button {
+                color: #6e7080;
+                font-size: 15px;
+                font-weight: 600;
+                transition: 0.3s;
+                padding: 24px 30px;
+            }
+            .accordion-button::after {
+                background-image: url(/assets/images/accordion-up.svg) !important;
+                width: 15px;
+                background-size: 15px;
+                height: 15px;
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: url(/assets/images/accordion-up.svg) !important;
+            }
+        }
+    } 
+}
+
+@media (min-width: 992px) { 
+    .fb-my-ac__sidebarmain{
+        order: 1;
+    }
+    .fb-my-ac__maincolum{
+        order: 2;
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .fb-my-ac__sidebarmain{
+        order: 2;
+    }
+    .fb-my-ac__maincolum{
+        order: 1;
+        margin-bottom: $spacer-4;
+    } 
+}
+@include mobile{
+    .fb-pages{
+        &__faq{
+            &-wrap{
+                flex-direction: column;
+            }
+            &-items{
+                width:100%;
+            }
+        }
+    }
 }

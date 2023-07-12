@@ -1,0 +1,96 @@
+.fb-askquestion {
+    &__body {
+        display: none;
+
+        &.show {
+            display: block !important;
+        }
+    }
+
+    &__togglebtn {
+        display: none;
+    }
+
+    &__text {
+        font-size: 12px;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+
+    &__link {
+        cursor: pointer;
+        padding-left: 8px;
+        font-weight: 500;
+        color: $color-blue;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            color: $color-red;
+        }
+    }
+
+    .fb-modal__fav-list-label {
+        font-size: 12px;
+        margin-bottom: 8px;
+        color: #6e7080;
+        font-weight: 600;
+
+        span {
+            color: $color-red;
+        }
+    }
+
+    .fb-modal__fav-list-textarea {
+        height: 100px;
+    }
+
+    // .fb-input-checkbox-wrap+ input:checked.fb-askquestion__mail {}
+    .fb-input-checkbox-wrap {
+        display: block;
+        position: relative;
+
+        & .fb-askquestion__checkbox {
+            position: absolute;
+
+            &:checked {
+                ~.fb-askquestion__mail {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    &__mail {
+        display: none;
+        margin-top: 16px;
+    }
+
+    &__checklabel {
+        padding-left: 24px !important;
+    }
+
+    .fb-product-tile-btn {
+        margin-top: 16px;
+        max-width: 200px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 14px 18px 10px;
+    }
+
+}
+
+@include mobile {
+    .fb-askquestion {
+        margin-bottom: 32px !important;
+
+        &__text {
+            text-align: center;
+        }
+        .fb-product-tile-btn {
+            width: 100%;
+            max-width:100%;
+        }
+    }
+}

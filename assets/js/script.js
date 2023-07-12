@@ -353,3 +353,22 @@ if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   })
 }
+
+
+// ask question
+const question_link = document.querySelector('#question');
+const question_label = document.querySelector('.fb-askquestion__link');
+const question_body = document.querySelector('.fb-askquestion__body');
+
+if (question_link) {
+  question_link.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      console.log('ho');
+      question_label.textContent = "Hide the form";
+      question_body.classList.add("show");
+    } else {
+      question_label.textContent = "Ask a question";
+      question_body.classList.remove("show");
+    }
+  });
+}
