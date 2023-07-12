@@ -1,0 +1,116 @@
+.fb-f-shipping {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   max-width: 400px;
+  //   margin: 30px;
+  //   border-radius: 5px;
+  //   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.35);
+  //   padding: $spacer-4 $spacer-3;
+  //   position: relative;
+
+  //   &__van {
+  //     display: block;
+  //     width: 100px;
+  //     margin: 0 auto;
+  //     padding-bottom: $spacer-3;
+  //   }
+
+  //   &__head-txt {
+  //     color: #51535d;
+  //     font-weight: 700;
+  //     font-size: 16px;
+  //     padding-bottom: $spacer-3;
+  //     text-align: center;
+  //   }
+
+  //   &__txt {
+  //     color: #848799;
+  //     font-size: 13px;
+  //     line-height: 18px;
+  //     text-align: center;
+  //     font-weight: 500;
+  //     max-width: 340px;
+  //     display: block;
+  //     margin: 0 auto;
+  //   }
+
+  //   &__close {
+  //     position: absolute;
+  //     right: 1%;
+  //     top: 1%;
+  //     width: 30px;
+  //     height: 30px;
+  //     background-color: #fff;
+  //     box-shadow: -1px 1px 3px #d5d5d5;
+  //     border-radius: 50%;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+
+  //     svg {
+  //       width: 10px;
+  //       height: 10px;
+  //     }
+  //   }
+
+  .modal-header {
+    border: 0 !important;
+    display: block;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.35);
+    position: relative;
+  }
+
+  .modal-content {
+    max-width: 380px;
+  }
+
+  .modal-title {
+    color: #51535d;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: $spacer-3;
+    text-align: center;
+  }
+
+  &__van {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: $spacer-3;
+  }
+
+  &__txt {
+    color: #848799;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+    max-width: 340px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__close {
+    position: absolute;
+    right: -3%;
+    top: -3%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    box-shadow: -1px 1px 3px #d5d5d5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .modal-dialog {
+    margin-top: 130px;
+  }
+}
