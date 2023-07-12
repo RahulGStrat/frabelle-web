@@ -1,0 +1,113 @@
+.fb-mailed-gift {
+  display: flex;
+  margin: 0 -16px;
+  padding: $spacer-2 0 $spacer-6 0;
+  align-items: center;
+
+  &__inner {
+    width: calc(50% - 32px);
+    margin: 0 16px;
+  }
+
+  &__input-out {
+    display: flex;
+  }
+
+  &__fade-txt {
+    font-size: 12px;
+    color: #a7aabe;
+    font-weight: 600;
+  }
+
+  .fb-title-head {
+    text-align: left;
+  }
+
+  .fb-product-info__atributs-stock {
+    padding: 0 16px 0 0;
+  }
+
+  .fb-product-info__atributs-link {
+    color: #51535d;
+  }
+
+  .fb-input {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-bottom: $spacer-4;
+    margin-right: $spacer-3;
+    label {
+      padding-bottom: 4px;
+    }
+    select {
+      width: 50%;
+      width: 236px;
+    }
+    em {
+      color: #eb2028;
+    }
+  }
+  .fb-input__text {
+    height: 35px;
+    padding: 10px 16px;
+    &--msg {
+      height: 80px;
+    }
+  }
+
+  .fb-select {
+    padding: 10px 24px 10px 4px;
+  }
+
+  .fb-select {
+    padding: 10px 24px 10px 8px;
+  }
+
+  .fb-product-info__tocart-label {
+    left: 6px;
+    top: 13px;
+  }
+
+  .fb-product-info__bottom-link:first-child {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .fb-product-info__tocart-qty {
+    option {
+      text-align: center;
+    }
+  }
+}
+
+@include mobile-tablet {
+  .fb-mailed-gift {
+    margin: 0;
+    display: block;
+    &__inner {
+      width: 100%;
+      margin: 0;
+    }
+    .fb-input {
+      select {
+        width: 100%;
+      }
+    }
+
+    &__input-out {
+      display: block;
+    }
+  }
+  .fb-newslettier__form-inpwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fb-newslettier__form input {
+    text-align: center;
+  }
+}
