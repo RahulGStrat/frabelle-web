@@ -1,0 +1,60 @@
+.fb-beour-vip {
+  .fb-title-head {
+    font-size: 42px !important;
+    text-align: left !important;
+  }
+  &__subhead {
+    color: #3b4780;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  &__list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    ul {
+      list-style: inside;
+      li {
+        font-size: 13px;
+        margin-top: 16px;
+        font-weight: 450;
+        color: $color-grey2;
+      }
+    }
+  }
+  &__paragraph {
+    font-size: 13px;
+    font-weight: 450;
+    color: $color-grey2;
+    p {
+      margin-top: 25px;
+      b {
+        font-weight: 700;
+      }
+      a {
+        color: #2c3c8b;
+      }
+    }
+  }
+}
+@include mobile {
+  .fb-beour-vip {
+    .fb-title-head {
+      font-size: 32px !important;
+    }
+    &__subhead {
+      font-size: 17px;
+    }
+    &__list {
+      margin-left: 16px;
+      ul {
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+    &__paragraph {
+      font-size: 13px;
+    }
+  }
+}
