@@ -1,0 +1,65 @@
+// quantity dropdown
+.fb-product-info__tocart-qty {
+    label {
+        left: 40px;
+    }
+
+    table {
+        height: 100%;
+
+        tbody {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            input.dxeEditArea.dxeEditAreaSys {
+                padding-left: 10px;
+            }
+
+            .dxeButton.dxeButtonEditButton {
+                height: 15px !important;
+                display: inline-flex;
+                align-items: center;
+                border: 0;
+
+                &:hover {
+                    border: none;
+                }
+
+                img {
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .dxic {
+                top: 8px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .fb-product-info__tocart-qty {
+        label {
+            left: 20px;
+        }
+
+        table {
+            tbody {
+                td:first-child {
+                    padding-left: 70px !important;
+                }
+
+                input.dxeEditArea.dxeEditAreaSys {
+                    min-width: 20px;
+                    padding-left: 0 !important;
+                }
+
+                .dxic {
+                    left: -18px;
+                }
+            }
+        }
+    }
+}
