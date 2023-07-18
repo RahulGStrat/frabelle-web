@@ -1,0 +1,35 @@
+.fb-forgot-page {
+    .fb-login-page__outer {
+        width: 35%;
+    }
+
+    .fb-login-page__left {
+        width: calc(100% - 32px);
+    }
+
+    .fb-page-wrapper__title-sub {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .fb-input {
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 8px;
+
+            em {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .fb-forgot-page {
+        .fb-login-page__outer {
+            width: 100%;
+        }
+    }
+}
