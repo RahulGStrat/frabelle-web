@@ -1,0 +1,65 @@
+.fb-register {
+    
+    &__outer {
+        width: 50%;
+        margin: $spacer-0 auto;
+        border: 1px solid #ededed;
+        background-color: $color-white;
+        border-radius: 5px;
+        padding: $spacer-5;
+        .fb-page-wrapper__title {
+            font-size: 20px;
+            color: #51535d;
+        }
+        .fb-login_popup__btn {
+            margin-bottom: $spacer-3;
+        }
+    }
+    &__name-wrap {
+        display: flex;
+        margin: 0 -8px;
+        
+    }
+    &__name {
+        margin: $spacer-2;
+    }
+    &__label {
+        font-size: 12px;
+        color: #6e7080;
+        font-weight: 600;
+        line-height: 1.4;
+        padding-bottom: $spacer-2;
+        span {
+            font-size: 10px;
+            color: #a7aabe; 
+        }
+    }
+    &__label-outer {
+        width: 100%;
+        padding: $spacer-2 $spacer-0;
+        position: relative;
+    }
+    &__pass-icon {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: auto;
+        top: 50px;
+        right: 12px;
+    }
+    &__small-txt {
+        font-size: 10px;
+        color: #a7aabe;
+        padding-bottom: $spacer-3;
+    }
+}
+
+
+@include mobile {
+    .fb-register {
+        &__outer {
+            width: 100%;
+            padding: $spacer-3;
+        }
+    }
+}

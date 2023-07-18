@@ -372,3 +372,20 @@ if (question_link) {
     }
   });
 }
+
+const pass = document.querySelector('#pass-toggle');
+const passOut = document.querySelector('#pass-out');
+if (pass) {
+  pass.addEventListener('click',()=>{
+    if(passOut.querySelector('input').type==='password'){
+      passOut.querySelector('input').type='text';
+      pass.querySelectorAll('img')[0].style.display='block'
+      pass.querySelectorAll('img')[1].style.display='none'
+    }
+    else {
+      passOut.querySelector('input').type='password'
+      pass.querySelectorAll('img')[0].style.display='none'
+      pass.querySelectorAll('img')[1].style.display='block'
+    }
+  })
+}
