@@ -15,16 +15,78 @@
 
     &__wrap {
         display: flex;
-        margin: 0 -8px;
+        margin: 0 -16px;
     }
 
     &__left,
     &__right {
-        width: calc(50% - 16px);
-        margin: 0 8px;
+        width: calc(50% - 32px);
+        margin: 0 16px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            right: -16px;
+            top: 0;
+            background-color: #ededed;
+        }
+
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
     }
 
     .fb-login_popup__social {
         padding-top: 0;
+    }
+
+    .fb-login_popup__form {
+        form {
+            border-bottom: 0;
+        }
+    }
+}
+
+@include tablet {
+    .fb-login-page {
+
+        &__outer {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .fb-login-page {
+        .fb-page-wrapper__title {
+            font-size: 18px;
+        }
+
+        &__outer {
+            width: 100%;
+        }
+
+        &__wrap {
+            flex-direction: column;
+            margin: 0 -16px;
+        }
+
+        &__left,
+        &__right {
+            width: calc(100% - 32px);
+
+            &::after {
+                content: none;
+            }
+        }
+
+        .fb-login_popup__social {
+            padding-top: 0;
+        }
     }
 }
