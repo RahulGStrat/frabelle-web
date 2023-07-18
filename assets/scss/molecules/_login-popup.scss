@@ -1,4 +1,4 @@
-.fb-login_popup{
+.fb-login_popup {
     width: 100%;
     padding: 16px 24px;
     background: #fff;
@@ -6,7 +6,7 @@
     border-radius: 3px;
     overflow: hidden;
 
-    &__title{
+    &__title {
         color: #51535d;
         font-size: 16px;
         font-weight: 600;
@@ -15,9 +15,10 @@
         margin-bottom: 16px;
     }
 
-    &__form{
+    &__form {
         width: 100%;
-        form{
+
+        form {
             width: 100%;
             border: none;
             outline: none;
@@ -25,44 +26,79 @@
             border-bottom: 1px solid #c1c3c9;
         }
 
-        &-field{
+        &-field {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 13px;
         }
+
+        &--or {
+            flex-direction: column;
+
+            .fb-login_popup__text {
+                width: 100%;
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 16px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    width: 40%;
+                    height: 1px;
+                    background-color: #51535d;
+                    transform: translateY(-50%);
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 50%;
+                    width: 40%;
+                    height: 1px;
+                    background-color: #51535d;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
 
-    .fb-input__text-wrap{
-        input{
+    .fb-input__text-wrap {
+        input {
             height: 35px;
         }
     }
 
-    &__link{
+    &__link {
         font-size: 11px;
         font-weight: 600;
         color: #eb2028;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             color: #eb2028;
         }
     }
 
-    &__text{
+    &__text {
         font-size: 11px;
         font-weight: 500;
         color: #848799;
     }
 
-    &__btn-wrap{
+    &__btn-wrap {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    &__btn{
+    &__btn {
         width: 100%;
         display: inline-block;
         font-size: 12px;
@@ -83,12 +119,12 @@
         }
     }
 
-    &__social{
+    &__social {
         width: 100%;
         padding-top: 16px;
     }
 
-    &__socialbtn{
+    &__socialbtn {
         width: 100%;
         display: flex;
         align-items: center;
@@ -100,7 +136,7 @@
         margin-bottom: 16px;
         transition: all 0.3s ease-in-out;
 
-        &-text{
+        &-text {
             font-size: 11px;
             font-weight: 600;
             font-family: 'Spartan';
@@ -109,8 +145,8 @@
             text-align: center;
             text-decoration: none;
         }
-        
-        &-logo{
+
+        &-logo {
             width: 14px;
             height: 14px;
             display: flex;
@@ -118,8 +154,8 @@
             justify-content: center;
             margin-right: 8px;
         }
-        
-        &:hover{
+
+        &:hover {
             background: #ededed;
         }
     }
