@@ -11,6 +11,9 @@
             font-size: 20px;
             color: #51535d;
         }
+        .fb-login_popup__btn {
+            margin-bottom: $spacer-3;
+        }
     }
     &__name-wrap {
         display: flex;
