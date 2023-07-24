@@ -29,9 +29,22 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 10px;
+                position: relative;
                 img{
                     border-radius: 50%;
                     width: 100%;
+                    
+                }
+                &:hover{
+                    border-radius:10%;
+                    .fb-tooltip__wrap {
+                        visibility: visible;
+                        left: 45%;
+                        top: 34px;
+                        .fb-tooltip__body{
+                            width: 240px;
+                        }
+                    }
                 }
             }
             &-icn{
@@ -133,9 +146,19 @@
         &-info{
             width: 100%;
             padding-left: 0;
-            
-           
-           
+            &__atributs-writer{
+                &:hover{
+                    .fb-tooltip__wrap {
+                        left: 5px !important;
+                        top: 34px;
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        &:after{
+                            left: 5px !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
