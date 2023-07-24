@@ -1,6 +1,12 @@
 .fb-recipes{
+    &__main{
+        display: flex;
+    }
+    &__media{
+        width: 45%;
+    }
     &-info{
-        width: 50%;
+        width:55%;
         padding-left: $spacer-5;
         .fb-title-head{
             text-align: left;
