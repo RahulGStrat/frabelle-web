@@ -50,10 +50,10 @@
 }
 
 // promp image
-// .fb-monthly-promo__promo-img {
-//     height: 55px !important;
-//     width: 75px !important;
-// }
+.fb-monthly-promo__promo-img {
+    height: 50px !important;
+    width: 75px !important;
+}
 
 @include mobile {
     .fb-product-info__tocart-qty {
