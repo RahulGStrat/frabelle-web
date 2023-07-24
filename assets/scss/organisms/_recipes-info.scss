@@ -4,6 +4,9 @@
     }
     &__media{
         width: 45%;
+        img{
+            width: 100%;
+        }
     }
     &-info{
         width:55%;
@@ -149,6 +152,20 @@
 
 @include mobile{
     .fb-recipes{
+        &__main{
+            display: flex;
+            flex-direction: column;
+        }
+        &__media{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            margin-bottom: $spacer-5;
+            img{
+                width: auto;
+                
+            }
+        }
         &-info{
             width: 100%;
             padding-left: 0;
@@ -171,9 +188,18 @@
 @media only screen and (max-width:460px) {
     .fb-recipes{
         &-info{
+            &__bottom{
+                flex-wrap: wrap;
+            }
             .fb-product-tile-btn{
                 width: 100% ;
                 margin-right: 0;
+            }
+        }
+        &__media{
+            img{
+                width: 100%;
+                
             }
         }
     }
