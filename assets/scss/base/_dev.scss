@@ -39,6 +39,11 @@
     }
 }
 
+// header nav menu image align
+.fb-header-nav__megamenu-cnts {
+    align-items: flex-start;
+}
+
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
