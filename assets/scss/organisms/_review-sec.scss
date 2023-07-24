@@ -1,0 +1,48 @@
+.fb-review {
+    background-color: #fff;
+
+    .fb-review__cnt {
+        margin-bottom: 24px;
+    }
+
+    .fb-input {
+
+        label {
+            font-size: 14px;
+            margin-bottom: 8px;
+
+            em {
+                color: #eb2028;
+            }
+        }
+
+        img {
+            display: block;
+            width: 120px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+    }
+
+    .fb-product-tile-btn {
+        margin-top: 24px;
+        width: auto !important;
+    }
+}
+
+@include mobile {
+    .fb-product-d__outer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fb-product-d__inner {
+        margin-bottom: 24px;
+    }
+
+    .fb-product-d__heading {
+        margin-bottom: 16px;
+    }
+}

@@ -1,32 +1,71 @@
 .fb-product-tile-btn {
-    &--red{
-        background-color:$color-red;
+    &--red {
+        background-color: $color-red;
         border: none;
         color: $color-white;
+
         &:hover {
-            background-color:$color-red-hover;
+            background-color: $color-red-hover;
             color: $color-white;
             border: none;
         }
     }
-    &--orange{
-        background-color:$color-orange;
+
+    &--orange {
+        background-color: $color-orange;
         border: none;
         color: $color-white;
+
         &:hover {
-            background-color:$color-orange-hvr;
+            background-color: $color-orange-hvr;
             color: $color-white;
             border: none;
         }
     }
-    &--cancel{
+
+    &--cancel {
         background: #f7f8fc;
         border: 1px solid #dadce3;
         color: #51535d;
+
         &:hover {
             background: #dadce3;
             color: #51535d;
             border: 1px solid #dadce3;
+        }
+    }
+
+    &--apple {
+        width: 100%;
+        display: flex;
+        border: 1px solid #51535d;
+
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid $color-black;
+            padding: 10px;
+            width: 20%;
+
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+
+        .fb-product-tile-btn {
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            background-color: $color-black;
+            color: $color-white;
+            font-size: 15px;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-black;
+            }
         }
     }
 }
