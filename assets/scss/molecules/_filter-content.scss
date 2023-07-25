@@ -1,27 +1,33 @@
-.fb-filter-cnt{
+.fb-filter-cnt {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #dadce3;
+    border-top: 1px solid #dadce3 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
     padding: 12px 0;
-    &__head{
+
+    &__head {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
     }
-    &__title{
+
+    &__title {
         font-size: 17px;
         font-weight: 700;
         color: #51535d;
         text-transform: capitalize;
     }
-    &__clr{
+
+    &__clr {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 16px;
-        &-btn{
+        // margin-right: 16px;
+
+        &-btn {
             display: inline-block;
             font-size: 12px;
             font-weight: 600;
@@ -32,8 +38,8 @@
             text-transform: capitalize;
             outline: none;
             border: none;
-            
-            &:hover{
+
+            &:hover {
                 color: $color-red;
                 text-decoration: none;
                 text-transform: capitalize;
@@ -42,35 +48,44 @@
             }
         }
     }
-    .fb-filter-opns{
+
+    .fb-filter-opns {
         width: 100%;
-        &__list{
+
+        &__list {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: flex-start;
-            &-item{
-                width: 100%;  
+
+            &-item {
+                width: 100%;
                 margin-bottom: 10px;
-                .fb-input-checkbox-wrap{
-                    label{
-                        &:hover{
+
+                .fb-input-checkbox-wrap {
+                    margin-bottom: 8px;
+
+                    label {
+                        &:hover {
                             color: $color-red;
                         }
                     }
-                }         
+                }
             }
         }
-        &__current{
+
+        &__current {
             width: 100%;
             padding: 16px 0;
-            &-list{
+
+            &-list {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: flex-start;
             }
-            &-item{
+
+            &-item {
                 width: 100%;
                 display: inline-block;
                 margin-bottom: 10px;
@@ -80,42 +95,48 @@
             }
         }
     }
-    &__selected{
+
+    &__selected {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
 
-        &-btn{
-            width: 14px;
+        &-btn {
+            width: 11px;
             height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             margin-bottom: 2px;
-            &-logo{
+            margin-right: 8px;
+
+            &-logo {
                 width: 100%;
 
-                svg{
+                svg {
                     width: 100%;
                     height: auto;
-                    path{
+
+                    path {
                         stroke: #2c3c8b;
                     }
                 }
             }
-            &:hover{
-                .fb-filter-cnt__selected-btn-logo{
-                    svg{
-                        path{
+
+            &:hover {
+                .fb-filter-cnt__selected-btn-logo {
+                    svg {
+                        path {
                             stroke: $color-red;
                         }
                     }
                 }
             }
         }
-        &-text{
+
+        &-text {
             font-size: 12px;
             font-weight: 500;
             color: #848799;
@@ -124,11 +145,11 @@
     }
 }
 
-@include mobile-tablet{
-    .fb-filter-cnt{
-        .fb-filter-opns{
-            &__current{
-                &-item{
+@include mobile-tablet {
+    .fb-filter-cnt {
+        .fb-filter-opns {
+            &__current {
+                &-item {
                     width: auto;
                     display: inline-block;
                     margin-right: 30px;

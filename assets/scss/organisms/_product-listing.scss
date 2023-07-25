@@ -1,46 +1,83 @@
-.fb-prdct-lstng{
-  &__secout{
+.fb-prdct-lstng {
+  &__secout {
     display: flex;
     width: 100%;
   }
-  .fb-sidebar{
+
+  .fb-sidebar {
     width: 100%;
     max-width: 300px;
     padding-right: 24px;
   }
-  .fb-prdct-list-outer{
+
+  .fb-prdct-list-outer {
     flex: 1;
-    &__head{
+
+    &__head {
       flex-wrap: wrap;
       margin-bottom: 16px;
     }
-    &__grid{
-      img{
-        width: 100%;
+
+    &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+
+      .fb-product-tile {
+        display: flex;
+        flex-direction: column;
+        width: calc(25% - 16px);
+        margin: 0 8px;
       }
+
+      // img {
+      //   width: 100%;
+      // }
     }
   }
-  .fb-prdct-list-outer__filter{
+
+  .fb-prdct-list-outer__filter {
     display: flex;
   }
 
 }
 
-@include mobile-tablet{
-  .fb-prdct-lstng{
-    .fb-sidebar{
+@include tablet {
+  .fb-prdct-list-outer {
+    &__grid {
+      .fb-product-tile {
+        width: calc(25% - 16px) !important;
+      }
+    }
+  }
+}
+
+@include mobile-tablet {
+  .fb-prdct-lstng {
+    .fb-sidebar {
       display: none;
     }
-    .fb-title-head{
+
+    .fb-title-head {
       width: 100%;
     }
-    .fb-prdct-list-outer__view{
+
+    .fb-prdct-list-outer__view {
       display: none;
     }
-    .fb-prdct-list-outer__filter{
+
+    .fb-prdct-list-outer__filter {
       display: flex;
       width: 100%;
       justify-content: space-between;
+    }
+
+    .fb-prdct-list-outer {
+      &__grid {
+        .fb-product-tile {
+          width: calc(50% - 16px);
+        }
+      }
     }
   }
 }

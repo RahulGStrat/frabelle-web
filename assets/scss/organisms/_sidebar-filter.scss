@@ -1,5 +1,5 @@
-.fb-sidebar{
-    &__controller{
+.fb-sidebar {
+    &__controller {
         width: 100%;
         max-width: 112px;
         display: none;
@@ -8,22 +8,24 @@
         padding: 10px 8px;
         border: 1px solid #dadce3;
         border-radius: 3px;
-        &-logo{
+
+        &-logo {
             width: 13px;
             height: 13px;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            &-img{
+            &-img {
                 width: 100%;
 
-                svg{
+                svg {
                     width: 100%;
                 }
             }
         }
-        &-text{
+
+        &-text {
             font-size: 10px;
             font-weight: 600;
             color: #848799;
@@ -31,20 +33,23 @@
             margin-left: 4px;
         }
     }
-    &__body{
+
+    &__body {
         position: static;
         top: 0;
         left: -100%;
         width: 100%;
         transition: all .3s ease-in-out;
         background-color: #fff;
-        &--active{
+
+        &--active {
             left: 0;
             transition: all .3s ease-in-out;
             z-index: 12;
         }
     }
-    &__head{
+
+    &__head {
         width: 100%;
         display: none;
         align-items: center;
@@ -52,23 +57,26 @@
         padding: 12px;
         margin-bottom: 8px;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-        &-logo{
+
+        &-logo {
             width: 26px;
             height: 26px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            &-img{
+
+            &-img {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 8px;
 
-                svg{
+                svg {
                     width: 100%;
-                    path{
+
+                    path {
                         stroke: #2c3c8b;
                         stroke-width: 1px;
                     }
@@ -76,77 +84,98 @@
             }
         }
     }
-    &__title{
+
+    &__title {
         font-size: 17px;
         font-weight: 700;
         color: #51535d;
         padding-left: 12px;
     }
-    .fb-filter-cnt{
+
+    .fb-filter-cnt {
         padding: 12px;
-        .accordion-header{
+
+        .accordion-header {
             pointer-events: none;
-            .accordion-button{
+
+            .accordion-button {
+
                 &:not(.collapsed),
-                &:focus{
+                &:focus {
                     background-color: transparent;
                     border: none;
                     outline: none;
                     border-radius: 0;
                     box-shadow: none;
                 }
-                &::after{
+
+                &::after {
                     opacity: 0;
+                    display: none;
                 }
             }
         }
-        &__head{
+
+        &__head {
             margin-bottom: 0;
         }
-        .accordion-body{
+
+        .accordion-body {
             padding: 0;
-            .fb-filter__opns{
+
+            .fb-filter__opns {
                 padding: 16px 0;
             }
         }
-        .collapse:not(.show){
+
+        .collapse:not(.show) {
             display: block;
         }
     }
-    .accordion-button{
+
+    .accordion-button {
         padding: 0;
     }
 }
 
-@include mobile-tablet{
-    .fb-sidebar{
-        &__controller{
+@include mobile-tablet {
+    .fb-sidebar {
+        &__controller {
             display: flex;
         }
-        &__head{
+
+        &__head {
             display: flex;
         }
-        &__body{
+
+        &__body {
             position: absolute;
         }
-        .accordion{
+
+        .accordion {
             max-height: calc(100vh - 50px);
             overflow-y: scroll;
         }
-        .fb-filter-cnt{
+
+        .fb-filter-cnt {
             padding: 12px;
-            .accordion-header{
+
+            .accordion-header {
                 pointer-events: all;
-                .accordion-button{
+
+                .accordion-button {
+
                     &:not(.collapsed),
-                    &:focus{
+                    &:focus {
                         background-color: transparent;
                         border: none;
                         outline: none;
                         border-radius: 0;
                         box-shadow: none;
                     }
-                    &::after{
+
+                    &::after {
+                        display: block;
                         width: 15px;
                         height: 16px;
                         background-size: cover;
@@ -154,24 +183,29 @@
                     }
                 }
             }
-            &__head{
+
+            &__head {
                 margin-bottom: 0;
             }
-            &__title{
+
+            &__title {
                 font-size: 15px;
             }
-            .accordion-body{
+
+            .accordion-body {
                 padding: 0;
-                .fb-filter__opns{
+
+                .fb-filter__opns {
                     padding: 16px 0;
                 }
             }
-            
-        .collapse:not(.show){
-            display: none;
+
+            .collapse:not(.show) {
+                display: none;
+            }
         }
-        }
-        .accordion-button{
+
+        .accordion-button {
             padding: 0;
         }
     }
