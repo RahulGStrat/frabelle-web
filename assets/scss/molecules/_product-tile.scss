@@ -151,10 +151,11 @@
     }
 
     &__title {
+        display: block;
         font-size: 12px;
         font-weight: 600;
         color: $color-blue-2;
-        margin-bottom: $spacer-4;
+        margin-bottom: $spacer-3;
         transition: 0.3s;
         white-space: nowrap;
         overflow: hidden;
