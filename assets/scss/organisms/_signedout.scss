@@ -1,45 +1,49 @@
 .fb-singed-out {
-    background-color: #fcfcff;
-    margin-top: 100px;
-  
+  background-color: #fcfcff;
+  margin-top: 100px;
+
+  &__top-head {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(59, 71, 128);
+    padding: 36px 0;
+  }
+  &__txt {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #848799;
+  }
+  &__btn-outer {
+    display: flex;
+    justify-content: center;
+  }
+  &-btn {
+    background: #eb2028;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 16px 8px;
+    width: 185px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $color-red-hover;
+      color: $color-white;
+      border: none;
+    }
+  }
+}
+
+@include mobile {
+  .fb-singed-out {
     &__top-head {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      color: rgb(59, 71, 128);
-      padding: 36px 0;
-    }
-    &__txt{
-        text-align: center;
-        margin-bottom: 40px;
-        color: #848799;
-    }
-    &__btn-outer{
-      display: flex;
-      justify-content: center;
-    }
-    &-btn{
-        background: #eb2028;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 600;
-        font-size: 12px;
-        padding: 16px 8px;
-        width: 185px;
-        vertical-align: middle;
-        text-align: center;
-        border-radius: 3px;
-        transition: 0.3s;
+      font-size: 18px;
+      padding: $spacer-2 0;
     }
   }
-  
-  @include mobile {
-    .fb-singed-out {
-      &__top-head {
-        font-size: 18px;
-        padding: $spacer-2 0;
-      }
-    }
-  }
-  
+}
