@@ -4,6 +4,55 @@
     width: 100%;
   }
 
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: $spacer-4 0;
+    input {
+      position: relative;
+      margin: 0 6px;
+      border-radius: 5px;
+      font-weight: 600;
+      border: 1px solid #dadce3;
+      padding: 8px 16px;
+      color: #a7aabe;
+      width: 40px;
+      font-size: 13px;
+      background-color: #fff;
+      &:hover {
+        background-color: #eb2028;
+        border: 1px solid #eb2028;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .aspNetDisabled.active {
+      background-color: #f0f1f5;
+      border: 0;
+      pointer-events: none;
+    }
+    #ctl17_btnNext {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.61 21.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23848799;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_3' data-name='Layer 3'%3E%3Cpolygon class='cls-1' points='12.61 10.91 1.4 0 0 1.43 9.75 10.91 0.05 20.39 1.45 21.82 12.61 10.91'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 20%;
+      width: 40px;
+      &:hover {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.61 21.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_3' data-name='Layer 3'%3E%3Cpolygon class='cls-1' points='12.61 10.91 1.4 0 0 1.43 9.75 10.91 0.05 20.39 1.45 21.82 12.61 10.91'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
+    #ctl17_btnPrev {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.61 21.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23848799;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_3' data-name='Layer 3'%3E%3Cpolygon class='cls-1' points='0 10.91 11.22 0 12.61 1.43 2.87 10.91 12.56 20.39 11.17 21.82 0 10.91'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 20%;
+      width: 40px;
+      &:hover {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.61 21.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_3' data-name='Layer 3'%3E%3Cpolygon class='cls-1' points='0 10.91 11.22 0 12.61 1.43 2.87 10.91 12.56 20.39 11.17 21.82 0 10.91'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
+  }
+
   .fb-sidebar {
     width: 100%;
     max-width: 300px;
