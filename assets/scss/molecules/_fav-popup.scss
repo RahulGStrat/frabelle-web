@@ -4,6 +4,8 @@
         max-height: 100px;
         display: block;
         border: 0;
+        position: static;
+        margin-top: 0;
         &::after {
             display: none;
         }
