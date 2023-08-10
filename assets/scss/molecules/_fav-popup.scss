@@ -1,0 +1,14 @@
+.fb-fav-popup {
+    position: relative;
+    .fb-click-drop__body {
+        max-height: 100px;
+        display: block;
+        border: 0;
+        &::after {
+            display: none;
+        }
+        &.scroll {
+            overflow-y: scroll;
+        }
+    }
+}
