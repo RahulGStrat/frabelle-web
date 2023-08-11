@@ -17,6 +17,7 @@
         }
         textarea{
             height:100px;
+            resize: none;
         }
     }
     &:first-child{
@@ -144,6 +145,23 @@
                 color: #848799;
                 padding:4px 8px 0;
                 cursor: pointer;
+        }
+    }
+    &__label{
+        &--req{
+            position: relative;
+            &::after{
+                content: '*';
+                color:$color-red;
+                font-weight: 600;
+                margin: 0;
+                font-size:11px;
+            }
+        }
+        &--tooltip-icn{
+            svg{
+                width: 10px;
+            }
         }
     }
 }
