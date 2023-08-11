@@ -2,18 +2,19 @@
 function myFunction() {
   document.getElementById("clicktodrop").classList.toggle("show1");
 }
+
 window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("fb-click-drop__body");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show1')) {
-        openDropdown.classList.remove('show1');
+      if (openDropdown.classList.contains("show1")) {
+        openDropdown.classList.remove("show1");
       }
     }
   }
-}
+};
 // CLICK TO DROPDOWN END ////////////////
 
 // onload accordion collapse
@@ -161,10 +162,9 @@ $(".fb-featured__product-slick").slick({
 //   });
 // });
 
-$(".fb-featured__tabbtn").on('shown.bs.tab', function (e) {
+$(".fb-featured__tabbtn").on("shown.bs.tab", function (e) {
   $(".fb-featured__product-slick").slick("setPosition");
 });
-
 
 // pageg header start
 const page_header = document.querySelector(".fb-page-header");
@@ -230,7 +230,7 @@ if (header_controller) {
     } else {
       header_nav.classList.toggle("fb-header-nav__active");
     }
-  })
+  });
 }
 // controller end
 
@@ -245,68 +245,63 @@ if (search_icon_mob) {
 // search bar mob end
 
 // megamenu start
-const megaHome = document.querySelector(".fb-header-megamenu__home")
-const megaInner = document.querySelectorAll(".fb-header-megamenu__home-inner")
-const megaRoom = document.querySelectorAll(".fb-header-megamenu__home-room")
-const megaLinks = document.querySelectorAll(".fb-header-megamenu__link")
-const megaLinkSub = document.querySelectorAll(".fb-header-megamenu__sub")
-const megaBack = document.querySelectorAll(".fb-header-megamenu__back")
+const megaHome = document.querySelector(".fb-header-megamenu__home");
+const megaInner = document.querySelectorAll(".fb-header-megamenu__home-inner");
+const megaRoom = document.querySelectorAll(".fb-header-megamenu__home-room");
+const megaLinks = document.querySelectorAll(".fb-header-megamenu__link");
+const megaLinkSub = document.querySelectorAll(".fb-header-megamenu__sub");
+const megaBack = document.querySelectorAll(".fb-header-megamenu__back");
 
 // link forward start
 megaLinks.forEach((item) => {
   item.addEventListener("click", () => {
     let dataid = item.dataset.id;
-    megaHome.classList.add("d-none")
+    megaHome.classList.add("d-none");
     megaLinkSub.forEach((subItem) => {
       if (subItem.dataset.content === dataid) {
-        megaInner.forEach(item => item.classList.add("d-none"))
-        subItem.classList.remove("d-none")
+        megaInner.forEach((item) => item.classList.add("d-none"));
+        subItem.classList.remove("d-none");
       }
-    })
-  })
-})
+    });
+  });
+});
 // link forward end
 
 // back button start
-megaBack.forEach(item => {
+megaBack.forEach((item) => {
   item.addEventListener("click", () => {
     if (item.classList.contains("fb-header-megamenu__back-two")) {
       item.parentElement.classList.add("d-none");
       let childs = [...item.parentElement.parentElement.children];
-      childs.forEach(item => {
+      childs.forEach((item) => {
         if (item.classList.contains("fb-header-megamenu__home-inner")) {
-          item.classList.remove("d-none")
+          item.classList.remove("d-none");
         }
-      })
+      });
     } else {
       item.parentElement.classList.add("d-none");
       let childs = [...item.parentElement.parentElement.parentElement.children];
-      childs.forEach(item => {
+      childs.forEach((item) => {
         if (item.classList.contains("fb-header-megamenu__home")) {
           item.classList.remove("d-none");
         }
-      })
+      });
     }
-  })
-})
+  });
+});
 // back button end
 
 // megamenu end
-
 
 // pageg header end
 
 // order-summary
 
-const orderbtn = document.querySelectorAll(
-  ".fb-order__summarydrop-btn"
-);
+const orderbtn = document.querySelectorAll(".fb-order__summarydrop-btn");
 const orderinnerbtn = document.querySelectorAll(
   ".fb-dropdown .accordion-button"
 );
-const orderCnt = document.querySelectorAll(
-  ".fb-order__summarydrop-cnt"
-);
+const orderCnt = document.querySelectorAll(".fb-order__summarydrop-cnt");
 const orderinnerCnt = document.querySelectorAll(
   ".fb-dropdown .accordion-collapse"
 );
@@ -347,23 +342,22 @@ const sidebar_filter_close = document.querySelector(".fb-sidebar__head-logo");
 if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
   sidebar_filter.addEventListener("click", () => {
     sidebar_filter_body.classList.add("fb-sidebar__body--active");
-  })
+  });
   sidebar_filter_close.addEventListener("click", (e) => {
     e.preventDefault();
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
-  })
+  });
 }
 
-
 // ask question
-const question_link = document.querySelector('#question');
-const question_label = document.querySelector('.fb-askquestion__link');
-const question_body = document.querySelector('.fb-askquestion__body');
+const question_link = document.querySelector("#question");
+const question_label = document.querySelector(".fb-askquestion__link");
+const question_body = document.querySelector(".fb-askquestion__body");
 
 if (question_link) {
   question_link.addEventListener("change", (e) => {
     if (e.target.checked) {
-      console.log('ho');
+      console.log("ho");
       question_label.textContent = "Hide the form";
       question_body.classList.add("show");
     } else {
@@ -373,19 +367,43 @@ if (question_link) {
   });
 }
 
-const pass = document.querySelector('#pass-toggle');
-const passOut = document.querySelector('#pass-out');
+const pass = document.querySelector("#pass-toggle");
+const passOut = document.querySelector("#pass-out");
 if (pass) {
-  pass.addEventListener('click',()=>{
-    if(passOut.querySelector('input').type==='password'){
-      passOut.querySelector('input').type='text';
-      pass.querySelectorAll('img')[0].style.display='block'
-      pass.querySelectorAll('img')[1].style.display='none'
+  pass.addEventListener("click", () => {
+    if (passOut.querySelector("input").type === "password") {
+      passOut.querySelector("input").type = "text";
+      pass.querySelectorAll("img")[0].style.display = "block";
+      pass.querySelectorAll("img")[1].style.display = "none";
+    } else {
+      passOut.querySelector("input").type = "password";
+      pass.querySelectorAll("img")[0].style.display = "none";
+      pass.querySelectorAll("img")[1].style.display = "block";
     }
-    else {
-      passOut.querySelector('input').type='password'
-      pass.querySelectorAll('img')[0].style.display='none'
-      pass.querySelectorAll('img')[1].style.display='block'
-    }
-  })
+  });
 }
+// wishlist popup
+
+let cards_wishlist = document.querySelectorAll(".fb-product-tile");
+
+cards_wishlist.forEach((item) => {
+  let wishlistBtn = item.querySelector(
+    ".fb-product-tile .fb-product-tile__fav"
+  );
+  let wishlistBody = item.querySelector(
+    ".fb-product-tile .fb-click-drop__body"
+  );
+  wishlistBtn.addEventListener("click", () => {
+    wishlistBody.classList.toggle("fav_active");
+  });
+  item.addEventListener("mouseleave", () => {
+    wishlistBody.classList.remove("fav_active");
+  });
+});
+
+
+
+
+
+
+

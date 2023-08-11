@@ -23,6 +23,9 @@
   <button type="button" class="" data-bs-toggle="modal" data-bs-target="#fav-list">
     New Favorite List
   </button>
+  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#ingredients">
+    ingredients
+  </button>
   
   <!-- Modal Atome-->
   <div class="modal fade fb-modal__atome" id="atome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -116,6 +119,64 @@
     </div>
   </div>
   <!-- Modal FAVORATE LIST END -->
+  <!-- Modal ingredients -->
+  <div class="modal fade fb-modal__ingrd fb-modal__fav-list" id="ingredients" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+      <div class="modal-content fb-modal__fav-list-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body ">
+            
+              <!-- cart table start -->
+              <div class="fb-carttable">
+                <div class="fb-carttable__outer">
+                    <ul class="fb-carttable__head">
+                        <li class="fb-carttable__headitem product">ITEM</li>
+                        <li class="fb-carttable__headitem">PRICE</li>
+                        <li class="fb-carttable__headitem">QTY</li>
+                    </ul>
+                    <div class="fb-carttable__tile">
+                        <div class="fb-carttable__item">
+                            <a href="#" class="fb-carttable__itemcnt logo">
+                            <img src="../assets/images/cart-small-img.webp" alt="">
+                            </a>
+                            <div class="fb-carttable__itemwrap">
+                                <div class="fb-carttable__itemcnt prdct ">
+                                    <a href="#">Kasim Cubes 2x2 Inches</a>
+                                </div>
+                                <div class="fb-carttable__itemcnt">
+                                    <p class="fb-carttable__label">Price</p>
+                                    <p>₱374.00</p>
+                                </div>
+                                <div class="fb-carttable__itemcnt select">
+                                    <p class="fb-carttable__label">Qty</p>
+                                    <!-- select start -->
+                                    <select name="" id="" class="fb-select">
+                                        <option value="" class="fb-select__option">Option one</option>
+                                        <option value="" class="fb-select__option">Option two</option>
+                                        <option value="" class="fb-select__option">Option three</option>
+                                        <option value="" class="fb-select__option">Option four</option>
+                                        <option value="" class="fb-select__option">Option five</option>
+                                        <option value="" class="fb-select__option">Option six</option>
+                                    </select>
+                                    <!-- select end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- cart table end -->
+
+            <footer class="modal-footer fb-modal__fav-list-footer">
+              <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
+                
+            </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal ingredienrs END -->
     <!-- body content end -->
 
     <!-- scripts -->
