@@ -1,6 +1,14 @@
 .fb-pages {
     &__account {
         padding: $spacer-6 0;
+
+        .fb-my-ac__sidebarmain{
+            order: 1;
+        }
+        .fb-my-ac__maincolum{
+            order: 2;
+            margin-bottom: $spacer-4;
+        } 
     }
 }
 
@@ -8,13 +16,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    &__sidebarmain {
-        order: 1;
-    }
-
     &__maincolum {
-        order: 2;
-
         &-wrap {
             border: 1px solid #ededed;
             padding: 30px;
@@ -74,7 +76,6 @@
         flex-direction: column;
 
         &__sidebarmain {
-            order: 3 !important;
             width: 100%;
             max-width: 100%;
             margin-bottom: $spacer-6;
