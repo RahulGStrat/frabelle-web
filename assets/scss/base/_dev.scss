@@ -54,6 +54,13 @@
     height: 50px !important;
     width: 75px !important;
 }
+.fb-pl3{
+    padding-left: 50px !important;
+    option{
+        max-height: 80px;
+        overflow: scroll !important;
+    }
+}
 
 @include mobile {
     .fb-product-info__tocart-qty {
