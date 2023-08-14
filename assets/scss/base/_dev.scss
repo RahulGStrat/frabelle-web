@@ -38,7 +38,18 @@
         }
     }
 }
-
+// reduce the size of carttable dropdown
+.fb-carttable{
+    .fb-product-info__tocart-qty{
+        border: none !important;
+    }
+    .fb-featured__dropdown{
+        width: 75px !important;
+        padding-left: 20px;
+        margin-top: -10px;
+        margin-left: 16px;
+    }
+}
 // header nav menu image align
 .fb-header-nav__megamenu-cnts {
     align-items: flex-start;
