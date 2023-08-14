@@ -403,21 +403,33 @@ cards_wishlist.forEach((item) => {
 // HIDE INPUT
 const checkbox1 = document.getElementById('checkbox1');
 const checkbox2 = document.getElementById('checkbox2');
+const one = document.getElementById('one');
+const two = document.getElementById('two');
+const three = document.getElementById('three');
 
-const divOne = document.getElementById('one');
-const divTwo = document.getElementById('two');
-const divThree = document.getElementById('three');
-
-checkbox1.addEventListener('change', () => {
-  divOne.style.display = checkbox1.checked ? 'block' : 'none';
-  divTwo.style.display = checkbox1.checked ? 'block' : 'none';
+checkbox1.addEventListener('change', function() {
+  if (checkbox1.checked) {
+    one.style.display = 'block';
+    two.style.display = 'block';
+  } else {
+    one.style.display = 'none';
+    if (!checkbox2.checked) {
+      two.style.display = 'none';
+    }
+  }
 });
 
-checkbox2.addEventListener('change', () => {
-  divTwo.style.display = checkbox2.checked ? 'block' : 'none';
-  divThree.style.display = checkbox2.checked ? 'block' : 'none';
+checkbox2.addEventListener('change', function() {
+  if (checkbox2.checked) {
+    two.style.display = 'block';
+    three.style.display = 'block';
+  } else {
+    three.style.display = 'none';
+    if (!checkbox1.checked) {
+      two.style.display = 'none';
+    }
+  }
 });
-
 
 
 
