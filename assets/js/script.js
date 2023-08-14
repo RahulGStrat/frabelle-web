@@ -400,6 +400,23 @@ cards_wishlist.forEach((item) => {
     wishlistBody.classList.remove("fav_active");
   });
 });
+// HIDE INPUT
+const checkbox1 = document.getElementById('checkbox1');
+const checkbox2 = document.getElementById('checkbox2');
+
+const divOne = document.getElementById('one');
+const divTwo = document.getElementById('two');
+const divThree = document.getElementById('three');
+
+checkbox1.addEventListener('change', () => {
+  divOne.style.display = checkbox1.checked ? 'block' : 'none';
+  divTwo.style.display = checkbox1.checked ? 'block' : 'none';
+});
+
+checkbox2.addEventListener('change', () => {
+  divTwo.style.display = checkbox2.checked ? 'block' : 'none';
+  divThree.style.display = checkbox2.checked ? 'block' : 'none';
+});
 
 
 
