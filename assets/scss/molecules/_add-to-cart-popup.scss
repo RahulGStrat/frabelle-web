@@ -40,11 +40,10 @@
                 }
             }
         }
-    }
-
-    &.scroll {
-        overflow-y: scroll;
-        max-height: 250px;
+        &.scroll {
+            overflow-y: scroll;
+            max-height: 250px;
+        }
     }
 
     &__product{
