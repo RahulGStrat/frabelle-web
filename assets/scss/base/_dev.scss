@@ -72,6 +72,20 @@
         overflow: scroll !important;
     }
 }
+// fb-cart-delete
+.fb-modal-footer{
+    flex-wrap: nowrap !important;
+    justify-content: left !important;
+    .cancel{
+        width: 92px;
+    }
+    .delete{
+        width: 80px;
+    }
+}
+.fb-meat-select{
+        padding: 10px 20px !important;
+}
 
 @include mobile {
     .fb-product-info__tocart-qty {
