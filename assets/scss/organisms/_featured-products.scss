@@ -9,7 +9,18 @@
       flex: 1;
     }
   }
-
+  .fb-product-info__tocart-label{
+    left: 70px !important;
+  }
+  &__dropdown{
+    padding: 12px 18px;
+    font-size: 12px;
+    width: 110px;
+    padding-left: 60px;
+    border-radius: 3px;
+    border: 1px solid #2c3c8b;
+  }
+  
   .nav {
     justify-content: center;
     border-radius: 10px;
@@ -134,6 +145,10 @@
       }
     }
   }
+}
+.fb-dropitems{
+  display: flex;
+  align-items: center;
 }
 
 @include tablet {

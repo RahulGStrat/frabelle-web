@@ -232,6 +232,16 @@
     }
 }
 
+.modal-body.fav-list {
+    .fb-product-tile-btn--red{
+        width: 100%;
+    }
+    .fb-modal__fav-list-footer button {
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+}
+
 @include mobile {
     .fb-modal__atome {
         &-desc {

@@ -1,0 +1,57 @@
+.fb-checkout-recipes-tile {
+    padding: $spacer-4;
+    background-color: $color-white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.03);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s;
+    width: 100%;
+
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: $spacer-3;
+        overflow: hidden;
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__desc {
+        .fb-title-head {
+            font-size: 20px;
+            font-weight: 600;
+            padding-bottom: $spacer-3;
+        }
+    }
+    &__sub-desc {
+        display: flex;
+    }
+    &__cooking {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            // color: $color-grey-2;
+        }
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        margin-right: $spacer-2;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover {
+        box-shadow: 0 5px 20px #c8cde3;
+        transition: 0.3s;
+    }
+}
