@@ -407,7 +407,7 @@ const one = document.getElementById('one');
 const two = document.getElementById('two');
 const three = document.getElementById('three');
 
-checkbox1.addEventListener('change', function() {
+checkbox1.addEventListener('change', function () {
   if (checkbox1.checked) {
     one.style.display = 'block';
     two.style.display = 'block';
@@ -419,7 +419,7 @@ checkbox1.addEventListener('change', function() {
   }
 });
 
-checkbox2.addEventListener('change', function() {
+checkbox2.addEventListener('change', function () {
   if (checkbox2.checked) {
     two.style.display = 'block';
     three.style.display = 'block';
@@ -431,6 +431,19 @@ checkbox2.addEventListener('change', function() {
   }
 });
 
+
+// listing page btn
+
+const viewBtn = document.querySelectorAll('.fb-prdct-list-outer__viewlink');
+
+viewBtn.forEach((item) => {
+  item.addEventListener('click', () => {
+    viewBtn.forEach((e) => {
+      e.classList.remove('active');
+    })
+    item.classList.add('active');
+  })
+})
 
 
 
