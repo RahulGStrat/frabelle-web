@@ -83,10 +83,29 @@
         width: 80px;
     }
 }
-.fb-meat-select{
-        padding: 10px 20px !important;
+.fb-prdct-list-outer__view{
+        .dxeListBoxItem{
+            // padding: 12px 12px 12px !important;
+            color: #848799;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: .55px;
+            padding: 8px 10px;
+        }
+        .dxeListBoxItem:hover{
+            background: #f7f8fc;
+        }
+        #ctl17_drpSort_DDD_L_LBT{
+            max-height: 200px !important;
+        }
+   
 }
+.fb-prdct-list-outer{
+    .active{
 
+    }
+}
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
