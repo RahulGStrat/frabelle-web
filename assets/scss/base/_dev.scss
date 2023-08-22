@@ -101,9 +101,12 @@
         }
    
 }
-.fb-prdct-list-outer{
-    .active{
-
+.fb-recent-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .fb-recent__product{
+        margin: 8px;
     }
 }
 @include mobile {
@@ -126,6 +129,18 @@
                 .dxic {
                     left: -18px;
                 }
+            }
+        }
+    }
+    .fb-recent-list{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .fb-recent__product{
+            margin: 16px 0;
+            width: 50%;
+            display: block;
+            img{
+                max-height: 150px
             }
         }
     }

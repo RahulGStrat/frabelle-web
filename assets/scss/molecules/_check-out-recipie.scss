@@ -36,10 +36,27 @@
         align-items: center;
         justify-content: center;
         p {
-            font-size: 14px;
+            color: #848799;
+            font-size: 12px;
             font-weight: 400;
-            // color: $color-grey-2;
+            font-family: 'Spartan';
+            font-style: normal;
+            
         }
+        p::after{
+            color: #848799;
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            font-size: 1.2rem;
+        }
+    }
+    &__vertical{
+            border-left: 1px solid #848799;;
+            height: 20px;
+            position:absolute;
+            left: 50%;
     }
     &__icon {
         width: 25px;
