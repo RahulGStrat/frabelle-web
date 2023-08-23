@@ -93,6 +93,9 @@
             letter-spacing: .55px;
             padding: 8px 10px;
         }
+        .dxpc-mainDiv {
+            margin-top: 30px;
+        }
         .dxeListBoxItem:hover{
             background: #f7f8fc;
         }
@@ -101,6 +104,19 @@
         }
    
 }
+.dxpcDropDown{
+    margin-top: 20px !important;
+}
+
+.fb-prdct-list-outer__viewlink 
+    {
+        &.active{
+            background: #f0f1f5;
+            border: 1px solid #f0f1f5;
+            }
+
+    }
+
 .fb-recent-list{
     display: flex;
     flex-direction: row;
@@ -108,6 +124,11 @@
     .fb-recent__product{
         margin: 8px;
     }
+}
+.fb-vertical-productlist{
+    .fb-product-info__tocart-label{
+        left: 54px !important;
+       }
 }
 @include mobile {
     .fb-product-info__tocart-qty {

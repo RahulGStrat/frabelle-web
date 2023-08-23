@@ -150,6 +150,44 @@ $(".fb-featured__product-slick").slick({
   ],
 });
 
+
+// fb-checkout-recipes
+$(".fb-checkout-recipes-slick").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: true,
+  arrows: true,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
+
 //
 // document.querySelectorAll(".fb-featured__tabbtn").forEach((e) => {
 //   e.addEventListener("click", () => {
@@ -393,11 +431,15 @@ cards_wishlist.forEach((item) => {
   let wishlistBody = item.querySelector(
     ".fb-product-tile .fb-click-drop__body"
   );
-  wishlistBtn.addEventListener("click", () => {
-    wishlistBody.classList.toggle("fav_active");
-  });
+  if(wishlistBtn){
+    wishlistBtn.addEventListener("click", () => {
+      wishlistBody.classList.toggle("fav_active");
+    });
+  }
   item.addEventListener("mouseleave", () => {
-    wishlistBody.classList.remove("fav_active");
+    if(wishlistBody){
+      wishlistBody.classList.remove("fav_active");
+    }
   });
 });
 // HIDE INPUT
@@ -407,29 +449,33 @@ const one = document.getElementById('one');
 const two = document.getElementById('two');
 const three = document.getElementById('three');
 
-checkbox1.addEventListener('change', function () {
-  if (checkbox1.checked) {
-    one.style.display = 'block';
-    two.style.display = 'block';
-  } else {
-    one.style.display = 'none';
-    if (!checkbox2.checked) {
-      two.style.display = 'none';
+if (checkbox1) {
+  checkbox1.addEventListener('change', function () {
+    if (checkbox1.checked) {
+      one.style.display = 'block';
+      two.style.display = 'block';
+    } else {
+      one.style.display = 'none';
+      if (!checkbox2.checked) {
+        two.style.display = 'none';
+      }
     }
-  }
-});
+  });
+}
 
-checkbox2.addEventListener('change', function () {
-  if (checkbox2.checked) {
-    two.style.display = 'block';
-    three.style.display = 'block';
-  } else {
-    three.style.display = 'none';
-    if (!checkbox1.checked) {
-      two.style.display = 'none';
+if (checkbox2) {
+  checkbox2.addEventListener('change', function () {
+    if (checkbox2.checked) {
+      two.style.display = 'block';
+      three.style.display = 'block';
+    } else {
+      three.style.display = 'none';
+      if (!checkbox1.checked) {
+        two.style.display = 'none';
+      }
     }
-  }
-});
+  });
+}
 
 
 // listing page btn
