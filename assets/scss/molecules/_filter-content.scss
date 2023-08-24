@@ -66,7 +66,7 @@
             &-item {
                 width: 100%;
                 margin-bottom: 10px;
-
+                display: none;
                 .fb-input-checkbox-wrap {
                     margin-bottom: 8px;
 
@@ -75,6 +75,9 @@
                             color: $color-red;
                         }
                     }
+                }
+                &.show-item{
+                    display: block;
                 }
             }
         }

@@ -376,6 +376,7 @@ window.addEventListener("resize", () => {
 const sidebar_filter = document.querySelector(".fb-sidebar__controller");
 const sidebar_filter_body = document.querySelector(".fb-sidebar__body");
 const sidebar_filter_close = document.querySelector(".fb-sidebar__head-logo");
+const sidebar_filter_options = document.querySelectorAll(".fb-filter-opns__list");
 
 if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
   sidebar_filter.addEventListener("click", () => {
@@ -385,6 +386,47 @@ if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
     e.preventDefault();
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   });
+}
+
+// To set the sidebar filters above 5 hiden
+if(sidebar_filter_options){
+  sidebar_filter_options.forEach(item=>{
+    const sidebar_filters = item.querySelectorAll(".fb-filter-opns__list-item")
+    const sidebar_filter_readmore = item.querySelector(".fb-seemore-more");
+    let triger = false;
+    if(sidebar_filters.length >  4){
+      sidebar_filter_readmore.classList.add("fb-seemore-more--show");
+      sidebar_filters.forEach((item,index)=>{
+        if(item.classList.contains("show-item") && index > 4){
+          item.classList.remove("show-item")
+        }
+      })
+    }
+    if(sidebar_filter_readmore){
+      sidebar_filter_readmore.addEventListener("click",(e)=>{
+        e.preventDefault();
+        triger=!triger;
+        let text = sidebar_filter_readmore.querySelector(".fb-seemore-more__btn .fb-seemore-more__btn-text");
+        if(triger){
+          text.textContent = "See less"
+          sidebar_filter_readmore.classList.add("fb-seemore-more--arrow")
+          sidebar_filters.forEach(item=>{
+            if(!item.classList.contains("show-item")){
+             item.classList.add("show-item")
+            }
+           })
+        }else{
+          text.textContent = "See more"
+          sidebar_filter_readmore.classList.remove("fb-seemore-more--arrow")
+          sidebar_filters.forEach((item,index)=>{
+          if(item.classList.contains("show-item") && index > 4){
+            item.classList.remove("show-item");
+           }
+           })
+        }
+      })
+    }
+  })
 }
 
 // ask question
@@ -490,8 +532,3 @@ viewBtn.forEach((item) => {
     item.classList.add('active');
   })
 })
-
-
-
-
-
