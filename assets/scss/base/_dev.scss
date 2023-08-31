@@ -167,6 +167,9 @@
         padding-bottom: 0 !important;
     }
 }
+.fb-cart-price{
+    padding-left: 7px;
+}
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
