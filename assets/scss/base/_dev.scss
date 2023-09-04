@@ -170,6 +170,19 @@
 .fb-cart-price{
     padding-left: 7px;
 }
+.fb-recipe__filters{
+    display: flex;
+    justify-content: center;
+}
+.fb-product-horizontal{
+    .fb-product-horizontal-outer{
+        width: 20%;
+        .fb-product-tile__tile-img{
+            width: 100%;
+          }
+        }
+}
+
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
