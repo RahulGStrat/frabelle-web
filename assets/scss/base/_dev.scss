@@ -77,15 +77,7 @@
         overflow: scroll !important;
     }
 }
-.fb-input__box {
-    span {
-        color: $color-red !important;
-        font-weight: 500 !important;
-    }
-}
-.error {
-    border-color: $color-red !important;
-}
+
 
 // fb-cart-delete
 .fb-modal-footer {
@@ -237,6 +229,17 @@
             background-color: transparent !important;
         }
     }
+}
+
+// error text 
+.fb-input__box {
+    & .fb-input > span {
+        color: $color-red !important;
+        font-weight: 500 !important;
+    }
+}
+.error {
+    border-color: $color-red !important;
 }
 
 @include mobile {
