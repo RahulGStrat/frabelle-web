@@ -61,6 +61,15 @@
         overflow: scroll !important;
     }
 }
+.fb-input__box {
+    span {
+        color: $color-red !important;
+        font-weight: 500 !important;
+    }
+}
+.error {
+    border-color: $color-red !important;
+}
 
 @include mobile {
     .fb-product-info__tocart-qty {
