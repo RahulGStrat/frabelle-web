@@ -39,6 +39,20 @@
     }
 }
 
+// reduce the size of carttable dropdown
+.fb-carttable {
+    .fb-product-info__tocart-qty {
+        border: none !important;
+    }
+
+    .fb-featured__dropdown {
+        width: 75px !important;
+        padding-left: 20px;
+        margin-top: -10px;
+        margin-left: 16px;
+    }
+}
+
 // header nav menu image align
 .fb-header-nav__megamenu-cnts {
     align-items: flex-start;
@@ -54,9 +68,11 @@
     height: 50px !important;
     width: 75px !important;
 }
-.fb-pl3{
+
+.fb-pl3 {
     padding-left: 50px !important;
-    option{
+
+    option {
         max-height: 80px;
         overflow: scroll !important;
     }
@@ -69,6 +85,158 @@
 }
 .error {
     border-color: $color-red !important;
+}
+
+// fb-cart-delete
+.fb-modal-footer {
+    flex-wrap: nowrap !important;
+    justify-content: left !important;
+
+    .cancel {
+        width: 92px;
+    }
+
+    .delete {
+        width: 80px;
+    }
+}
+
+.fb-prdct-list-outer__view {
+    .dxeListBoxItem {
+        // padding: 12px 12px 12px !important;
+        color: #848799;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: .55px;
+        padding: 8px 10px;
+    }
+
+    .dxpc-mainDiv {
+        margin-top: 30px;
+    }
+
+    .dxeListBoxItem:hover {
+        background: #f7f8fc;
+    }
+
+    #ctl17_drpSort_DDD_L_LBT {
+        max-height: 200px !important;
+    }
+
+}
+
+.dxpcDropDown {
+    margin-top: -18px !important;
+}
+
+.fb-prdct-list-outer__viewlink {
+    &.active {
+        background: #f0f1f5;
+        border: 1px solid #f0f1f5;
+    }
+
+}
+
+.fb-recent-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .fb-recent__product {
+        margin: 8px;
+    }
+}
+
+.fb-product-info__tocart-label {
+    left: 65px !important;
+}
+
+.fb-prdct-list-outer__grid {
+    .fb-featured__dropdown {
+        border-radius: 5px !important;
+        border-radius: 5px !important;
+        padding-left: 60px !important;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 10px;
+
+    }
+}
+
+.fb-checkout-recipie {
+    background-color: #f0f1fa;
+    margin-bottom: 20px;
+}
+
+.fb-featured .slick-dots li button:before {
+    content: "";
+    background-color: #fff;
+
+}
+
+.fb-checkout-recipes {
+    .fb-checkout-recipes-tile {
+        padding: 14px !important;
+    }
+}
+
+.fb-checkout-recipes {
+    .fb-checkout-recipes-tile__desc .fb-title-head {
+        font-size: 14px !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.fb-recipie-head {
+    .fb-title-head {
+        padding-top: 40px;
+        padding-bottom: 0 !important;
+    }
+}
+
+.fb-cart-price {
+    padding-left: 7px;
+}
+
+.fb-recipe__filters {
+    display: flex;
+    justify-content: center;
+}
+
+.fb-product-horizontal {
+    .fb-product-horizontal-outer {
+        width: 20%;
+
+        .fb-product-tile__tile-img {
+            width: 100%;
+        }
+    }
+}
+
+.fb-prdct-list-outer__view {
+    &.dropdown {
+        table {
+            padding: 4px !important;
+        }
+
+        .dxic {
+            input {
+                color: $color-grey2;
+                font-weight: 500;
+                font-size: 13px;
+            }
+        }
+
+        .dxeButton.dxeButtonEditButton {
+            border: 0;
+            background: none;
+        }
+
+        .dxeListBoxItemSelected {
+            background-color: transparent !important;
+        }
+    }
 }
 
 @include mobile {
@@ -94,4 +262,24 @@
             }
         }
     }
+
+    .fb-recent-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .fb-recent__product {
+            margin: 16px 0;
+            width: 50%;
+            display: block;
+
+            img {
+                max-height: 150px
+            }
+        }
+    }
+
+    .ae-benefit-tile {
+        display: none;
+    }
+
 }

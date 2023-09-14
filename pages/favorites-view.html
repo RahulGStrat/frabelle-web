@@ -7209,109 +7209,154 @@
       <div class="fb-my-ac">
         <div class="fb-my-ac__maincolum">
           <div class="fb-my-ac__maincolum-wrap">
-            <div class="fb-title-head">My Addresses</div>
-          <!-- AcDash -->
-          <div class="fb-ac-dash-myaddress">
-            <!-- <div c lass="content-wrapper">-->
-            <div classs="fb-ac-dash-myaddress___outer">
-              <div class="fb-ac-dash-myaddress__header">
-                <div class="my-address">Default Addresses</div>
-              </div>
-              <div class="fb-ac-dash-myaddress__ship-bill">
-                <div class="default-shipping-address">
-                  <div class="title">Default Shipping Address</div>
-                  <div class="address-box">
-                    <divaddress-box>Gokul Chandran</divaddress-box>
-                    <div class="address-box-item">45 , Building Street</div>
-                    <div class="address-box-item">
-                      Dasmariñas Resettlement Area,Cavite, Calabarzon, 4115
-                    </div>
-                    <div class="address-box-item">Philippines</div>
-                    <div class="address-box-item">T: 8590356559</div>
+            <div class="fb-favorites">
+                <div class="fb-favorites__head">
+                    <div class="fb-title-head">List 1</div>
+                </div> 
+                <div  class="fb-favorites__head--sub">
+                  <p>testing</p>
+                </div>
+                 <!-- cart table start -->
+                <div class="fb-carttable">
+                  <div class="fb-carttable__outer">
+                    <ul class="fb-carttable__head fb-carttable__head--check">
+                      <li class="fb-carttable__headitem product">
+                        <div class="fb-input-checkbox-wrap">
+                          <input type="checkbox" id="checkbox">
+                          <label for="checkbox">Select all</label>
+                        </div>
+                      </li>
+                      <li class="fb-carttable__headitem">
+                        <a href=""> Remove Selected</a>
+                      </li>
+                      <li class="fb-carttable__headitem">
+                        <a href="">Move Selected</a>
+                      </li>
+                      <li class="fb-carttable__headitem">
+                        <a href="">Copy Selected</a>
+                      </li>
+                      <li class="fb-carttable__headitem blank"></li>
+                  </ul>
+                      <ul class="fb-carttable__head">
+                          <li class="fb-carttable__headitem product">PRODUCT</li>
+                          <li class="fb-carttable__headitem">PRICE</li>
+                          <li class="fb-carttable__headitem">QTY</li>
+                          <li class="fb-carttable__headitem">SUBTOTAL</li>
+                          <li class="fb-carttable__headitem blank"></li>
+                      </ul>
+                      <div class="fb-carttable__tile">
+                          <div class="fb-carttable__item">
+                            <div class="fb-input-checkbox-wrap">
+                              <input type="checkbox" id="checkbox">
+                            </div>
+                              <a href="#" class="fb-carttable__itemcnt logo">
+                              <img src="../assets/images/cart-small-img.webp" alt="">
+                              </a>
+                              <div class="fb-carttable__itemwrap">
+                                  <div class="fb-carttable__itemcnt prdct ">
+                                      <a href="#">Kasim Cubes 2x2 Inches</a>
+                                      <p class="fb-carttable__weight">FMP1-00056</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt">
+                                      <p class="fb-carttable__label">Price</p>
+                                      <p>₱374.00</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt select">
+                                      <p class="fb-carttable__label">Qty</p>
+                                      <!-- select start -->
+                                      <select name="" id="" class="fb-select">
+                                          <option value="" class="fb-select__option">Option one</option>
+                                          <option value="" class="fb-select__option">Option two</option>
+                                          <option value="" class="fb-select__option">Option three</option>
+                                          <option value="" class="fb-select__option">Option four</option>
+                                          <option value="" class="fb-select__option">Option five</option>
+                                          <option value="" class="fb-select__option">Option six</option>
+                                      </select>
+                                      <!-- select end -->
+                                  </div>
+                                  <div class="fb-carttable__itemcnt">
+                                      <p class="fb-carttable__label">Subtotal</p>
+                                      <p>₱2,992.00</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt dlt">
+                                      <a href="#" class="fb-carttable_dlticon">
+                                          <div class="fb-carttable__dltimg">
+                                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z" fill="#E3E3E5"/>
+                                                  <path d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z" fill="#E3E3E5"/>
+                                                  <path d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z" fill="#E3E3E5"/>
+                                                  <path d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z" fill="#E3E3E5"/>
+                                              </svg>
+                                          </div>
+                                          <p class="fb-carttable__label">Delete</p>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fb-carttable__tile">
+                          <div class="fb-carttable__item">
+                            <div class="fb-input-checkbox-wrap">
+                              <input type="checkbox" id="checkbox">
+                            </div>
+                              <a href="#" class="fb-carttable__itemcnt logo">
+                              <img src="../assets/images/cart-small-img.webp" alt="">
+                              </a>
+                              <div class="fb-carttable__itemwrap">
+                                  <div class="fb-carttable__itemcnt prdct ">
+                                      <a href="#">Kasim Cubes 2x2 Inches</a>
+                                      <p class="fb-carttable__weight">FMP1-00056</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt">
+                                      <p class="fb-carttable__label">Price</p>
+                                      <p>₱374.00</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt select">
+                                      <p class="fb-carttable__label">Qty</p>
+                                      <!-- select start -->
+                                      <select name="" id="" class="fb-select">
+                                          <option value="" class="fb-select__option">Option one</option>
+                                          <option value="" class="fb-select__option">Option two</option>
+                                          <option value="" class="fb-select__option">Option three</option>
+                                          <option value="" class="fb-select__option">Option four</option>
+                                          <option value="" class="fb-select__option">Option five</option>
+                                          <option value="" class="fb-select__option">Option six</option>
+                                      </select>
+                                      <!-- select end -->
+                                  </div>
+                                  <div class="fb-carttable__itemcnt">
+                                      <p class="fb-carttable__label">Subtotal</p>
+                                      <p>₱2,992.00</p>
+                                  </div>
+                                  <div class="fb-carttable__itemcnt dlt">
+                                      <a href="#" class="fb-carttable_dlticon">
+                                          <div class="fb-carttable__dltimg">
+                                              <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.31111 1.73333C2.31111 0.776004 3.08711 0 4.04444 0H6.35554C7.31287 0 8.08887 0.776004 8.08887 1.73333V2.02222H9.8222C10.1413 2.02222 10.4 2.28093 10.4 2.6C10.4 2.91906 10.1413 3.17777 9.8222 3.17777H0.577777C0.258709 3.17777 0 2.91906 0 2.6C0 2.28093 0.258709 2.02222 0.577777 2.02222H2.31111V1.73333ZM3.46666 2.02222H6.93332V1.73333C6.93332 1.41426 6.67461 1.15555 6.35554 1.15555H4.04444C3.72537 1.15555 3.46666 1.41426 3.46666 1.73333V2.02222Z" fill="#E3E3E5"/>
+                                                  <path d="M9.25965 2.23684C9.57794 2.25967 9.81755 2.53605 9.79487 2.85433L9.78998 11.3902C9.72524 12.2973 8.9704 13 8.06105 13H2.33875C1.42939 13 0.674551 12.2973 0.609807 11.3902L0.60502 2.85433C0.582193 2.53604 0.821815 2.25965 1.14011 2.23684C1.4584 2.21414 1.73492 2.45376 1.7576 2.77206L1.76239 11.308C1.78406 11.6104 2.03554 11.8446 2.33875 11.8446H8.06105C8.36425 11.8446 8.61574 11.6104 8.6374 11.308L8.64219 2.77206C8.66489 2.45377 8.9414 2.21416 9.25968 2.23684H9.25965Z" fill="#E3E3E5"/>
+                                                  <path d="M4.04409 5.19995C4.36315 5.19995 4.62186 5.45866 4.62186 5.77773V9.53328C4.62186 9.85234 4.36315 10.1111 4.04409 10.1111C3.72502 10.1111 3.46631 9.85234 3.46631 9.53328V5.77773C3.46631 5.45866 3.72502 5.19995 4.04409 5.19995Z" fill="#E3E3E5"/>
+                                                  <path d="M6.93339 5.77773C6.93339 5.45866 6.67468 5.19995 6.35561 5.19995C6.03654 5.19995 5.77783 5.45866 5.77783 5.77773V9.53328C5.77783 9.85234 6.03654 10.1111 6.35561 10.1111C6.67468 10.1111 6.93339 9.85234 6.93339 9.53328V5.77773Z" fill="#E3E3E5"/>
+                                              </svg>
+                                          </div>
+                                          <p class="fb-carttable__label">Delete</p>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fb-favorites__btnwrap">
+                        <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red disabled">
+                          ADD TO CART
+                        </button>
+                        <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">
+                          BUY NOW
+                        </button>
+                        <button href="#" class="fb-product-tile-btn">Add to Cart</button>
+                      </div>
                   </div>
-                  <a href="edit-address.html" class="edit-address">
-                    <span>Edit Address</span>
-                  </a>
                 </div>
-                <div class="default-billing-address">
-                  <div class="title">Default Billing Address</div>
-                  <div class="address-box">
-                    <div class="address-box-item">Gokul Chandran</div>
-                    <div class="address-box-item">566, Buliding Street</div>
-                    <div class="address-box-item">
-                      Balic-Balic, City of Manila, NCR, 1008
-                    </div>
-                    <div class="address-box-item">Philippines</div>
-                    <div class="address-box-item">T: 8977678789</div>
-                  </div>
-                  <a href="edit-address.html" class="edit-address">
-                    <span>Edit Address</span>
-                  </a>
-                </div>
-              </div>
+                <!-- cart table end -->
             </div>
-            <!-- </div> -->
-          </div>
-          <!-- AcDash -->
-          <!-- AcDash -->
-          <div class="fb-ac-ad-address">
-            <div class="fb-ac-ad-address__head">Additional Address Entries</div>
-            <div class="fb-ac-ad-address__wrap">
-              <div class="fb-ac-ad-address__box ">
-                <p>
-                  Farhan Mohamed<br>
-                  Thrikkakkara<br>
-                  Judgemukk<br>
-                  Paombong, Bulacan, Central Luzon, 682021
-                  Philippines<br>
-                  T: 07994033309
-                </p>
-                <div class="fb-ac-ad-address__bottom">
-                  <a href="edit-address.html" class="fb-ac-ad-address__box-link">
-                    <span>Edit</span>
-                  </a>
-                  <a href="#" class="fb-ac-ad-address__box-link">
-                    <span>Delete</span>
-                  </a>
-                  <a href="#" class="fb-ac-ad-address__box-link">
-                    <span>Make default address</span>
-                  </a>
-                  
-                </div>
-              </div>
-              <div class="fb-ac-ad-address__box">
-                <p>
-                  Farhan Mohamed<br>
-                  Thrikkakkara<br>
-                  Judgemukk<br>
-                  Paombong, Bulacan, Central Luzon, 682021
-                  Philippines<br>
-                  T: 07994033309
-                </p>
-                <div class="fb-ac-ad-address__bottom">
-                  <a href="edit-address.html" class="fb-ac-ad-address__box-link">
-                    <span>Edit</span>
-                  </a>
-                  <a href="#" class="fb-ac-ad-address__box-link">
-                    <span>Delete</span>
-                  </a>
-                  <a href="#" class="fb-ac-ad-address__box-link">
-                    <span>Make default address</span>
-                  </a>
-                  
-                </div>
-              </div>
-              <div class="fb-ac-ad-address__box fb-ac-ad-address__box-noaddress">
-                <p>
-                  You have no other address entries in your address book.
-                </p>
-                <div class="fb-ac-ad-address__bottom">
-                  <button href="edit-address.html" class="fb-product-tile-btn fb-product-tile-btn--red">Add New Address</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- AcDash -->
           </div>
         </div>
         <div class="fb-my-ac__sidebarmain">
@@ -7365,7 +7410,7 @@
               </g>
             </svg>
             Order History</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="favorites.html">
+        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 24.36">
               <g id="Layer_2" data-name="Layer 2">
@@ -7375,8 +7420,8 @@
                 </g>
               </g>
             </svg>
-            Favorites</a></li>
-        <li class="fb-sbar__nav-item"><span class="nav-link fb-sbar__nav-link active" href="#">
+            Favorites</span></li>
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-address.html">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.64 30.05">
               <g id="Layer_2" data-name="Layer 2">
@@ -7396,7 +7441,7 @@
                 </g>
               </g>
             </svg>
-            My Addresses</span></li>
+            My Addresses</a></li>
         <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="customer-information.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 27.62">
               <g id="Layer_2" data-name="Layer 2">
@@ -7409,7 +7454,7 @@
               </g>
             </svg>
             Account Information</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="store-credit.html">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link " href="store-credit.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.37 28.64">
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_3" data-name="Layer 3">
@@ -7419,7 +7464,7 @@
               </g>
             </svg>
             Store Credit</a></li>
-        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link" href="gift-card.html">
+        <li class="fb-sbar__nav-item"><a class="nav-link fb-sbar__nav-link">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.96 21.32">
               <g id="Layer_2" data-name="Layer 2">
@@ -7659,6 +7704,48 @@
     </div>
   </div>
   <!-- Footer end -->
+   <!-- Modal FAVORATE LIST -->
+   <div class="modal fade fb-modal__fav-list" id="fav-list" data-bs-backdrop="static" data-bs-keyboard="false"
+   tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+     <div class="modal-content fb-modal__fav-list-content">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <div class="modal-body ">
+
+         <div class="fb-modal__fav-list-head">
+           <h2>
+             Create a New Favorite List
+             </h1>
+         </div>
+         <div class="fb-modal__fav-list-body">
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Favorite List Name
+             </label>
+             <div class="fb-input__text-wrap">
+               <input type="email" class="fb-input__text" placeholder="Email address">
+             </div>
+           </div>
+           <div class="fb-modal__fav-list-fields">
+             <label class="fb-modal__fav-list-label">
+               Description (optional)
+             </label>
+             <div class="fb-input__text-wrap">
+               <textarea class="fb-modal__fav-list-textarea" ></textarea>
+             </div>
+           </div>
+         </div>
+
+         <footer class="modal-footer fb-modal__fav-list-footer">
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">SAVE</button>
+           <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+
+         </footer>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Modal FAVORATE LIST END -->
   <!-- body content end -->
 
   <!-- scripts -->

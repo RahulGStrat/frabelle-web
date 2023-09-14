@@ -1,0 +1,19 @@
+.fb-cart-itemsum{
+  // min-width: 20px;
+  // height: 20px;
+  // line-height: 20px;
+  // font-size: 10px;
+  // left: 20px;
+    position: absolute;
+    left: 26px;
+    top: -8px;
+    span.red {
+    background: #eb2028;
+    color: #ffffff;
+    text-align: center;
+    padding: 7px 8px;
+    border-radius: 50%;
+    font-size: 8px;
+    font-weight: bold;
+      }
+}
