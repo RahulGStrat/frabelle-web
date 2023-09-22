@@ -61,6 +61,10 @@
             color: #848799;
             }
         }
+
+        &.error {
+            border-color: #eb2028;
+        }
     }
     &__text{
         width: 100%;
