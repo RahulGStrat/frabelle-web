@@ -1,0 +1,37 @@
+.fb-addcartbubble {
+    position: relative;
+    width: 144px;
+    height: 72px;
+    padding: 5px;
+    color: #32557f;
+    border: 3px solid #848799;
+    margin: top;
+    margin-top: 20px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 26px;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border: solid 16px transparent;
+    border-top: 0;
+    border-bottom-color: #fff;
+  }
+
+  &::before {
+    top: -18px;
+    z-index: 1;
+    border-bottom-color: #848799;
+  }
+}
+// .faq-question-view .page-title-wrapper h1, .faq-category-view .page-title-wrapper h1 {
+//   padding-top: 24px;
+//   padding-left: 30px;
+// }

@@ -45,6 +45,9 @@
 @import "./molecules/free-shipping";
 @import "./molecules/fav-popup";
 @import "./molecules/recent-product";
+@import "./molecules/fb-see-more";
+@import "./molecules/cartaddedmsg";
+@import "./molecules/modified-popup";
 
 // organisms
 @import "./organisms/footer";
@@ -105,6 +108,10 @@
 @import "organisms/forgot-passwod";
 @import "organisms/review-sec";
 @import "organisms/ingredients-method";
+@import "organisms/check-out-recipie";
 @import "organisms/signedout";
-
+@import "organisms/car-item-sum.scss";
+@import "organisms/fav-msg-box";
+@import "organisms/recipie-with-tile";
+@import "organisms/fb-notfound";
 // pages

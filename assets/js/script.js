@@ -150,6 +150,44 @@ $(".fb-featured__product-slick").slick({
   ],
 });
 
+
+// fb-checkout-recipes
+$(".fb-checkout-recipes-slick").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: true,
+  arrows: true,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
+
 //
 // document.querySelectorAll(".fb-featured__tabbtn").forEach((e) => {
 //   e.addEventListener("click", () => {
@@ -170,6 +208,7 @@ $(".fb-featured__tabbtn").on("shown.bs.tab", function (e) {
 const page_header = document.querySelector(".fb-page-header");
 const header_controller = document.querySelector(".fb-header__controller");
 const header_nav = document.querySelector(".fb-header-nav-wrap");
+const header_navLinks = document.querySelectorAll(".fb-header-nav__item");
 const header_toplink = document.querySelector(".fb-toplinks__wrap");
 const search_icon_mob = document.querySelector(".fb-header__search-icon--mob");
 const search_bar = document.querySelector(".fb-header__search");
@@ -188,6 +227,18 @@ const headerSticky = () => {
     }
   }
 };
+
+// function to add active to the header nav links - Unipuehover
+header_navLinks.forEach(item=>{
+  item.addEventListener('mouseenter',()=>{
+    const link = item.querySelector(".fb-header-nav__link")
+    link.classList.add('active-link')
+  })
+  item.addEventListener('mouseleave',()=>{
+    const link = item.querySelector(".fb-header-nav__link")
+    link.classList.remove('active-link')
+  })
+})
 
 // to caputure screen width
 function screenWidthFinder() {
@@ -338,6 +389,7 @@ window.addEventListener("resize", () => {
 const sidebar_filter = document.querySelector(".fb-sidebar__controller");
 const sidebar_filter_body = document.querySelector(".fb-sidebar__body");
 const sidebar_filter_close = document.querySelector(".fb-sidebar__head-logo");
+const sidebar_filter_options = document.querySelectorAll(".fb-filter-opns__list");
 
 if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
   sidebar_filter.addEventListener("click", () => {
@@ -347,6 +399,48 @@ if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
     e.preventDefault();
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   });
+}
+                                                                                                                                               
+
+// To set the sidebar filters above 5 hiden
+if(sidebar_filter_options){
+  sidebar_filter_options.forEach(item=>{
+    const sidebar_filters = item.querySelectorAll(".fb-filter-opns__list-item")
+    const sidebar_filter_readmore = item.querySelector(".fb-seemore-more");
+    let triger = false;
+    if(sidebar_filters.length >  4){
+      sidebar_filter_readmore.classList.add("fb-seemore-more--show");
+      sidebar_filters.forEach((item,index)=>{
+        if(item.classList.contains("show-item") && index > 4){
+          item.classList.remove("show-item")
+        }
+      })
+    }
+    if(sidebar_filter_readmore){
+      sidebar_filter_readmore.addEventListener("click",(e)=>{
+        e.preventDefault();
+        triger=!triger;
+        let text = sidebar_filter_readmore.querySelector(".fb-seemore-more__btn .fb-seemore-more__btn-text");
+        if(triger){
+          text.textContent = "See less"
+          sidebar_filter_readmore.classList.add("fb-seemore-more--arrow")
+          sidebar_filters.forEach(item=>{
+            if(!item.classList.contains("show-item")){
+             item.classList.add("show-item")
+            }
+           })
+        }else{
+          text.textContent = "See more"
+          sidebar_filter_readmore.classList.remove("fb-seemore-more--arrow")
+          sidebar_filters.forEach((item,index)=>{
+          if(item.classList.contains("show-item") && index > 4){
+            item.classList.remove("show-item");
+           }
+           })
+        }
+      })
+    }
+  })
 }
 
 // ask question
@@ -393,17 +487,62 @@ cards_wishlist.forEach((item) => {
   let wishlistBody = item.querySelector(
     ".fb-product-tile .fb-click-drop__body"
   );
-  wishlistBtn.addEventListener("click", () => {
-    wishlistBody.classList.toggle("fav_active");
-  });
+  if(wishlistBtn){
+    wishlistBtn.addEventListener("click", () => {
+      wishlistBody.classList.toggle("fav_active");
+    });
+  }
   item.addEventListener("mouseleave", () => {
-    wishlistBody.classList.remove("fav_active");
+    if(wishlistBody){
+      wishlistBody.classList.remove("fav_active");
+    }
   });
 });
+// HIDE INPUT
+const checkbox1 = document.getElementById('ctl17_checkbox1');
+const checkbox2 = document.getElementById('ctl17_checkbox2');
+const one = document.getElementById('one');
+const two = document.getElementById('two');
+const three = document.getElementById('three');
+
+if (checkbox1) {
+  checkbox1.addEventListener('change', function () {
+    if (checkbox1.checked) {
+      one.style.display = 'block';
+      two.style.display = 'block';
+    } else {
+      one.style.display = 'none';
+      if (!checkbox2.checked) {
+        two.style.display = 'none';
+      }
+    }
+  });
+}
+
+if (checkbox2) {
+  checkbox2.addEventListener('change', function () {
+    if (checkbox2.checked) {
+      two.style.display = 'block';
+      three.style.display = 'block';
+    } else {
+      three.style.display = 'none';
+      if (!checkbox1.checked) {
+        two.style.display = 'none';
+      }
+    }
+  });
+}
 
 
+// listing page btn
 
+const viewBtn = document.querySelectorAll('.fb-prdct-list-outer__viewlink');
 
-
-
-
+viewBtn.forEach((item) => {
+  item.addEventListener('click', () => {
+    viewBtn.forEach((e) => {
+      e.classList.remove('active');
+    })
+    item.classList.add('active');
+  })
+})

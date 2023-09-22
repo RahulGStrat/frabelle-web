@@ -1,0 +1,27 @@
+.fb-seemore-more{
+    display: none;
+    &__btn{
+        color: #3b4780;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    &__img{
+        width: 15px;
+        height: 13px;
+        margin-left: 5px;
+    } 
+        img{
+            width: 100%;
+        }
+        &--show{
+            display: block;
+        }
+        &--arrow{
+            .fb-seemore-more__img{
+                transform: rotateZ(180deg) translateY(-3px);
+            }
+        }
+}

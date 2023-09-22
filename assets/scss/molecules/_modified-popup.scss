@@ -1,0 +1,46 @@
+.fb-modified-fav{
+    // display: none;
+    position: absolute;
+    .fb-fav-popup {
+        position: relative;
+        margin-bottom: $spacer-3;
+        // visibility: hidden;
+        left: 63%;
+        top: 12px;
+        transform: translateX(-50%);
+        z-index: 9;
+        padding-top: 10px;
+        &::after {
+            content: "";
+            background: #ffffff;
+            border-bottom: 1px solid #c1c3c9;
+            border-right: 1px solid #c1c3c9;
+            position: absolute;
+            left: 49%;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            transform: rotate(225deg);
+        }
+        .fb-click-drop__item{
+            position: relative;
+            z-index: 1;
+        }
+        .fb-click-drop__body {
+            max-height: 100px;
+            display: block;
+            border: 0;
+            position: static;
+            margin-top: 0;
+            border: 1px solid #c1c3c9;
+            &.scroll {
+                overflow-y: scroll;
+            }
+        }
+    }
+}
+.active{
+    .fb-modified-fav{
+        display: block;
+    }
+}

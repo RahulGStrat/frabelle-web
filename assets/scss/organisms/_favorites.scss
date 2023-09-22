@@ -1,12 +1,19 @@
-.fb-favorites{
-    &__head{
+.fb-favorites {
+    &__head {
         display: flex;
         justify-content: space-between;
-        margin-bottom: $spacer-4;
+        margin-bottom: 16px;
+
+        &--sub {
+            font-size: 14px;
+            margin-bottom: $spacer-3;
+        }
     }
-    .fb-title-head{
+
+    .fb-title-head {
         padding-bottom: 0;
     }
+
     .fb-product-tile-btn--red {
         width: auto;
         padding: 14px 18px 10px;
@@ -15,30 +22,145 @@
         margin-top: auto;
         margin-bottom: 0;
     }
-    &__table{
-        &-name{
-                
-        }
-        &-desc{
+
+    &__table {
+        // &-name {}
+
+        &-desc {
             font-weight: 500;
             margin-top: $spacer-1;
         }
     }
+
+    .fb-carttable {
+        border: 0;
+
+    }
+
+    .fb-carttable__outer {
+        padding: 0;
+
+    }
+
+    .fb-carttable__head {
+        padding: 16px 0;
+
+
+        &--check {
+            // margin: 0 -8px;
+
+            .fb-carttable__headitem {
+                width: 18%;
+                margin: 0 8px;
+
+                &.product {
+                    width: 51%;
+                    margin: 0;
+                    margin-right: $spacer-2;
+                }
+
+                a {
+                    color: $color-blue;
+                    font-size: 12px;
+
+                    &:hover {
+                        color: $color-red-hover;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .fb-carttable__headitem {
+        &.blank {
+            width: 0;
+        }
+    }
+
+
+    .fb-input-checkbox-wrap {
+        margin-right: 24px;
+    }
+
+    &__btnwrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: $spacer-3 0;
+        border-top: 1px solid $color-grey1;
+
+        .fb-product-tile-btn {
+            width: 25%;
+
+
+            &.disabled {
+                pointer-events: none !important;
+                opacity: 0.5;
+            }
+        }
+    }
 }
-@include mobile{
-    .fb-favorites{
-        &__table{
+
+@include mobile {
+    .fb-favorites {
+        &__table {
             td:nth-of-type(1):before {
                 content: "Name & Description";
             }
+
             td:nth-of-type(2):before {
                 content: "Items";
             }
+
             td:nth-of-type(3):before {
                 content: "Latest Activity";
-             }
+            }
+
             td:nth-of-type(4):before {
                 content: "Action";
+            }
+        }
+
+        .fb-carttable__head {
+
+
+            &--check {
+                // margin: 0 -8px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .fb-carttable__headitem {
+                    width: 44%;
+                    margin: 0px;
+                    margin-bottom: $spacer-2;
+
+                    &.product {
+                        order: 4;
+                    }
+
+                }
+            }
+        }
+
+        .fb-carttable__itemwrap {
+            width: 70%;
+        }
+
+        .fb-input-checkbox-wrap {
+            margin-right: 8px;
+        }
+
+        .fb-carttable__itemcnt.logo {
+            width: 15%;
+        }
+
+        &__btnwrap {
+            flex-direction: column;
+
+            .fb-product-tile-btn {
+                width: 100%;
+                margin-bottom: $spacer-3;
             }
         }
     }
