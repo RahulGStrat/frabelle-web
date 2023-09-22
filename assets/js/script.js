@@ -208,6 +208,7 @@ $(".fb-featured__tabbtn").on("shown.bs.tab", function (e) {
 const page_header = document.querySelector(".fb-page-header");
 const header_controller = document.querySelector(".fb-header__controller");
 const header_nav = document.querySelector(".fb-header-nav-wrap");
+const header_navLinks = document.querySelectorAll(".fb-header-nav__item");
 const header_toplink = document.querySelector(".fb-toplinks__wrap");
 const search_icon_mob = document.querySelector(".fb-header__search-icon--mob");
 const search_bar = document.querySelector(".fb-header__search");
@@ -226,6 +227,18 @@ const headerSticky = () => {
     }
   }
 };
+
+// function to add active to the header nav links - Unipuehover
+header_navLinks.forEach(item=>{
+  item.addEventListener('mouseenter',()=>{
+    const link = item.querySelector(".fb-header-nav__link")
+    link.classList.add('active-link')
+  })
+  item.addEventListener('mouseleave',()=>{
+    const link = item.querySelector(".fb-header-nav__link")
+    link.classList.remove('active-link')
+  })
+})
 
 // to caputure screen width
 function screenWidthFinder() {
@@ -387,6 +400,7 @@ if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   });
 }
+                                                                                                                                               
 
 // To set the sidebar filters above 5 hiden
 if(sidebar_filter_options){
@@ -485,8 +499,8 @@ cards_wishlist.forEach((item) => {
   });
 });
 // HIDE INPUT
-const checkbox1 = document.getElementById('checkbox1');
-const checkbox2 = document.getElementById('checkbox2');
+const checkbox1 = document.getElementById('ctl17_checkbox1');
+const checkbox2 = document.getElementById('ctl17_checkbox2');
 const one = document.getElementById('one');
 const two = document.getElementById('two');
 const three = document.getElementById('three');
