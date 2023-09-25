@@ -178,7 +178,6 @@
         padding-bottom: 0 !important;
     }
 }
-
 .fb-recipie-head {
     .fb-title-head {
         padding-top: 40px;
@@ -228,6 +227,9 @@
             background-color: transparent !important;
         }
     }
+}
+.fb-move-selected{
+    position: relative;
 }
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
