@@ -14,6 +14,12 @@ window.onclick = function (event) {
       }
     }
   }
+  if(!event.target.matches('.fb-carttable__headitem')){
+    const ele = document.querySelector('#ctl17_liMoveSelected')
+    if(ele){
+      ele.classList.remove('active')
+    }
+  }
 };
 // CLICK TO DROPDOWN END ////////////////
 
@@ -546,3 +552,6 @@ viewBtn.forEach((item) => {
     item.classList.add('active');
   })
 })
+
+
+// btn close 
