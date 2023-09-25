@@ -34,7 +34,8 @@
         text-decoration: none;
         text-transform: uppercase;
 
-        &:hover {
+        &:hover,
+        &.active-link {
             color: #fff;
             background-color: $color-red;
         }

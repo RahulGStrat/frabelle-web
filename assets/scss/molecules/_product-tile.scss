@@ -175,6 +175,9 @@
     transition: 0.3s;
     min-height: 62px;
     display: block;
+    &:hover {
+      color: $color-blue-2;
+    }
   }
 
   &__weight {
