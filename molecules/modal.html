@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- styles -->
-    <link rel="stylesheet" href="../assets/css/aos.css" />
-    <link rel="stylesheet" href="../assets/css/slick.css" />
-    <link rel="stylesheet" href="../assets/css/slick-theme.css" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <!-- styles -->
-    <title>Frabelle</title>
-  </head>
-  <body>
-    <!-- body content start -->
 
-<!-- Button trigger modal -->
-<button type="button" class="" data-bs-toggle="modal" data-bs-target="#atome">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+  <link rel="stylesheet" href="../assets/css/slick.css" />
+  <link rel="stylesheet" href="../assets/css/slick-theme.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- styles -->
+  <title>Frabelle</title>
+</head>
+
+<body>
+  <!-- body content start -->
+
+  <!-- Button trigger modal -->
+  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#atome">
     Atome
   </button>
   <button type="button" class="" data-bs-toggle="modal" data-bs-target="#fav-list">
@@ -26,170 +28,226 @@
   <button type="button" class="" data-bs-toggle="modal" data-bs-target="#ingredients">
     ingredients
   </button>
-  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#homecart">
-    Home Cart
+  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#addtocart">
+    add to cart
   </button>
-  
+
   <!-- Modal Atome-->
-  <div class="modal fade fb-modal__atome" id="atome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade fb-modal__atome" id="atome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered fb-modal__atome-dialog">
       <div class="modal-content fb-modal__atome-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body ">
 
-            <div class="fb-modal__atome-logo">
+          <div class="fb-modal__atome-logo">
             <a href="https://www.atome.ph/" target="_blank">
               <img class="" data-atome-src="logo" src="../assets/images/atome-logo.svg">
             </a>
+          </div>
+
+          <div class="fb-modal__atome-head">
+            <h2>Time to own it</h2>
+            <span>Why wait? Shop today, 0% interest over 3 payments.</span>
+
+          </div>
+          <div class="fb-modal__atome-body">
+            <div class="fb-modal__atome-desc">
+              <div class="fb-modal__atome-desc-item">
+                <div class="fb-modal__atome-icn">
+                  <img data-atome-src="zero_interest" src="../assets/images/ic-interest.svg">
+                </div>
+                <div class="fb-modal__atome-desc-text"><b>0% interest</b>100% transparent</div>
+              </div>
+              <div class="fb-modal__atome-desc-item">
+                <div class="fb-modal__atome-icn">
+                  <img data-atome-src="split_into_3" src="../assets/images/ic-installments.svg">
+                </div>
+                <div class="fb-modal__atome-desc-text"><b>Split bill into 3 payments </b>Hassle-free experience
+                </div>
+              </div>
+              <div class="fb-modal__atome-desc-item">
+                <div class="fb-modal__atome-icn">
+                  <img data-atome-src="hundreds_merchants" src="../assets/images/ic-merchants.svg">
+                </div>
+                <div class="fb-modal__atome-desc-text"><b>Hundreds of merchants</b>Vast variety</div>
+              </div>
+            </div>
+            <div class="fb-modal__atome-footer">
+              <a target="_blank" href="https://www.atome.ph/terms-of-service" class="terms-conditions">Terms &amp;
+                Conditions</a>
+              <a target="_blank" href="https://www.atome.ph//how-it-works" class="how-it-works">How it works</a>
             </div>
 
-            <div class="fb-modal__atome-head">
-                <h2>Time to own it</h2>
-                <span>Why wait? Shop today, 0% interest over 3 payments.</span>
-
-            </div>
-            <div class="fb-modal__atome-body">
-                <div class="fb-modal__atome-desc">
-                    <div class="fb-modal__atome-desc-item">
-                        <div class="fb-modal__atome-icn">
-                            <img data-atome-src="zero_interest" src="../assets/images/ic-interest.svg">
-                        </div>
-                        <div class="fb-modal__atome-desc-text"><b>0% interest</b>100% transparent</div>
-                    </div>
-                    <div class="fb-modal__atome-desc-item">
-                        <div class="fb-modal__atome-icn">
-                            <img data-atome-src="split_into_3" src="../assets/images/ic-installments.svg">
-                        </div>
-                        <div class="fb-modal__atome-desc-text"><b>Split bill into 3 payments          </b>Hassle-free experience
-                        </div>
-                    </div>
-                    <div class="fb-modal__atome-desc-item">
-                        <div class="fb-modal__atome-icn">
-                            <img data-atome-src="hundreds_merchants" src="../assets/images/ic-merchants.svg">
-                        </div>
-                        <div class="fb-modal__atome-desc-text"><b>Hundreds of merchants</b>Vast variety</div>
-                    </div>
-                </div>
-                <div class="fb-modal__atome-footer">
-                    <a target="_blank" href="https://www.atome.ph/terms-of-service" class="terms-conditions">Terms &amp; Conditions</a>
-                    <a target="_blank" href="https://www.atome.ph//how-it-works" class="how-it-works">How it works</a>
-                </div>
-                
-            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal Atome END -->
   <!-- Modal FAVORATE LIST -->
-  <div class="modal fade fb-modal__fav-list" id="fav-list" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade fb-modal__fav-list" id="fav-list" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
       <div class="modal-content fb-modal__fav-list-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body ">
-            
-            <div class="fb-modal__fav-list-head">
-                <h2>
-                    Create a New Favorite List
-                </h1>
-            </div>
-            <div class="fb-modal__fav-list-body">
-                <div class="fb-modal__fav-list-fields">
-                    <label class="fb-modal__fav-list-label">
-                        Favorite List Name
-                    </label>
-                    <div class="fb-input__text-wrap">
-                        <input type="email" class="fb-input__text" placeholder="Email address">
-                      </div>
-                </div>
-                <div class="fb-modal__fav-list-fields">
-                    <label class="fb-modal__fav-list-label">
-                        Description (optional)
-                    </label>
-                    <div class="fb-input__text-wrap">
-                        <textarea name="description" class="fb-modal__fav-list-textarea" maxlength="255" id="requisition-list-description" data-bind="value: value().description"></textarea>
-                      </div>
-                </div>
-            </div>
 
-            <footer class="modal-footer fb-modal__fav-list-footer">
-                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">SAVE</button>
-                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
-                
-            </footer>
+          <div class="fb-modal__fav-list-head">
+            <h2>
+              Create a New Favorite List
+              </h1>
+          </div>
+          <div class="fb-modal__fav-list-body">
+            <div class="fb-modal__fav-list-fields">
+              <label class="fb-modal__fav-list-label">
+                Favorite List Name
+              </label>
+              <div class="fb-input__text-wrap">
+                <input type="email" class="fb-input__text" placeholder="Email address">
+              </div>
+            </div>
+            <div class="fb-modal__fav-list-fields">
+              <label class="fb-modal__fav-list-label">
+                Description (optional)
+              </label>
+              <div class="fb-input__text-wrap">
+                <textarea name="description" class="fb-modal__fav-list-textarea" maxlength="255"
+                  id="requisition-list-description" data-bind="value: value().description"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <footer class="modal-footer fb-modal__fav-list-footer">
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">SAVE</button>
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+
+          </footer>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal FAVORATE LIST END -->
   <!-- Modal ingredients -->
-  <div class="modal fade fb-modal__ingrd fb-modal__fav-list" id="ingredients" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade fb-modal__ingrd fb-modal__fav-list" id="ingredients" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
       <div class="modal-content fb-modal__fav-list-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body ">
-            
-              <!-- cart table start -->
-              <div class="fb-carttable">
-                <div class="fb-carttable__outer">
-                    <ul class="fb-carttable__head">
-                        <li class="fb-carttable__headitem product">ITEM</li>
-                        <li class="fb-carttable__headitem">PRICE</li>
-                        <li class="fb-carttable__headitem">QTY</li>
-                    </ul>
-                    <div class="fb-carttable__tile">
-                        <div class="fb-carttable__item">
-                            <a href="#" class="fb-carttable__itemcnt logo">
-                            <img src="../assets/images/cart-small-img.webp" alt="">
-                            </a>
-                            <div class="fb-carttable__itemwrap">
-                                <div class="fb-carttable__itemcnt prdct ">
-                                    <a href="#">Kasim Cubes 2x2 Inches</a>
-                                </div>
-                                <div class="fb-carttable__itemcnt">
-                                    <p class="fb-carttable__label">Price</p>
-                                    <p>₱374.00</p>
-                                </div>
-                                <div class="fb-carttable__itemcnt select">
-                                    <p class="fb-carttable__label">Qty</p>
-                                    <!-- select start -->
-                                    <select name="" id="" class="fb-select">
-                                        <option value="" class="fb-select__option">Option one</option>
-                                        <option value="" class="fb-select__option">Option two</option>
-                                        <option value="" class="fb-select__option">Option three</option>
-                                        <option value="" class="fb-select__option">Option four</option>
-                                        <option value="" class="fb-select__option">Option five</option>
-                                        <option value="" class="fb-select__option">Option six</option>
-                                    </select>
-                                    <!-- select end -->
-                                </div>
-                            </div>
-                        </div>
+
+          <!-- cart table start -->
+          <div class="fb-carttable">
+            <div class="fb-carttable__outer">
+              <ul class="fb-carttable__head">
+                <li class="fb-carttable__headitem product">ITEM</li>
+                <li class="fb-carttable__headitem">PRICE</li>
+                <li class="fb-carttable__headitem">QTY</li>
+              </ul>
+              <div class="fb-carttable__tile">
+                <div class="fb-carttable__item">
+                  <a href="#" class="fb-carttable__itemcnt logo">
+                    <img src="../assets/images/cart-small-img.webp" alt="">
+                  </a>
+                  <div class="fb-carttable__itemwrap">
+                    <div class="fb-carttable__itemcnt prdct ">
+                      <a href="#">Kasim Cubes 2x2 Inches</a>
                     </div>
+                    <div class="fb-carttable__itemcnt">
+                      <p class="fb-carttable__label">Price</p>
+                      <p>₱374.00</p>
+                    </div>
+                    <div class="fb-carttable__itemcnt select">
+                      <p class="fb-carttable__label">Qty</p>
+                      <!-- select start -->
+                      <select name="" id="" class="fb-select">
+                        <option value="" class="fb-select__option">Option one</option>
+                        <option value="" class="fb-select__option">Option two</option>
+                        <option value="" class="fb-select__option">Option three</option>
+                        <option value="" class="fb-select__option">Option four</option>
+                        <option value="" class="fb-select__option">Option five</option>
+                        <option value="" class="fb-select__option">Option six</option>
+                      </select>
+                      <!-- select end -->
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- cart table end -->
+            </div>
+          </div>
+          <!-- cart table end -->
 
-            <footer class="modal-footer fb-modal__fav-list-footer">
-              <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
-                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
-                
-            </footer>
+          <footer class="modal-footer fb-modal__fav-list-footer">
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
+
+          </footer>
+          <<<<<<< HEAD </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal ingredienrs END -->
+    =======
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Modal ingredienrs END -->
+  <!-- Modal add to cart -->
+  <div class="modal fade fb-modal__add-cart fb-modal__fav-list" id="addtocart" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+      <div class="modal-content fb-modal__fav-list-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body ">
+
+          <!-- add to cart start -->
+          <div class="fb-modal__add-cart-outer">
+            <div class="fb-modal__add-cart-sec-1">
+              <img src="/assets/images/apple.webp" alt="">
             </div>
+            <div class="fb-modal__add-cart-sec-2">
+              <h3 class="fb-modal__add-cart-head">Kasim Cubes 2x2 Inches</h3>
+              <p class="fb-modal__add-cart-des">Lorem Ipsum</p>
+              <div class="fb-modal__add-cart-qty">
+                <p class="fb-modal__add-cart-title">Quantity</p>
+                <!-- select start -->
+                <select name="" id="" class="fb-select">
+                  <option value="" class="fb-select__option">1</option>
+                  <option value="" class="fb-select__option">2</option>
+                  <option value="" class="fb-select__option">3</option>
+                  <option value="" class="fb-select__option">4</option>
+                  <option value="" class="fb-select__option">5</option>
+                  <option value="" class="fb-select__option">6</option>
+                </select>
+                <!-- select end -->
+              </div>
             </div>
-            </div>
-            </div>
-<!-- Modal ingredienrs END -->
+          </div>
+          <!-- add to cart end -->
+
+          <footer class="modal-footer fb-modal__fav-list-footer">
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+            <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
+
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal add to cart END -->
+  >>>>>>> origin/inzamam
   <!-- List modal -->
-  
-    <!-- body content end -->
 
-    <!-- scripts -->
-    <script src="../assets/js/jquery.slim.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <!-- scripts -->
-  </body>
+  <!-- body content end -->
+
+  <!-- scripts -->
+  <script src="../assets/js/jquery.slim.min.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <!-- scripts -->
+</body>
+
 </html>
