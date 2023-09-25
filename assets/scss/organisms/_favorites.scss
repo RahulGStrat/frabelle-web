@@ -11,6 +11,7 @@
     }
 
     &--edit {
+        display: flex !important;
         justify-content: flex-start;
        &-icon {
         width: 18px;
