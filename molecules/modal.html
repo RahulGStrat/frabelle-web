@@ -26,6 +26,9 @@
   <button type="button" class="" data-bs-toggle="modal" data-bs-target="#ingredients">
     ingredients
   </button>
+  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#addtocart">
+    add to cart
+  </button>
   
   <!-- Modal Atome-->
   <div class="modal fade fb-modal__atome" id="atome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -177,6 +180,48 @@
     </div>
   </div>
   <!-- Modal ingredienrs END -->
+  <!-- Modal add to cart -->
+  <div class="modal fade fb-modal__add-cart fb-modal__fav-list" id="addtocart" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog">
+      <div class="modal-content fb-modal__fav-list-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body ">
+            
+              <!-- add to cart start -->
+              <div class="fb-modal__add-cart-outer">
+                  <div class="fb-modal__add-cart-sec-1">
+                      <img src="/assets/images/apple.webp" alt="">
+                  </div>
+                  <div class="fb-modal__add-cart-sec-2">
+                      <h3 class="fb-modal__add-cart-head">Kasim Cubes 2x2 Inches</h3>
+                      <p class="fb-modal__add-cart-des">Lorem Ipsum</p>
+                      <div class="fb-modal__add-cart-qty">
+                        <p class="fb-modal__add-cart-title">Quantity</p>
+                        <!-- select start -->
+                        <select name="" id="" class="fb-select">
+                            <option value="" class="fb-select__option">1</option>
+                            <option value="" class="fb-select__option">2</option>
+                            <option value="" class="fb-select__option">3</option>
+                            <option value="" class="fb-select__option">4</option>
+                            <option value="" class="fb-select__option">5</option>
+                            <option value="" class="fb-select__option">6</option>
+                        </select>
+                        <!-- select end -->
+                    </div>
+                  </div>
+              </div>
+              <!-- add to cart end -->
+
+            <footer class="modal-footer fb-modal__fav-list-footer">
+              <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+                <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
+                
+            </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal add to cart END -->
   <!-- List modal -->
   
     <!-- body content end -->
