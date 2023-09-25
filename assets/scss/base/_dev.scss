@@ -244,9 +244,10 @@
         margin-left: 10px !important;
     }
 }
-// to setup the horizonatal view of the section
-.fb-product-tile.horizontal .fb-product-tile__tile-img {
-      width: 100% !important;
+.fb-register__outer{
+    span{
+     margin-top: 10px !important;
+    }
 }
 
 // error text 
@@ -260,6 +261,10 @@
     border-color: $color-red !important;
 }
 
+// to setup the horizonatal view of the section
+.fb-product-tile.horizontal .fb-product-tile__tile-img {
+      width: 100% !important;
+}
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
