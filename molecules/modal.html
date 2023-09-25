@@ -26,6 +26,9 @@
   <button type="button" class="" data-bs-toggle="modal" data-bs-target="#ingredients">
     ingredients
   </button>
+  <button type="button" class="" data-bs-toggle="modal" data-bs-target="#homecart">
+    Home Cart
+  </button>
   
   <!-- Modal Atome-->
   <div class="modal fade fb-modal__atome" id="atome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -172,11 +175,51 @@
                 <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
                 
             </footer>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal ingredienrs END -->
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- Modal ingredienrs END -->
+            <!-- Modal home cart -->
+            <div class="modal fade fb-modal__ingrd fb-modal__fav-list" id="homecart" data-bs-backdrop="static"
+              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered fb-modal__fav-list-dialog homecart">
+                <div class="modal-content fb-modal__fav-list-content">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body ">
+            
+                    <!-- home cart -->
+                    <div class="fb-modal__home-cart">
+                      <div class="fb-modal__home-cart-out">
+                        <a href="#" class="fb-modal__home-cart-product">
+                          <img src="../assets/images/featured-product-3.webp" alt="">
+                        </a>
+                        <div class="fb-modal__home-cart-details">
+                          <h3 class="fb-modal__home-cart-name">Premium Angus Burger Patties (4pcs)</h3>
+                          <p class="fb-modal__home-cart-title">100% Pure and Authentic Japanese Wagyu</h3>
+                          <div class="fb-modal__home-cart-drop">
+                            <select name="" id="" class="fb-select fb-select--custome">
+                              <option value="" class="fb-select__option">1</option>
+                              <option value="" class="fb-select__option">2</option>
+                              <option value="" class="fb-select__option">3</option>
+                              <option value="" class="fb-select__option">4</option>
+                              <option value="" class="fb-select__option">5</option>
+                              <option value="" class="fb-select__option">6</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="modal-footer fb-modal__fav-list-footer">
+                        <button href="#" class="fb-product-tile-btn fb-product-tile-btn--cancel">CANCEL</button>
+                        <button href="#" class="fb-product-tile-btn fb-product-tile-btn--red">ADD TO CART</button>
+                      </footer>
+                    </div>
+                    <!-- home cart -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal home cart -->
   <!-- List modal -->
   
     <!-- body content end -->
