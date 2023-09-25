@@ -248,6 +248,12 @@
      margin-top: 10px !important;
     }
 }
+.fb-register{
+    &__label-outer{
+        padding: 4px 0 !important;
+    }
+}
+
 
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
