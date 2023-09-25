@@ -78,6 +78,7 @@
     }
 }
 
+
 // fb-cart-delete
 .fb-modal-footer {
     flex-wrap: nowrap !important;
@@ -259,6 +260,17 @@
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
       width: 100% !important;
 }
+// error text 
+.fb-input__box {
+    & .fb-input > span {
+        color: $color-red !important;
+        font-weight: 500 !important;
+    }
+}
+.error {
+    border-color: $color-red !important;
+}
+
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
