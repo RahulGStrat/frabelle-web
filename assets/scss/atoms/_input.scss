@@ -90,6 +90,9 @@
             background-size: 15px;
             background-position: right 10px top 10px;
         }
+        &.error {
+            border-color: #eb2028;
+        }
     }
 
     // check box
