@@ -231,6 +231,18 @@
 .fb-move-selected{
     position: relative;
 }
+.fb__cart-label-outer{
+    position: relative;
+    .fb-product-info__tocart-label{
+        left: 26px !important;
+        top: 16px;
+    }
+}
+.fb-product-info__tocart{
+    .fb-product-info__tocart-qty, .fb-product-info__tocart-buynow {
+        margin-left: 10px !important;
+    }
+}
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
       width: 100% !important;
