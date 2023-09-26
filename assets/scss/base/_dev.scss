@@ -261,6 +261,12 @@
         padding-left: 0 !important;
     }
 }
+.fb__cart-label-outer{
+    .dxeButtonEditButton{
+        border: none !important;
+        background-color: none !important;
+    }
+}
 // error text 
 .fb-input__box {
     & .fb-input > span {
