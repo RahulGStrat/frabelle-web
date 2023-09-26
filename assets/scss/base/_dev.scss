@@ -261,8 +261,6 @@
         padding-left: 0 !important;
     }
 }
-
-
 // error text 
 .fb-input__box {
     & .fb-input > span {
@@ -279,6 +277,7 @@
     }
     .dxeButtonEditButton{
         background: none !important;
+        border: none !important;
     }
     .dxeButtonEditButton:hover{
         background: none !important;
