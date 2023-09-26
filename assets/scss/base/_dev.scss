@@ -273,6 +273,33 @@
 .error {
     border-color: $color-red !important;
 }
+.fb-recipe__filters{
+    .dxeButtonEdit{
+        border-radius: 5px !important;
+    }
+    .dxeButtonEditButton{
+        background: none !important;
+    }
+    .dxeButtonEditButton:hover{
+        background: none !important;
+        border: none !important;
+    }
+    .dxeButtonEdit .dxeEditArea{
+        color: #848799 !important;
+        font-family: 'Spartan'!important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+    }
+}
+.fb-product-tile__cta{
+    .dxeButtonEditButton{
+            background: none !important;
+            border: none;
+    }
+    .dxeButtonEditButton:hover{
+        border: none !important;
+    }
+}
 
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
