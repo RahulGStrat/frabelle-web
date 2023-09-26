@@ -16,8 +16,12 @@ window.onclick = function (event) {
   }
   if(!event.target.matches('.fb-carttable__headitem')){
     const ele = document.querySelector('#ctl17_liMoveSelected')
+    const ele2 = document.querySelector('#ctl17_liCopySelected')
     if(ele){
       ele.classList.remove('active')
+    }
+    if(ele2){
+      ele2.classList.remove('active')
     }
   }
 };
