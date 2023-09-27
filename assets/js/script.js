@@ -27,9 +27,9 @@ window.onclick = function (event) {
 };
 
 // CLICK TO DROPDOWN END ////////////////
-if(!event.target.matches('.fb-filter-cnt__clr')){
-  const ele3 = document.querySelector('#ctl17_liMoveSelected')
-};
+// if(!event.target.matches('.fb-filter-cnt__clr')){
+//   const ele3 = document.querySelector('#ctl17_liMoveSelected')
+// };
 // onload accordion collapse
 const accordionButton = document.querySelectorAll(
   ".fb-footer__linksec .accordion-button"
