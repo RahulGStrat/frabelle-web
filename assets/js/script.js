@@ -14,22 +14,18 @@ window.onclick = function (event) {
       }
     }
   }
-  if(!event.target.matches('.fb-carttable__headitem')){
+  if (!event.target.matches('.fb-carttable__headitem')) {
     const ele = document.querySelector('#ctl17_liMoveSelected')
     const ele2 = document.querySelector('#ctl17_liCopySelected')
-    if(ele){
+    if (ele) {
       ele.classList.remove('active')
     }
-    if(ele2){
+    if (ele2) {
       ele2.classList.remove('active')
     }
   }
 };
-
 // CLICK TO DROPDOWN END ////////////////
-// if(!event.target.matches('.fb-filter-cnt__clr')){
-//   const ele3 = document.querySelector('#ctl17_liMoveSelected')
-// };
 // onload accordion collapse
 const accordionButton = document.querySelectorAll(
   ".fb-footer__linksec .accordion-button"
@@ -242,12 +238,12 @@ const headerSticky = () => {
 };
 
 // function to add active to the header nav links - Unipuehover
-header_navLinks.forEach(item=>{
-  item.addEventListener('mouseenter',()=>{
+header_navLinks.forEach(item => {
+  item.addEventListener('mouseenter', () => {
     const link = item.querySelector(".fb-header-nav__link")
     link.classList.add('active-link')
   })
-  item.addEventListener('mouseleave',()=>{
+  item.addEventListener('mouseleave', () => {
     const link = item.querySelector(".fb-header-nav__link")
     link.classList.remove('active-link')
   })
@@ -413,43 +409,43 @@ if (sidebar_filter && sidebar_filter_close && sidebar_filter_body) {
     sidebar_filter_body.classList.remove("fb-sidebar__body--active");
   });
 }
-                                                                                                                                               
+
 
 // To set the sidebar filters above 5 hiden
-if(sidebar_filter_options){
-  sidebar_filter_options.forEach(item=>{
+if (sidebar_filter_options) {
+  sidebar_filter_options.forEach(item => {
     const sidebar_filters = item.querySelectorAll(".fb-filter-opns__list-item")
     const sidebar_filter_readmore = item.querySelector(".fb-seemore-more");
     let triger = false;
-    if(sidebar_filters.length >  4){
+    if (sidebar_filters.length > 4) {
       sidebar_filter_readmore.classList.add("fb-seemore-more--show");
-      sidebar_filters.forEach((item,index)=>{
-        if(item.classList.contains("show-item") && index > 4){
+      sidebar_filters.forEach((item, index) => {
+        if (item.classList.contains("show-item") && index > 4) {
           item.classList.remove("show-item")
         }
       })
     }
-    if(sidebar_filter_readmore){
-      sidebar_filter_readmore.addEventListener("click",(e)=>{
+    if (sidebar_filter_readmore) {
+      sidebar_filter_readmore.addEventListener("click", (e) => {
         e.preventDefault();
-        triger=!triger;
+        triger = !triger;
         let text = sidebar_filter_readmore.querySelector(".fb-seemore-more__btn .fb-seemore-more__btn-text");
-        if(triger){
+        if (triger) {
           text.textContent = "See less"
           sidebar_filter_readmore.classList.add("fb-seemore-more--arrow")
-          sidebar_filters.forEach(item=>{
-            if(!item.classList.contains("show-item")){
-             item.classList.add("show-item")
+          sidebar_filters.forEach(item => {
+            if (!item.classList.contains("show-item")) {
+              item.classList.add("show-item")
             }
-           })
-        }else{
+          })
+        } else {
           text.textContent = "See more"
           sidebar_filter_readmore.classList.remove("fb-seemore-more--arrow")
-          sidebar_filters.forEach((item,index)=>{
-          if(item.classList.contains("show-item") && index > 4){
-            item.classList.remove("show-item");
-           }
-           })
+          sidebar_filters.forEach((item, index) => {
+            if (item.classList.contains("show-item") && index > 4) {
+              item.classList.remove("show-item");
+            }
+          })
         }
       })
     }
@@ -500,13 +496,13 @@ cards_wishlist.forEach((item) => {
   let wishlistBody = item.querySelector(
     ".fb-product-tile .fb-click-drop__body"
   );
-  if(wishlistBtn){
+  if (wishlistBtn) {
     wishlistBtn.addEventListener("click", () => {
       wishlistBody.classList.toggle("fav_active");
     });
   }
   item.addEventListener("mouseleave", () => {
-    if(wishlistBody){
+    if (wishlistBody) {
       wishlistBody.classList.remove("fav_active");
     }
   });
