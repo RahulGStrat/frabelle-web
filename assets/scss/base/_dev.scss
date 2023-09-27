@@ -258,7 +258,7 @@
     .fb-click-drop__link {
         background-color: transparent;
         border: none;
-        padding-left: 0 !important;
+        padding-left: 0 !important; 
     }
 }
 .fb__cart-label-outer{
@@ -305,7 +305,20 @@
         border: none !important;
     }
 }
-
+.fb-input__text-wrap2{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #c1c3c9;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+.fb-md-modal{
+    .btn-close{
+        float: right;
+        padding: 10px !important;
+    }
+}
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
       width: 100% !important;
