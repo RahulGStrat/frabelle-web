@@ -249,7 +249,24 @@
      margin-top: 10px !important;
     }
 }
-
+.fb-register{
+    &__label-outer{
+        padding: 4px 0 !important;
+    }
+}
+.fb-cdc-list{
+    .fb-click-drop__link {
+        background-color: transparent;
+        border: none;
+        padding-left: 0 !important;
+    }
+}
+.fb__cart-label-outer{
+    .dxeButtonEditButton{
+        border: none !important;
+        background-color: none !important;
+    }
+}
 // error text 
 .fb-input__box {
     & .fb-input > span {
@@ -259,6 +276,34 @@
 }
 .error {
     border-color: $color-red !important;
+}
+.fb-recipe__filters{
+    .dxeButtonEdit{
+        border-radius: 5px !important;
+    }
+    .dxeButtonEditButton{
+        background: none !important;
+        border: none !important;
+    }
+    .dxeButtonEditButton:hover{
+        background: none !important;
+        border: none !important;
+    }
+    .dxeButtonEdit .dxeEditArea{
+        color: #848799 !important;
+        font-family: 'Spartan'!important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+    }
+}
+.fb-product-tile__cta{
+    .dxeButtonEditButton{
+            background: none !important;
+            border: none;
+    }
+    .dxeButtonEditButton:hover{
+        border: none !important;
+    }
 }
 
 // to setup the horizonatal view of the section

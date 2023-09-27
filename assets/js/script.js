@@ -14,9 +14,22 @@ window.onclick = function (event) {
       }
     }
   }
+  if(!event.target.matches('.fb-carttable__headitem')){
+    const ele = document.querySelector('#ctl17_liMoveSelected')
+    const ele2 = document.querySelector('#ctl17_liCopySelected')
+    if(ele){
+      ele.classList.remove('active')
+    }
+    if(ele2){
+      ele2.classList.remove('active')
+    }
+  }
 };
-// CLICK TO DROPDOWN END ////////////////
 
+// CLICK TO DROPDOWN END ////////////////
+if(!event.target.matches('.fb-filter-cnt__clr')){
+  const ele3 = document.querySelector('#ctl17_liMoveSelected')
+};
 // onload accordion collapse
 const accordionButton = document.querySelectorAll(
   ".fb-footer__linksec .accordion-button"
@@ -546,3 +559,6 @@ viewBtn.forEach((item) => {
     item.classList.add('active');
   })
 })
+
+
+// btn close 
