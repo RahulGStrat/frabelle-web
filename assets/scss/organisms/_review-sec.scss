@@ -5,6 +5,12 @@
         margin-bottom: 24px;
     }
 
+    .fb-product-d__inner {
+        &:last-child {
+            width: calc(65% - 58px);
+        }
+    }
+
     .fb-input {
 
         label {
@@ -64,6 +70,11 @@
             width: 100%;
             height: 100%;
         }
+    }
+
+    &__line {
+        border-bottom: 1px solid #ededed;
+        padding-bottom: $spacer-4;
     }
 }
 
