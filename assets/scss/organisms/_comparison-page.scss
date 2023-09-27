@@ -49,6 +49,7 @@
     &__table-body {
         width: calc(25% - 16px);
         min-width: 285px;
+        max-width: 285px;
         padding: 24px 16px;
         font-size: 14px;
     }
