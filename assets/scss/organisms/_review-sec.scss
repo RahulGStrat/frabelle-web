@@ -55,6 +55,7 @@
         color: #a7aabe;
         font-style: normal;
         font-size: 11px;
+
         span {
             color: #6e7080;
             font-style: normal;
@@ -66,6 +67,7 @@
         width: 60px;
         height: auto;
         padding-bottom: $spacer-2;
+
         img {
             width: 100%;
             height: 100%;
@@ -74,7 +76,7 @@
 
     &__line {
         border-bottom: 1px solid #ededed;
-        padding-bottom: $spacer-4;
+        padding: $spacer-3 0;
     }
 }
 
