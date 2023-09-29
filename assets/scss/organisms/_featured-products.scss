@@ -73,7 +73,7 @@
   .slick-dots-container>ul {
     padding: 0;
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     transition: all 0.25s;
     position: relative;
     margin: 0;
@@ -190,6 +190,10 @@
   .fb-featured {
     &__product-slick {
       margin: $spacer-0;
+    }
+
+    .slick-dots-container>ul {
+      justify-content: flex-start;
     }
   }
 }
