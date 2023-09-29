@@ -323,6 +323,12 @@
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
       width: 100% !important;
 }
+.fb-modal__add-cart-qty{
+    .fb-featured__dropdown{
+        padding: 12px 22px !important;
+        width: 86px;
+    }
+}
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
