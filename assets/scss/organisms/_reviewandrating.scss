@@ -1,0 +1,166 @@
+.fb-review-rating{
+    &__inner{
+        border-bottom: 1px solid #f1f1f1;
+        display: flex;
+        .fb-product-tile-btn{
+            width: 144px;
+            height: 34px;
+        }
+    }
+    &__outer{
+        margin: 40px auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width: 72%;
+        padding: 20px;
+    }
+    &__showcase{
+        width: 35%;
+        display: flex;
+    }
+    &__sum-reviews{
+       font-size: 14px;
+       line-height: 18px;
+       color: #51535d;
+       font-weight: 600;
+       vertical-align: top;
+       display: inline-block;
+       padding-top: 6px;
+       padding-right: 20px;
+        }
+    &__indication{
+        width: 60%;
+        padding-left: 20px;
+        border-left: 1px solid #f1f1f1;
+        margin-bottom: 18px;
+        .star-imges{
+            width: 17px;
+            height: auto;
+            padding: 2px;
+        }
+        .five-star,.four-star,.three-star,.two-star,.one-star{
+            display: flex;
+            img{
+                width: 100%;
+            }
+        }
+        .progress-container {
+            width: 26%;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            margin-left: 20px;
+            height: 15px;
+          }
+          
+          .progress-bar {
+            width: 0;
+            height: 14px;
+            background-color: #2f84ed;
+            transition: width 0.5s ease-in-out;
+          }
+          
+          .progress-bar {
+            width: 50%;
+            /* other styles... */
+          }
+    }
+    &__starrating{
+        width: 62%;
+        padding-right: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    &__summary{
+        .detailed-summary{
+            .content-tiltle{
+                color: #6e7080;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: .35px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .content-review{
+                font-size: 14px;
+                color: #848799;
+                display: block;
+                margin-bottom: 20px;
+                font-weight: 500;
+                line-height: 1.887;
+            }
+        }
+        .summery-intrections{
+            .interaction-txt{
+                font-size: 11px;
+                color: #a7aabe;
+                font-weight: 500;
+                letter-spacing: .28px;
+                line-height: 1.1818;
+                text-transform: initial;
+            }
+        }
+    }
+
+        &__customer-smry{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .review-author{
+                position: relative;
+                color: #6A6C77;
+                .author-name{
+                    font-size: 12px;
+                    color: #6e7080;
+                    font-weight: 600;
+                    letter-spacing: .3px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                }
+                .rated-stars{
+                    width: 85px;
+                    margin-bottom: 15px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .review-date{
+                font-size: 11px;
+                color: #a7aabe;
+                font-weight: 500;
+                letter-spacing: .28px;
+                line-height: 1.1818;
+            }
+        }
+   
+}
+@include mobile {
+    .fb-review-rating{
+        &__outer{
+            width: 100%;
+        }
+        &__inner{
+            flex-direction: column;
+        }
+        &__write{
+            display: none;
+        }
+        &__showcase{
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &__starrating{
+            width: 54%;
+        }
+        &__indication{
+            width: 100%;
+            border: none;
+            padding-left: 0;
+            .progress-container{
+                width: 64%;
+            }
+        }
+    }
+    
+}
