@@ -90,15 +90,55 @@
             }
         }
         .summery-intrections{
+            display: flex;
+            align-items: center;
             .interaction-txt{
-                font-size: 11px;
+                font-size: 12px;
                 color: #a7aabe;
                 font-weight: 500;
                 letter-spacing: .28px;
                 line-height: 1.1818;
                 text-transform: initial;
+                margin-right: 16px;
+            }
+            
+            .interaction-type{
+                display: flex;
+                .like-interaction{
+                    margin-right: 15px;
+                    display: flex;
+                    &-sum{
+                        margin-left: 10px;
+                        font-size: 12px;
+                        padding-top: 5px;
+                    }
+                    a{
+                        svg{
+                            width: 20px;
+                            height: 16px;
+                        }
+                    }
+                }
+                .dislike-interaction{
+                    display: flex;
+                    a{
+                        svg{
+                            transform: rotate(180deg);
+                            width: 20px;
+                            height: 16px;
+                        }
+                    }
+                    &-sum{
+                        margin-left: 10px;
+                        font-size: 12px;
+                        padding-top: 5px;
+                    }
+                   
+                  
+                }
             }
         }
+        
     }
 
         &__customer-smry{

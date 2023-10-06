@@ -337,6 +337,14 @@
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
       width: 100% !important;
 }
+.fb-modal-footer{
+    .delete{
+        background: #2c3c8b !important;
+        color: #fff !important;
+    }
+    
+}
+
 @include mobile {
     .fb-product-info__tocart-qty {
         label {
