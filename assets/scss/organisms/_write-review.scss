@@ -1,0 +1,26 @@
+.fb-wrt-review{
+    .fb-product-d__outer{
+        justify-content: center;
+    }
+    .fb-product-d__heading {
+        display: flex;
+        justify-content: center
+    }
+    .fb-product-d__inner {
+        width: 35% !important;
+        .fb-input {
+            display: flex;
+            justify-content: center;
+            img{
+                width: 170px;
+                height: auto;
+            }
+        }
+        .fb-product-tile-btn {
+            margin-top: $spacer-0;
+            font-weight: 700;
+            padding: $spacer-2 $spacer-3;
+            border-radius: 3px;
+        }
+    }
+}
