@@ -389,3 +389,20 @@
     }
 
 }
+// my account link color change
+.fb-header__action-wrap{
+    .fb-header__action-text a{
+        color: #464c69 !important;
+        font-weight: 600;
+       
+    }
+    &:hover{
+        .fb-header__action-text 
+        {
+            a{
+                color: #eb2028 !important;
+            }
+        }
+            
+    }
+}
