@@ -146,7 +146,7 @@ $(document).ready(function () {
     var maxDots = 5;
     var transformXIntervalNext = -30;
     var transformXIntervalPrev = 30;
-  } else {
+  } else { 
     var maxDots = 17;
     var transformXIntervalNext = -30;
     var transformXIntervalPrev = 30;
@@ -158,7 +158,7 @@ $(document).ready(function () {
       $(this).addClass('dot-index-' + index);
     });
     $(this).find('ul.slick-dots').css('transform', 'translateX(0)');
-    setBoundries($(this), 'default');
+    setBoundries($(this), 'default'); 
   });
 
   var transformCount = 0;
@@ -209,7 +209,7 @@ $(document).ready(function () {
   });
 
   $(".fb-featured__product-slick").slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: true,
@@ -677,3 +677,17 @@ viewBtn.forEach((item) => {
 
 
 // btn close 
+
+// scroll to another module
+
+const scrollButton = document.getElementById('ctl17_lnkbtnAddreview');
+const module2 = document.getElementById('ctl17_fbwritereview');
+
+// Function to scroll to module2
+function scrollToModule(e) {
+  e.preventDefault();
+  module2.scrollIntoView({ behavior: 'smooth' });
+}
+// Add an event listener to the button to trigger scrolling
+scrollButton.addEventListener('click', scrollToModule(e));
+
