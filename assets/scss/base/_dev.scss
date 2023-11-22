@@ -52,8 +52,6 @@
         margin-left: 16px;
     }
 }
-
-// header nav menu image align
 .fb-header-nav__megamenu-cnts {
     align-items: flex-start;
 }
@@ -410,6 +408,6 @@
 .fb-review-rating__maincontent{
     display: contents;
 }
-.highcharts-point-hover:hover{
-display: none !important;
+.highcharts-label{
+    visibility: hidden;
 }
