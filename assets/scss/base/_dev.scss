@@ -1,413 +1,436 @@
 // quantity dropdown
 .fb-product-info__tocart-qty {
-    label {
-        left: 40px;
-    }
+  label {
+    left: 40px;
+  }
 
-    table {
-        height: 100%;
+  table {
+    height: 100%;
 
-        tbody {
-            display: flex;
-            align-items: center;
-            height: 100%;
+    tbody {
+      display: flex;
+      align-items: center;
+      height: 100%;
 
-            input.dxeEditArea.dxeEditAreaSys {
-                padding-left: 10px;
-            }
+      input.dxeEditArea.dxeEditAreaSys {
+        padding-left: 10px;
+      }
 
-            .dxeButton.dxeButtonEditButton {
-                height: 15px !important;
-                display: inline-flex;
-                align-items: center;
-                border: 0;
+      .dxeButton.dxeButtonEditButton {
+        height: 15px !important;
+        display: inline-flex;
+        align-items: center;
+        border: 0;
 
-                &:hover {
-                    border: none;
-                }
-
-                img {
-                    margin-top: 0 !important;
-                    margin-bottom: 0 !important;
-                }
-            }
-
-            .dxic {
-                top: 8px;
-            }
+        &:hover {
+          border: none;
         }
+
+        img {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .dxic {
+        top: 8px;
+      }
     }
+  }
 }
 
 // reduce the size of carttable dropdown
 .fb-carttable {
-    .fb-product-info__tocart-qty {
-        border: none !important;
-    }
+  .fb-product-info__tocart-qty {
+    border: none !important;
+  }
 
-    .fb-featured__dropdown {
-        width: 75px !important;
-        padding-left: 20px;
-        margin-top: -10px;
-        margin-left: 16px;
-    }
+  .fb-featured__dropdown {
+    width: 75px !important;
+    padding-left: 20px;
+    margin-top: -10px;
+    margin-left: 16px;
+  }
 }
 .fb-header-nav__megamenu-cnts {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 //featured prdcts
 .fb-product-tile__weight {
-    min-height: 13px;
+  min-height: 13px;
 }
 
 // promp image
 .fb-monthly-promo__promo-img {
-    height: 50px !important;
-    width: 75px !important;
+  height: 50px !important;
+  width: 75px !important;
 }
 
 .fb-pl3 {
-    padding-left: 50px !important;
+  padding-left: 50px !important;
 
-    option {
-        max-height: 80px;
-        overflow: scroll !important;
-    }
+  option {
+    max-height: 80px;
+    overflow: scroll !important;
+  }
 }
-
 
 // fb-cart-delete
 .fb-modal-footer {
-    flex-wrap: nowrap !important;
-    justify-content: left !important;
+  flex-wrap: nowrap !important;
+  justify-content: left !important;
 
-    .cancel {
-        width: 92px;
-    }
+  .cancel {
+    width: 92px;
+  }
 
-    .delete {
-        width: 80px;
-    }
+  .delete {
+    width: 80px;
+  }
 }
 
 .fb-prdct-list-outer__view {
-    .dxeListBoxItem {
-        // padding: 12px 12px 12px !important;
-        color: #848799;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 13px;
-        letter-spacing: .55px;
-        padding: 8px 10px;
-    }
+  .dxeListBoxItem {
+    // padding: 12px 12px 12px !important;
+    color: #848799;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.55px;
+    padding: 8px 10px;
+  }
 
-    .dxpc-mainDiv {
-        margin-top: 30px;
-    }
+  .dxpc-mainDiv {
+    margin-top: 30px;
+  }
 
-    .dxeListBoxItem:hover {
-        background: #f7f8fc;
-    }
+  .dxeListBoxItem:hover {
+    background: #f7f8fc;
+  }
 
-    #ctl17_drpSort_DDD_L_LBT {
-        max-height: 200px !important;
-    }
-
+  #ctl17_drpSort_DDD_L_LBT {
+    max-height: 200px !important;
+  }
 }
 
 .dxpcDropDown {
-    margin-top: -18px !important;
+  margin-top: -18px !important;
 }
 
 .fb-prdct-list-outer__viewlink {
-    &.active {
-        background: #f0f1f5;
-        border: 1px solid #f0f1f5;
-    }
-
+  &.active {
+    background: #f0f1f5;
+    border: 1px solid #f0f1f5;
+  }
 }
 
 .fb-recent-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    .fb-recent__product {
-        margin: 8px;
-    }
+  .fb-recent__product {
+    margin: 8px;
+  }
 }
 
 .fb-product-info__tocart-label {
-    left: 65px !important;
+  left: 65px !important;
 }
 
 .fb-prdct-list-outer__grid {
-    .fb-featured__dropdown {
-        border-radius: 5px !important;
-        border-radius: 5px !important;
-        padding-left: 60px !important;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-right: 10px;
-
-    }
+  .fb-featured__dropdown {
+    border-radius: 5px !important;
+    border-radius: 5px !important;
+    padding-left: 60px !important;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 10px;
+  }
 }
 
 .fb-checkout-recipie {
-    background-color: #f0f1fa;
-    margin-bottom: 20px;
+  background-color: #f0f1fa;
+  margin-bottom: 20px;
 }
 
 .fb-featured .slick-dots li button:before {
-    content: "";
-    background-color: #fff;
-
+  content: "";
+  background-color: #fff;
 }
 
 .fb-checkout-recipes {
-    .fb-checkout-recipes-tile {
-        padding: 14px !important;
-    }
+  .fb-checkout-recipes-tile {
+    padding: 14px !important;
+  }
 }
 
 .fb-checkout-recipes {
-    .fb-checkout-recipes-tile__desc .fb-title-head {
-        font-size: 14px !important;
-        padding-bottom: 0 !important;
-    }
+  .fb-checkout-recipes-tile__desc .fb-title-head {
+    font-size: 14px !important;
+    padding-bottom: 0 !important;
+  }
 }
 .fb-recipie-head {
-    .fb-title-head {
-        padding-top: 40px;
-        padding-bottom: 0 !important;
-    }
+  .fb-title-head {
+    padding-top: 40px;
+    padding-bottom: 0 !important;
+  }
 }
 
 .fb-cart-price {
-    padding-left: 7px;
+  padding-left: 7px;
 }
 
 .fb-recipe__filters {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .fb-product-horizontal {
-    .fb-product-horizontal-outer {
-        width: 20%;
+  .fb-product-horizontal-outer {
+    width: 20%;
 
-        .fb-product-tile__tile-img {
-            width: 100%;
-        }
+    .fb-product-tile__tile-img {
+      width: 100%;
     }
+  }
 }
 
 .fb-prdct-list-outer__view {
-    &.dropdown {
-        table {
-            padding: 4px !important;
-        }
+  &.dropdown {
+    table {
+      padding: 4px !important;
+    }
 
-        .dxic {
-            input {
-                color: $color-grey2;
-                font-weight: 500;
-                font-size: 13px;
-            }
-        }
+    .dxic {
+      input {
+        color: $color-grey2;
+        font-weight: 500;
+        font-size: 13px;
+      }
+    }
 
-        .dxeButton.dxeButtonEditButton {
-            border: 0;
-            background: none;
-        }
+    .dxeButton.dxeButtonEditButton {
+      border: 0;
+      background: none;
+    }
 
-        .dxeListBoxItemSelected {
-            background-color: transparent !important;
-        }
+    .dxeListBoxItemSelected {
+      background-color: transparent !important;
     }
+  }
 }
-.fb-move-selected{
-    position: relative;
+.fb-move-selected {
+  position: relative;
 }
-.fb__cart-label-outer{
-    position: relative;
-    .fb-product-info__tocart-label{
-        left: 26px !important;
-        top: 18px;
-    }
+.fb__cart-label-outer {
+  position: relative;
+  .fb-product-info__tocart-label {
+    left: 26px !important;
+    top: 18px;
+  }
 }
-.fb-product-info__tocart{
-    .fb-product-info__tocart-qty, .fb-product-info__tocart-buynow {
-        margin-left: 10px !important;
-    }
+.fb-product-info__tocart {
+  .fb-product-info__tocart-qty,
+  .fb-product-info__tocart-buynow {
+    margin-left: 10px !important;
+  }
 }
-.fb-register__outer{
-    span{
-     margin-top: 10px !important;
-    }
+.fb-register__outer {
+  span {
+    margin-top: 10px !important;
+  }
 }
-.fb-register{
-    &__label-outer{
-        padding: 4px 0 !important;
-    }
-}
-.fb-cdc-list{
-    .fb-click-drop__link {
-        background-color: transparent;
-        border: none;
-        padding-left: 0 !important; 
-    }
-}
-.fb__cart-label-outer{
-    .dxeButtonEditButton{
-        border: none !important;
-        background: none !important;
-    }
-}
-// error text 
-.fb-input__box {
-    & .fb-input > span {
-        color: $color-red !important;
-        font-weight: 500 !important;
-    }
-}
-.error {
-    border-color: $color-red !important;
-}
-.fb-recipe__filters{
-    .dxeButtonEdit{
-        border-radius: 5px !important;
-    }
-    .dxeButtonEditButton{
-        background: none !important;
-        border: none !important;
-    }
-    .dxeButtonEditButton:hover{
-        background: none !important;
-        border: none !important;
-    }
-    .dxeButtonEdit .dxeEditArea{
-        color: #848799 !important;
-        font-family: 'Spartan'!important;
-        font-style: normal !important;
-        font-weight: 600 !important;
-    }
-}
-.fb-product-tile__cta{
-    .dxeButtonEditButton{
-            background: none !important;
-            border: none;
-    }
-    .dxeButtonEditButton:hover{
-        border: none !important;
-    }
-}
-.fb-input__text-wrap2{
+
+.fb-register__dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  select {
     width: 100%;
+    max-width: 60px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Spartan;
+    text-align: center;
+    color: #848799;
+    padding: 8px;
     background: #fff;
     border: 1px solid #c1c3c9;
     border-radius: 3px;
-    overflow: hidden;
-    position: relative;
-}
-.fb-md-modal{
-    .btn-close{
-        float: right;
-        padding: 10px !important;
+    outline: none;
+    margin-right: 8px;
+
+    option {
+      padding: 8px;
     }
+  }
+
+  .fb-input__text {
+    flex: 1;
+  }
+}
+
+.fb-register {
+  &__label-outer {
+    padding: 4px 0 !important;
+  }
+}
+.fb-cdc-list {
+  .fb-click-drop__link {
+    background-color: transparent;
+    border: none;
+    padding-left: 0 !important;
+  }
+}
+.fb__cart-label-outer {
+  .dxeButtonEditButton {
+    border: none !important;
+    background: none !important;
+  }
+}
+// error text
+.fb-input__box {
+  & .fb-input > span {
+    color: $color-red !important;
+    font-weight: 500 !important;
+  }
+}
+.error {
+  border-color: $color-red !important;
+}
+.fb-recipe__filters {
+  .dxeButtonEdit {
+    border-radius: 5px !important;
+  }
+  .dxeButtonEditButton {
+    background: none !important;
+    border: none !important;
+  }
+  .dxeButtonEditButton:hover {
+    background: none !important;
+    border: none !important;
+  }
+  .dxeButtonEdit .dxeEditArea {
+    color: #848799 !important;
+    font-family: "Spartan" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+  }
+}
+.fb-product-tile__cta {
+  .dxeButtonEditButton {
+    background: none !important;
+    border: none;
+  }
+  .dxeButtonEditButton:hover {
+    border: none !important;
+  }
+}
+.fb-input__text-wrap2 {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #c1c3c9;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.fb-md-modal {
+  .btn-close {
+    float: right;
+    padding: 10px !important;
+  }
 }
 // .fb-cart-qty{
 //     .dxeButtonEditButton{
 //         background: none !important;
 //     }
 // }
-.fb-cart-qnty{
-    .fb-featured__dropdown {
-        padding: 12px 18px 10px 54px !important;
-    }
-    .dxeButtonEditButton{
-        background: none !important;
-        border: none !important;
-    }
+.fb-cart-qnty {
+  .fb-featured__dropdown {
+    padding: 12px 18px 10px 54px !important;
+  }
+  .dxeButtonEditButton {
+    background: none !important;
+    border: none !important;
+  }
 }
 // to setup the horizonatal view of the section
 .fb-product-tile.horizontal .fb-product-tile__tile-img {
-      width: 100% !important;
+  width: 100% !important;
 }
-.fb-modal-footer{
-    .delete{
-        background: #2c3c8b !important;
-        color: #fff !important;
-    }
-    
+.fb-modal-footer {
+  .delete {
+    background: #2c3c8b !important;
+    color: #fff !important;
+  }
 }
 
 @include mobile {
-    .fb-product-info__tocart-qty {
-        label {
-            left: 20px;
-        }
-
-        table {
-            tbody {
-                td:first-child {
-                    padding-left: 70px !important;
-                }
-
-                input.dxeEditArea.dxeEditAreaSys {
-                    min-width: 20px;
-                    padding-left: 0 !important;
-                }
-
-                .dxic {
-                    left: -18px;
-                }
-            }
-        }
+  .fb-product-info__tocart-qty {
+    label {
+      left: 20px;
     }
 
-    .fb-recent-list {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        .fb-recent__product {
-            margin: 16px 0;
-            width: 50%;
-            display: block;
-
-            img {
-                max-height: 150px
-            }
+    table {
+      tbody {
+        td:first-child {
+          padding-left: 70px !important;
         }
-    }
 
-    .ae-benefit-tile {
-        display: none;
-    }
+        input.dxeEditArea.dxeEditAreaSys {
+          min-width: 20px;
+          padding-left: 0 !important;
+        }
 
+        .dxic {
+          left: -18px;
+        }
+      }
+    }
+  }
+
+  .fb-recent-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .fb-recent__product {
+      margin: 16px 0;
+      width: 50%;
+      display: block;
+
+      img {
+        max-height: 150px;
+      }
+    }
+  }
+
+  .ae-benefit-tile {
+    display: none;
+  }
 }
 // my account link color change
-.fb-header__action-wrap{
-    .fb-header__action-text a{
-        color: #464c69 !important;
-        font-weight: 600;
-       
+.fb-header__action-wrap {
+  .fb-header__action-text a {
+    color: #464c69 !important;
+    font-weight: 600;
+  }
+  &:hover {
+    .fb-header__action-text {
+      a {
+        color: #eb2028 !important;
+      }
     }
-    &:hover{
-        .fb-header__action-text 
-        {
-            a{
-                color: #eb2028 !important;
-            }
-        }
-            
-    }
+  }
 }
 // 15-11-2023
-.fb-review-rating__maincontent{
-    display: contents;
+.fb-review-rating__maincontent {
+  display: contents;
 }
-.highcharts-label{
-    visibility: hidden;
+.highcharts-label {
+  visibility: hidden;
 }
