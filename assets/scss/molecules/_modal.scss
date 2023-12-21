@@ -327,6 +327,12 @@
         }
     }
 }
+.fb-giftdatasave-outer{
+    display: flex;
+    .fb-product-tile-btn{
+        margin-right: 5px;
+    }
+}
 
 .modal-body.fav-list {
     .fb-product-tile-btn--red{
