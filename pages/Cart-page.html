@@ -7846,7 +7846,7 @@
               </div>
             </div> -->
               </div>
-              <button href="#" class="fb-product-tile-btn">Add Gift Box</button>
+              <button href="#" data-bs-toggle="modal" data-bs-target="#giftmodal" class="fb-product-tile-btn">Add Gift Box</button>
             </div>
           </div>
         </div>
@@ -8021,7 +8021,6 @@
         </div>
       </div>
     </div>
-    <!-- footer end -->
     <!-- alert popup start -->
     <!-- Button trigger modal -->
     <div class="fb-alert-popup">
@@ -8045,6 +8044,36 @@
       </div>
     </div>
     <!-- alert popup end -->
+        <!-- gift box popup -->
+        <div class="modal fade fb-modal__gift" id="giftmodal" tabindex="-1" aria-labelledby="giftmodalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="fb-modal__gift-heading">Add Gift Box</h3>
+                <p class="fb-modal__gift__txt">Box option: Frabelle MarketPlace Everyday Gift Box Small Price ₱60.00</p>
+                <div class="fb-modal__gift__image">
+                  <img src="../assets/images/gift-modal.png" alt="">
+                </div>
+                <div class="fb-input">
+                  <label>To<em>(optional)</em></label>
+                  <input type="email" class="fb-input__text" placeholder="Enter the recipient name">
+                </div>
+                <div class="fb-input">
+                  <label>From <em>(optional)</em></label>
+                  <input type="email" class="fb-input__text" placeholder="Enter the sender name">
+                </div>
+                <div class="fb-input">
+                  <label>From <em>(optional)</em></label>
+                  <textarea placeholder="Enter the sender name"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- gift box popup -->
     <!-- body content end -->
 
     <!-- scripts -->

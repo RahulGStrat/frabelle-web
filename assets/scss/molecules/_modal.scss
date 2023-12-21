@@ -270,6 +270,62 @@
             padding: $spacer-1 $spacer-3;
         }
     }
+    &__gift {
+        .modal-header {
+            padding: $spacer-2;
+            border-bottom: 0;
+        }
+        .modal-dialog {
+            max-width: 400px;
+        }
+        &-heading {
+            font-size: 16px;
+            color: #51535d;
+            font-weight: 600;
+            margin-bottom: $spacer-3;
+        }
+        &__txt {
+            font-size: 13px;
+            color: #51535d;
+            font-weight: 400;
+            margin-bottom: $spacer-4;
+        }
+
+        &__image {
+            margin-bottom: $spacer-4;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .fb-input {
+            margin-bottom: $spacer-3;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            textarea {
+                border: 1px solid #c1c3c9;
+                border-radius: 3px;
+                overflow: hidden;
+                width: 100%;
+                height: 60px;
+                font-size: 11px;
+                font-weight: 400;
+                color: #848799;
+                padding: 8px 16px;
+            }
+            label {
+                font-size: 11px;
+                margin-bottom: $spacer-2;
+                font-weight: 600;
+                em {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
 }
 
 .modal-body.fav-list {
