@@ -693,7 +693,7 @@ if (scrollButton) {
   scrollButton.addEventListener('click', scrollToModule(e));
 }
 
-const reviewBtn = document.querySelector('.fb-review-box__write-review .fb-product-tile-btn');
+const reviewBtn = document.querySelector('.fb-review-box__write-review .fb-product-tile-btn-clk');
 
 reviewBtn.addEventListener('click', (e) => {
   e.preventDefault();
