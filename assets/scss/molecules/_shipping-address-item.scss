@@ -3,7 +3,7 @@
   background-color: $color-white;
 
   input {
-    display: none;
+    // display: none;
 
     &:checked+.fb-shipping-adress-item__box {
       border: 1px solid #2c3c8b;
