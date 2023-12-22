@@ -77,17 +77,23 @@
     display: flex;
     padding-bottom: $spacer-3;
     align-items: center;
+    width: 100%;
   }
 
   &__product-img {
-    width: 45px;
-    height: 45px;
+    // width: 45px;
+    // height: 45px;
+    width: 20%;
     margin-right: $spacer-4;
 
     img {
       width: 100%;
       height: auto;
     }
+  }
+
+  &__prdct-text {
+    width: 80%;
   }
 
   &__inner-text1 {

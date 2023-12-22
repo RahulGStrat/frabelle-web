@@ -3,7 +3,7 @@
   background-color: $color-white;
 
   input {
-    display: none;
+    // display: none;
 
     &:checked+.fb-shipping-adress-item__box {
       border: 1px solid #2c3c8b;
@@ -51,6 +51,8 @@
     font-weight: 600;
     margin-bottom: $spacer-2;
     color: #2c3c8b;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__adress {
