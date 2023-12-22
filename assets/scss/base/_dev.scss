@@ -435,8 +435,14 @@
   visibility: hidden;
 }
 .fb-message_noproducts{
+  display: block;
+  width: 100%; 
   .fb-message{
-    background-color: #08ff08;
-    font-size: 14px;
+    font-size: 14px !important;
+    justify-content: center;
+    img{
+      width: 35px;
+      height: 36px;
+    }
   }
 }
