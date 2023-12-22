@@ -146,7 +146,7 @@ $(document).ready(function () {
     var maxDots = 5;
     var transformXIntervalNext = -30;
     var transformXIntervalPrev = 30;
-  } else { 
+  } else {
     var maxDots = 17;
     var transformXIntervalNext = -30;
     var transformXIntervalPrev = 30;
@@ -158,7 +158,7 @@ $(document).ready(function () {
       $(this).addClass('dot-index-' + index);
     });
     $(this).find('ul.slick-dots').css('transform', 'translateX(0)');
-    setBoundries($(this), 'default'); 
+    setBoundries($(this), 'default');
   });
 
   var transformCount = 0;
@@ -689,5 +689,13 @@ function scrollToModule(e) {
   module2.scrollIntoView({ behavior: 'smooth' });
 }
 // Add an event listener to the button to trigger scrolling
-scrollButton.addEventListener('click', scrollToModule(e));
+if (scrollButton) {
+  scrollButton.addEventListener('click', scrollToModule(e));
+}
 
+const reviewBtn = document.querySelector('.fb-review-box__write-review .fb-product-tile-btn-clk');
+
+reviewBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('.fb-wrt-review').classList.add('active');
+})
