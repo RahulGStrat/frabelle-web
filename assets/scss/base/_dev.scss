@@ -462,15 +462,39 @@
 .highcharts-label {
   visibility: hidden;
 }
-.fb-message_noproducts{
+
+.fb-message_noproducts {
   display: block;
-  width: 100%; 
-  .fb-message{
+  width: 100%;
+
+  .fb-message {
     font-size: 14px !important;
     justify-content: center;
-    img{
+
+    img {
       width: 35px;
       height: 36px;
     }
   }
+}
+
+// 22-12-2023
+.fb-fulfillment__radio-sec table td {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+  input {
+    margin-right: 16px;
+  }
+
+  span {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+// 26-12-2023
+#panelsStayOpen-headingOne.accordion-header {
+  pointer-events: all;
 }
