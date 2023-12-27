@@ -474,3 +474,13 @@
     }
   }
 }
+.fb-upproductinfo{
+  .fb-mailed-gift .fb-input{
+    flex-direction: column;
+  }
+  .fb-mailed-gift{
+    align-items: normal;
+    flex-direction: column;
+    margin-left: 6px;
+  }
+}
