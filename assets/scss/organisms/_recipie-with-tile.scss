@@ -1,73 +1,89 @@
-.fb-recipie-wt{
+.fb-recipie-wt {
     display: flex;
     flex-wrap: wrap;
-    .fb-checkout-recipes-tile{
+
+    .fb-checkout-recipes-tile {
         background-color: #ffffff;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
         border-radius: 5px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         transition: 0.3s;
-        padding: 24px 24px 24px 32px;
-       width: calc(33.3% - 16px);
-       margin: 24px 8px;
+        padding: 24px 24px 32px 24px;
+        width: calc(33.3% - 16px);
+        margin: 24px 8px;
     }
-    .fb-title-head{
+
+    .fb-title-head {
         font-size: 16px !important;
     }
-    .fb-checkout-recipes-tile__img{
+
+    .fb-checkout-recipes-tile__img {
         height: 235px;
         border-radius: 5px;
         margin-bottom: 16px;
         overflow: hidden;
         display: flex;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
-    .fb-checkout-recipes-tile__sub-desc{
+
+    .fb-checkout-recipes-tile__sub-desc {
         display: flex;
-            p{
-                color: #848799;
-                font-size: 11px;
-                font-weight: 400;
-                font-family: "Spartan";
-                font-style: normal;
-                    }
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: #848799;
+            font-size: 11px;
+            font-weight: 400;
+            font-family: "Spartan";
+            font-style: normal;
+        }
     }
+
     .fb-checkout-recipes .fb-checkout-recipes-tile__cooking {
-        width: 50%;
+        // width: 50%;
+        margin: 0 8px;
         display: flex;
         align-items: center;
         justify-content: center
     }
-    .fb-checkout-recipes-tile__cooking{
-        width: 50%;
+
+    .fb-checkout-recipes-tile__cooking {
+        // width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 8px;
     }
-    .fb-checkout-recipes-tile__icon{
+
+    .fb-checkout-recipes-tile__icon {
         width: 20px;
         height: 20px;
         margin-right: 8px;
-    
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
-    .fb-checkout-recipes-tile__vertical{
+
+    .fb-checkout-recipes-tile__vertical {
         border-left: 1px solid #848799;
         height: 16px;
-        margin: 16px auto;
+        margin: 0px 24px;
     }
-    
-    
+
+
 }
+
 @include mobile {
-    .fb-recipie-wt{
-        .fb-checkout-recipes-tile{
+    .fb-recipie-wt {
+        .fb-checkout-recipes-tile {
             width: calc(100% - 16px);
 
         }
