@@ -498,3 +498,28 @@
 #panelsStayOpen-headingOne.accordion-header {
   pointer-events: all;
 }
+
+// 27-12-2023
+.fb-checkout-formout {
+  .fb-your-addinfo__details {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fb-Ai {
+    width: 60%;
+  }
+
+  .fb-input__box {
+    max-width: unset;
+  }
+}
+
+@include mobile {
+  .fb-checkout-formout {
+    .fb-Ai {
+      width: 90%;
+    }
+  }
+}
