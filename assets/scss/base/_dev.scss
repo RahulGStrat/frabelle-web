@@ -564,3 +564,26 @@
     margin-left: 6px;
   }
 }
+
+// cart table - 29-12-2023
+
+.fb-carttable__item {
+  .fb-input-checkbox-wrap {
+    margin-right: 16px;
+  }
+
+  .fb-carttable__itemcnt {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-bottom: 0;
+    }
+
+    &.prdct {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
