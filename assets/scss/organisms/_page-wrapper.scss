@@ -19,3 +19,9 @@
         }
     }
 }
+
+@include mobile-tablet {
+    .fb-page-wrapper {
+        min-height: calc(50vh - 50px);
+    }
+}

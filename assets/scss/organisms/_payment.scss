@@ -1,0 +1,52 @@
+.fb-payment {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        margin: 0 -8px;
+
+        .fb-product-tile-btn {
+            width: calc(50% - 16px);
+            margin: 0 8px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 24px;
+    }
+
+    .fb-page-wrapper__title {
+        margin-bottom: 16px;
+    }
+}
+
+@include tablet {
+    .fb-payment {
+        &__btn {
+            width: 50%;
+        }
+    }
+}
+
+@include mobile {
+    .fb-payment {
+        &__btn {
+            width: 100%;
+        }
+
+        &__img {
+            width: 75%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
