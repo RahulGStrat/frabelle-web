@@ -234,7 +234,7 @@
 
   .fb-product-info__tocart-label {
     left: 26px !important;
-    top: 18px;
+    top: 16px;
   }
 }
 
@@ -585,5 +585,11 @@
       flex-direction: column;
       justify-content: center;
     }
+  }
+}
+
+.fb-product-tile__cta {
+  .dxeButtonEditSys td.dxic {
+    padding: 0px 2px 2px;
   }
 }
