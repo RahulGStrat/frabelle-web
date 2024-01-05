@@ -19,7 +19,8 @@
     }
 
     .fb-checkout-recipes-tile__img {
-        height: 235px;
+        // height: 235px;
+        min-height: 200px;
         border-radius: 5px;
         margin-bottom: 16px;
         overflow: hidden;
@@ -81,6 +82,15 @@
 
 }
 
+@include tablet {
+    .fb-recipie-wt {
+
+        .fb-checkout-recipes-tile__img {
+            min-height: unset;
+        }
+    }
+}
+
 @include mobile {
     .fb-recipie-wt {
         .fb-checkout-recipes-tile {
@@ -88,5 +98,8 @@
 
         }
 
+        .fb-checkout-recipes-tile__img {
+            min-height: unset;
+        }
     }
 }

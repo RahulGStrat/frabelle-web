@@ -593,3 +593,41 @@
     padding: 0px 2px 2px;
   }
 }
+
+// 05-01-2024
+.fb-header__search {
+  padding: 6px 8px !important;
+
+  &-input {
+    // overflow-x: scroll;
+    // padding-bottom: 2px;
+
+    // &::-webkit-scrollbar {
+    //   height: 1px;
+    // }
+
+    // &::-webkit-scrollbar-track {
+    //   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+    // }
+
+    // &::-webkit-scrollbar-thumb {
+    //   background-color: darkgrey;
+    //   outline: 1px solid slategrey;
+    // }
+
+    table {
+      // min-width: 1000px;
+      border: 0;
+
+      .dxeToken {
+        background: #fff;
+        border-color: #2c3c8b;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-icon {
+    margin-right: 4px;
+  }
+}

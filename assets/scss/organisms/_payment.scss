@@ -19,6 +19,11 @@
 
     &__img {
         margin-bottom: 24px;
+        width: 35%;
+
+        img {
+            width: 100%;
+        }
     }
 
     .fb-page-wrapper__title {
@@ -29,6 +34,10 @@
 @include tablet {
     .fb-payment {
         &__btn {
+            width: 50%;
+        }
+
+        &__img {
             width: 50%;
         }
     }
