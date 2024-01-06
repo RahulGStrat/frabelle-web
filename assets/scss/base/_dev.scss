@@ -631,3 +631,20 @@
     margin-right: 4px;
   }
 }
+
+// 06-01-2024
+#ctl13_rdlpaymentMethods tr {
+  &:first-child {
+    display: none
+  }
+}
+
+@include mobile {
+
+  #ctl13_rdlpaymentMethods,
+  #ctl13_rblFulfilment {
+    tr td {
+      padding-left: 0 !important;
+    }
+  }
+}
