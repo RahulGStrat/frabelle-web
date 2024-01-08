@@ -697,7 +697,9 @@ if (scrollButton) {
 //  write a review click
 const reviewBtn = document.querySelector('.fb-review-box__write-review .fb-product-tile-btn-clk');
 
-reviewBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  document.querySelector('.fb-wrt-review').classList.add('active');
-})
+if (reviewBtn) {
+  reviewBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.fb-wrt-review').classList.add('active');
+  })
+}
