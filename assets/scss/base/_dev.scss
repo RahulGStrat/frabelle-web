@@ -688,6 +688,24 @@
     a {
       width: 100%;
       height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
+  }
+
+  &-input {
+    table td {
+      border: 0 !important;
+    }
+  }
+}
+
+// 09-01-2024
+.fb-ac-dash-myaddress__ship-bill {
+  .address-box .address-box-item span {
+    overflow-wrap: break-word;
   }
 }
