@@ -592,7 +592,8 @@ if (question_link) {
 const pass = document.querySelector("#pass-toggle");
 const passOut = document.querySelector("#pass-out");
 if (pass) {
-  pass.addEventListener("click", () => {
+  pass.addEventListener("click", (e) => {
+    e.preventDefault();
     if (passOut.querySelector("input").type === "password") {
       passOut.querySelector("input").type = "text";
       pass.querySelectorAll("img")[0].style.display = "block";

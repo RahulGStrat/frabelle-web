@@ -718,5 +718,90 @@
     text-decoration-line: line-through;
     text-decoration-style: double;
     font-weight: 500;
+    margin-left: 8px;
+  }
+}
+
+// login password icon
+
+.fb-login_popup__form-field {
+  .fb-input__text-wrap {
+    position: relative;
+
+    .fb-register__pass-icon {
+      top: 50%;
+    }
+  }
+}
+
+// 12-01-2024
+.fb-product-info__price-box {
+  s {
+    font-size: 12px;
+  }
+}
+
+.fb-product-info__overview .fb-product-info__shotD-list {
+  &::before {
+    content: none;
+  }
+
+  span {
+    li {
+      position: relative;
+      padding-left: 8px;
+      padding-bottom: 8px;
+
+      &::before {
+        content: "";
+        background-color: #eb2028;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        left: -10px;
+        top: 3px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.fb-login_popup__form-field .fb-register__pass-icon {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// image slider - detail page
+.fb-product-media {
+  flex-direction: row-reverse;
+
+  .dx-contentBox {
+    width: 100% !important;
+    height: 450px !important;
+  }
+
+  .dxeImage {
+    height: 100%;
+  }
+}
+
+@include tablet {
+  .fb-product-media {
+
+    .dx-contentBox {
+      width: 100% !important;
+      height: 320px !important;
+    }
+  }
+}
+
+@include mobile {
+  .fb-product-media {
+
+    .dx-contentBox {
+      width: 100% !important;
+      height: 300px !important;
+    }
   }
 }
