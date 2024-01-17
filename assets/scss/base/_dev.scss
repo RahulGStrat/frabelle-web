@@ -774,7 +774,7 @@
 
 // image slider - detail page
 .fb-product-media {
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
 
   .dx-contentBox {
     width: 100% !important;
@@ -802,6 +802,34 @@
     .dx-contentBox {
       width: 100% !important;
       height: 300px !important;
+    }
+  }
+}
+
+// 
+.fb-product-info__price-main--rev {
+  margin-top: 16px;
+
+  .fb-product-info__price-wrap {
+    margin-right: 16px;
+    flex-direction: column;
+
+    p {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .fb-product-info__price {
+      color: #eb2028;
+    }
+
+    &--grey {
+
+      p,
+      div,
+      span {
+        color: #c1c3c9 !important;
+      }
     }
   }
 }
