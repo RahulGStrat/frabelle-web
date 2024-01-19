@@ -256,6 +256,7 @@
     .fb-product-tile__tile-img {
       width: 20%;
       height: auto;
+      max-height: 170px;
     }
 
     .fb-product-tile__tile-img {
@@ -283,6 +284,10 @@
 
     .fb-product-tile__tile-cont {
       text-align: right;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .fb-product-tile__price {
@@ -292,6 +297,8 @@
     .product-d {
       display: block;
       width: 60%;
+      height: 100%;
+      padding-top: 8px;
 
       .fb-product-tile__title {
         display: block;
@@ -320,7 +327,7 @@
           &::after {
             position: absolute;
             content: "";
-            top: 30%;
+            top: 10%;
             left: -13px;
             width: 5px;
             height: 5px;

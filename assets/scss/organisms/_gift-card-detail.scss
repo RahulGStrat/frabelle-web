@@ -3,17 +3,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   &__card-icon {
     width: 425px;
     height: auto;
     display: block;
     margin: 0 auto;
     padding-bottom: $spacer-3;
+
     img {
       width: 100%;
       height: 100%;
     }
   }
+
   .fb-storecredit__body {
     max-width: 580px;
     display: block;
@@ -25,7 +28,9 @@
   .fb-storecredit__body {
     font-size: 12px;
     line-height: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    color: #6e7080;
+    line-height: 20px;
   }
 
   &__cta-out {
@@ -34,24 +39,38 @@
   }
 
   &__cta {
-    width: 220px;
+    // width: 220px;
+    min-width: 220px;
+    width: auto;
     margin-right: $spacer-3;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  .fb-title-head {
+    font-size: 28px;
   }
 }
 
 @include mobile {
   .fb-gift-detail {
     padding: $spacer-2 0;
+
     &__card-icon {
       width: 100%;
     }
+
     .fb-title-head {
       font-size: 20px !important;
     }
+
     &__cta {
       width: 100%;
       margin-right: 0 !important;
     }
+
     &__cta-out {
       display: block;
     }
