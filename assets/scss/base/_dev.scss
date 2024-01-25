@@ -888,3 +888,36 @@
 .fb-register__dropdown select {
   min-width: 75px;
 }
+
+// 22-01-2024
+.product-d__list li {
+  &::after {
+    top: 6px !important;
+  }
+}
+
+.fb-pages__faq {
+  min-height: calc(100vh - 400px);
+}
+
+// 23-01-2024
+.fb-sbar__nav-item {
+  &:first-child svg {
+    width: 20px !important;
+  }
+
+  .fb-sbar__nav-link {
+    svg {
+      margin-right: 16px;
+      width: 20px;
+    }
+
+    &.active {
+      svg {
+        path {
+          fill: #3b4780;
+        }
+      }
+    }
+  }
+}
