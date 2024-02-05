@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: center;
         width: 35%;
-        margin: 0 -8px;
+        margin: 24px -8px 16px;
 
         .fb-product-tile-btn {
             width: calc(50% - 16px);
@@ -19,7 +19,7 @@
 
     &__img {
         margin-bottom: 24px;
-        width: 35%;
+        width: 25%;
 
         img {
             width: 100%;
@@ -27,12 +27,44 @@
     }
 
     .fb-page-wrapper__title {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+    }
+
+    &__ordernum {
+        color: #3b4780;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 24px;
+
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3b4780;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+
+    &__ordertext {
+        text-align: center;
+
+        a {
+            font-weight: 600;
+            color: #3b4780;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
     }
 }
 
 @include tablet {
     .fb-payment {
+        padding: 80px 0 40px;
+
         &__btn {
             width: 50%;
         }
@@ -45,6 +77,8 @@
 
 @include mobile {
     .fb-payment {
+        padding: 60px 0 40px;
+
         &__btn {
             width: 100%;
         }
