@@ -927,3 +927,48 @@
 .dxpcModalBackLite {
   display: none !important;
 }
+
+// addinfo input
+
+.fb-your-addinfo__details {
+  .fb-input {
+    position: relative;
+  }
+
+  .fb-add-drpdown {
+    position: absolute;
+    right: 0;
+    top: 35px;
+  }
+}
+
+// banner height
+@include mobile {
+  .fb-MainBanner {
+    margin-top: 8px !important;
+
+    .fb-MainBanner__tile-wrap {
+      max-height: 400px;
+
+      .fb-MainBanner__tile {
+        max-height: 400px;
+      }
+
+      .fb-MainBanner-img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// valid field reset password
+.fb-login_popup__form-field {
+  .fb-input span {
+    color: #eb2028;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+}
