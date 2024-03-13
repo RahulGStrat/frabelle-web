@@ -977,3 +977,9 @@
 .fb-cartpage__cnt .fb-order {
   overflow: unset;
 }
+
+// nav link active
+.fb-header-nav__link.active {
+  color: #fff;
+  background-color: #eb2028;
+}
