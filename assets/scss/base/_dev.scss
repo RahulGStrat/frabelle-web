@@ -983,3 +983,40 @@
   color: #fff;
   background-color: #eb2028;
 }
+
+// 
+.fb-carttable__itemcnt.select {
+  .fb-featured__dropdown {
+    margin-top: 0;
+  }
+}
+
+.fb-carttable__itemcnt {
+  &:nth-child(2) {
+    p {
+      transform: translateX(10px);
+    }
+  }
+
+  &:nth-child(4) {
+    p {
+      transform: translateX(24px);
+    }
+  }
+}
+
+@include mobile {
+  .fb-carttable__itemcnt {
+    &:nth-child(2) {
+      p {
+        transform: translateX(0px);
+      }
+    }
+
+    &:nth-child(4) {
+      p {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
