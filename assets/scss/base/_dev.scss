@@ -1020,3 +1020,28 @@
     }
   }
 }
+
+// dropdown wrap
+.fb-dropdown-outer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+
+  .fb-dropdown {
+    width: calc(50% - 16px) !important;
+    margin: 0 8px 16px;
+  }
+}
+
+@include mobile {
+  .fb-dropdown-outer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+
+    .fb-dropdown {
+      width: calc(100% - 16px) !important;
+      margin: 0 8px 16px;
+    }
+  }
+}
