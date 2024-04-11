@@ -1024,6 +1024,7 @@
 // dropdown wrap
 .fb-dropdown-outer {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 -8px;
 
@@ -1043,5 +1044,14 @@
       width: calc(100% - 16px) !important;
       margin: 0 8px 16px;
     }
+  }
+}
+
+// 
+.fb-featured__dropdown.fb-featured__dropdown--select {
+  padding-left: 8px;
+
+  option {
+    padding: 8px;
   }
 }
