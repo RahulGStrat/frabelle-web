@@ -704,3 +704,12 @@ if (reviewBtn) {
     document.querySelector('.fb-wrt-review').classList.add('active');
   })
 }
+
+
+// 
+const tickbox = document.querySelector(".fb-checkout .fb-fav__msgbox");
+if (tickbox) {
+  setTimeout(() => {
+    tickbox.classList.add("d-none");
+  }, 5000);
+}
