@@ -536,10 +536,10 @@ if (sidebar_filter_options) {
     const sidebar_filters = item.querySelectorAll(".fb-filter-opns__list-item")
     const sidebar_filter_readmore = item.querySelector(".fb-seemore-more");
     let triger = false;
-    if (sidebar_filters.length > 4) {
+    if (sidebar_filters.length > 5) {
       sidebar_filter_readmore.classList.add("fb-seemore-more--show");
       sidebar_filters.forEach((item, index) => {
-        if (item.classList.contains("show-item") && index > 4) {
+        if (item.classList.contains("show-item") && index > 5) {
           item.classList.remove("show-item")
         }
       })
@@ -561,7 +561,7 @@ if (sidebar_filter_options) {
           text.textContent = "See more"
           sidebar_filter_readmore.classList.remove("fb-seemore-more--arrow")
           sidebar_filters.forEach((item, index) => {
-            if (item.classList.contains("show-item") && index > 4) {
+            if (item.classList.contains("show-item") && index > 5) {
               item.classList.remove("show-item");
             }
           })
@@ -713,3 +713,13 @@ if (tickbox) {
     tickbox.classList.add("d-none");
   }, 5000);
 }
+
+// // close popup move selected
+//   function fbFunctionpop() {
+//     var popup = document.getElementsByClassName("fb-fav-popup");
+//     popup.classList.toggle("show");
+//   }
+
+$(document).click(function () {
+  $(".fb-fav-popup").hide();
+});
