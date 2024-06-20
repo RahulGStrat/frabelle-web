@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin tablet-pro {
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    @content;
+  }
+}
