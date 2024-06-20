@@ -1,19 +1,24 @@
 .fb-error-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 60px;
 
-    .fb-aboutus__cont {
-        padding-bottom: $spacer-3;
-    }
-
-    p {
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    img {
-        width: 100%;
+    &__img {
+        width: 580px;
+        height: 270px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .fb-aboutus__cont {
+        padding-bottom: $spacer-3;
     }
 
     .fb-empty__cta {
@@ -28,5 +33,10 @@
         br {
             display: none;
         }
+
+        &__img {
+            width: 100%;
+        }
+
     }
 }
