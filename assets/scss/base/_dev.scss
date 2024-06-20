@@ -1076,3 +1076,10 @@
 .fb-mailed-gift{
     margin: 0 !important;
 }
+@include tablet-pro{
+  #kt_content{
+   .fb-giftcard-update{
+    padding: 0 !important;
+  }
+  }
+}
